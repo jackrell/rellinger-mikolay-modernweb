@@ -5,62 +5,75 @@ import UserList from "./UserList";
 import { Link } from "react-router-dom";
 
 const UserPage = () => {
+  // State to store the list of users
   const [users, setUsers] = useState([]);
+  // State to store the list of available classes
   const [classes, setClasses] = useState([]);
+  // State variables for user input fields
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [classId, setClassId] = useState("");
+  // Stores the ID of the user being updated (if any)
   const [updateId, setUpdateId] = useState(null);
 
+  // Fetch users based on the selected class
   const fetchUsers = () => {
-    // If a class is selected, filter by that class; otherwise get all users.
     getAllUsers(classId).then((results) => {
       setUsers(results);
     });
   };
 
+  // Fetch all available classes
   const fetchClasses = () => {
     getAllClasses().then((results) => {
       setClasses(results);
     });
   };
 
+  // Fetch classes when the component mounts
   useEffect(() => {
     fetchClasses();
   }, []);
 
+  // Fetch users whenever the selected class changes
   useEffect(() => {
     fetchUsers();
   }, [classId]);
 
+  // Handles both user creation and updating
   const handleCreateOrUpdate = () => {
     if (!updateId) {
+      // Creating a new user with the provided details
       createUser(username, email, classId).then(() => {
+        // Reset input fields after creation
         setUsername("");
         setEmail("");
-        fetchUsers();
+        fetchUsers(); // Refresh the user list
       });
     } else {
-      // For updating the user’s pointer, we pass the pointer data in the format Parse expects.
+      // Updating an existing user with the selected ID
       updateUser(updateId, {
         username,
         email,
         class: { __type: "Pointer", className: "Class", objectId: classId },
       }).then(() => {
+        // Reset input fields after update
         setUsername("");
         setEmail("");
         setUpdateId(null);
-        fetchUsers();
+        fetchUsers(); // Refresh the user list
       });
     }
   };
 
+  // Handles deleting a user by ID
   const handleDelete = (id) => {
     removeUser(id).then(() => {
-      fetchUsers();
+      fetchUsers(); // Refresh the user list after deletion
     });
   };
 
+  // Populates the input fields with the user's data for editing
   const handleEdit = (user) => {
     setUpdateId(user.id);
     setUsername(user.get("username"));
@@ -74,6 +87,7 @@ const UserPage = () => {
     <div>
       <h2>User Management</h2>
       <div>
+        {/* Input fields for user details */}
         <input
           type="text"
           placeholder="Username"
@@ -86,6 +100,7 @@ const UserPage = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+        {/* Dropdown for selecting a class */}
         <select value={classId} onChange={(e) => setClassId(e.target.value)}>
           <option value="">Select Class</option>
           {classes.map((cls) => (
@@ -94,11 +109,14 @@ const UserPage = () => {
             </option>
           ))}
         </select>
+        {/* Button for creating/updating a user */}
         <button onClick={handleCreateOrUpdate}>
           {updateId ? "Update User" : "Create User"}
         </button>
       </div>
+      {/* User list component for displaying users */}
       <UserList users={users} onEdit={handleEdit} onDelete={handleDelete} />
+      {/* Navigation link to return to the home page */}
       <Link to="/">Return Home</Link>
     </div>
   );
