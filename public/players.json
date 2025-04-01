@@ -1,0 +1,5392 @@
+[
+  {
+    "name": "Quentin Grimes",
+    "team": "NYK",
+    "college": "Houston",
+    "height": 195.58,
+    "weight": 95.25432,
+    "ppg": 11.3,
+    "rpg": 3.2,
+    "apg": 2.1
+  },
+  {
+    "name": "Quenton Jackson",
+    "team": "WAS",
+    "college": "Texas A&M",
+    "height": 195.58,
+    "weight": 78.471416,
+    "ppg": 6.2,
+    "rpg": 0.9,
+    "apg": 1.7
+  },
+  {
+    "name": "Pat Connaughton",
+    "team": "MIL",
+    "college": "Notre Dame",
+    "height": 195.58,
+    "weight": 94.800728,
+    "ppg": 7.6,
+    "rpg": 4.6,
+    "apg": 1.3
+  },
+  {
+    "name": "RJ Barrett",
+    "team": "NYK",
+    "college": "Duke",
+    "height": 198.12,
+    "weight": 97.068688,
+    "ppg": 19.6,
+    "rpg": 5.0,
+    "apg": 2.8
+  },
+  {
+    "name": "Precious Achiuwa",
+    "team": "TOR",
+    "college": "Memphis",
+    "height": 203.2,
+    "weight": 102.0582,
+    "ppg": 9.2,
+    "rpg": 6.0,
+    "apg": 0.9
+  },
+  {
+    "name": "RaiQuan Gray",
+    "team": "BKN",
+    "college": "Florida State",
+    "height": 200.66,
+    "weight": 122.016248,
+    "ppg": 16.0,
+    "rpg": 9.0,
+    "apg": 7.0
+  },
+  {
+    "name": "R.J. Hampton",
+    "team": "DET",
+    "college": "None",
+    "height": 193.04,
+    "weight": 79.3786,
+    "ppg": 6.4,
+    "rpg": 1.9,
+    "apg": 1.1
+  },
+  {
+    "name": "Peyton Watson",
+    "team": "DEN",
+    "college": "UCLA",
+    "height": 200.66,
+    "weight": 90.7184,
+    "ppg": 3.3,
+    "rpg": 1.6,
+    "apg": 0.5
+  },
+  {
+    "name": "Patrick Beverley",
+    "team": "CHI",
+    "college": "Arkansas",
+    "height": 187.96,
+    "weight": 81.64656,
+    "ppg": 6.2,
+    "rpg": 3.7,
+    "apg": 2.9
+  },
+  {
+    "name": "Paul Reed",
+    "team": "PHI",
+    "college": "DePaul",
+    "height": 205.74,
+    "weight": 95.25432,
+    "ppg": 4.2,
+    "rpg": 3.8,
+    "apg": 0.4
+  },
+  {
+    "name": "Paul George",
+    "team": "LAC",
+    "college": "Fresno State",
+    "height": 203.2,
+    "weight": 99.79024,
+    "ppg": 23.8,
+    "rpg": 6.1,
+    "apg": 5.1
+  },
+  {
+    "name": "Patty Mills",
+    "team": "BKN",
+    "college": "St. Mary's",
+    "height": 182.88,
+    "weight": 81.64656,
+    "ppg": 6.2,
+    "rpg": 1.1,
+    "apg": 1.4
+  },
+  {
+    "name": "Pascal Siakam",
+    "team": "TOR",
+    "college": "New Mexico State",
+    "height": 203.2,
+    "weight": 104.32616,
+    "ppg": 24.2,
+    "rpg": 7.8,
+    "apg": 5.8
+  },
+  {
+    "name": "Patrick Williams",
+    "team": "CHI",
+    "college": "Florida State",
+    "height": 200.66,
+    "weight": 97.52228,
+    "ppg": 10.2,
+    "rpg": 4.0,
+    "apg": 1.2
+  },
+  {
+    "name": "Patrick Baldwin",
+    "team": "GSW",
+    "college": "Wisconsin-Milwaukee",
+    "height": 205.74,
+    "weight": 99.79024,
+    "ppg": 3.9,
+    "rpg": 1.3,
+    "apg": 0.4
+  },
+  {
+    "name": "Raul Neto",
+    "team": "CLE",
+    "college": "None",
+    "height": 187.96,
+    "weight": 81.64656,
+    "ppg": 3.3,
+    "rpg": 1.0,
+    "apg": 1.6
+  },
+  {
+    "name": "Payton Pritchard",
+    "team": "BOS",
+    "college": "Oregon",
+    "height": 185.42,
+    "weight": 88.45044,
+    "ppg": 5.6,
+    "rpg": 1.8,
+    "apg": 1.3
+  },
+  {
+    "name": "Reggie Bullock",
+    "team": "DAL",
+    "college": "North Carolina",
+    "height": 198.12,
+    "weight": 92.98636,
+    "ppg": 7.2,
+    "rpg": 3.6,
+    "apg": 1.4
+  },
+  {
+    "name": "Russell Westbrook",
+    "team": "LAC",
+    "college": "UCLA",
+    "height": 190.5,
+    "weight": 90.7184,
+    "ppg": 15.9,
+    "rpg": 5.8,
+    "apg": 7.5
+  },
+  {
+    "name": "Richaun Holmes",
+    "team": "SAC",
+    "college": "Bowling Green",
+    "height": 203.2,
+    "weight": 106.59412,
+    "ppg": 3.1,
+    "rpg": 1.9,
+    "apg": 0.2
+  },
+  {
+    "name": "Saddiq Bey",
+    "team": "ATL",
+    "college": "Villanova",
+    "height": 200.66,
+    "weight": 97.52228,
+    "ppg": 13.8,
+    "rpg": 4.7,
+    "apg": 1.5
+  },
+  {
+    "name": "Paolo Banchero",
+    "team": "ORL",
+    "college": "Duke",
+    "height": 208.28,
+    "weight": 113.398,
+    "ppg": 20.0,
+    "rpg": 6.9,
+    "apg": 3.7
+  },
+  {
+    "name": "Sam Hauser",
+    "team": "BOS",
+    "college": "Virginia",
+    "height": 200.66,
+    "weight": 98.429464,
+    "ppg": 6.4,
+    "rpg": 2.6,
+    "apg": 0.9
+  },
+  {
+    "name": "Saben Lee",
+    "team": "PHX",
+    "college": "Vanderbilt",
+    "height": 187.96,
+    "weight": 83.007336,
+    "ppg": 6.0,
+    "rpg": 1.8,
+    "apg": 2.7
+  },
+  {
+    "name": "Ryan Rollins",
+    "team": "GSW",
+    "college": "Toledo",
+    "height": 190.5,
+    "weight": 81.64656,
+    "ppg": 1.9,
+    "rpg": 1.0,
+    "apg": 0.5
+  },
+  {
+    "name": "Ryan Arcidiacono",
+    "team": "POR",
+    "college": "Villanova",
+    "height": 190.5,
+    "weight": 88.45044,
+    "ppg": 1.3,
+    "rpg": 0.8,
+    "apg": 1.2
+  },
+  {
+    "name": "Rui Hachimura",
+    "team": "LAL",
+    "college": "Gonzaga",
+    "height": 203.2,
+    "weight": 104.32616,
+    "ppg": 11.2,
+    "rpg": 4.5,
+    "apg": 0.9
+  },
+  {
+    "name": "Rudy Gobert",
+    "team": "MIN",
+    "college": "None",
+    "height": 215.9,
+    "weight": 117.026736,
+    "ppg": 13.4,
+    "rpg": 11.6,
+    "apg": 1.2
+  },
+  {
+    "name": "Rudy Gay",
+    "team": "UTA",
+    "college": "Connecticut",
+    "height": 203.2,
+    "weight": 113.398,
+    "ppg": 5.2,
+    "rpg": 2.9,
+    "apg": 1.0
+  },
+  {
+    "name": "Royce O'Neale",
+    "team": "BKN",
+    "college": "Baylor",
+    "height": 198.12,
+    "weight": 102.511792,
+    "ppg": 8.8,
+    "rpg": 5.1,
+    "apg": 3.7
+  },
+  {
+    "name": "Ron Harper Jr.",
+    "team": "TOR",
+    "college": "Rutgers",
+    "height": 195.58,
+    "weight": 111.13004,
+    "ppg": 2.2,
+    "rpg": 0.8,
+    "apg": 0.4
+  },
+  {
+    "name": "Romeo Langford",
+    "team": "SAS",
+    "college": "Indiana",
+    "height": 195.58,
+    "weight": 97.975872,
+    "ppg": 6.9,
+    "rpg": 2.7,
+    "apg": 1.2
+  },
+  {
+    "name": "Rodney McGruder",
+    "team": "DET",
+    "college": "Kansas State",
+    "height": 193.04,
+    "weight": 92.98636,
+    "ppg": 5.7,
+    "rpg": 2.3,
+    "apg": 0.9
+  },
+  {
+    "name": "Robin Lopez",
+    "team": "CLE",
+    "college": "Stanford",
+    "height": 213.36,
+    "weight": 127.459352,
+    "ppg": 3.0,
+    "rpg": 1.4,
+    "apg": 0.5
+  },
+  {
+    "name": "Robert Williams III",
+    "team": "BOS",
+    "college": "Texas A&M",
+    "height": 205.74,
+    "weight": 107.501304,
+    "ppg": 8.0,
+    "rpg": 8.3,
+    "apg": 1.4
+  },
+  {
+    "name": "Robert Covington",
+    "team": "LAC",
+    "college": "Tennessee State",
+    "height": 200.66,
+    "weight": 94.800728,
+    "ppg": 6.0,
+    "rpg": 3.5,
+    "apg": 1.2
+  },
+  {
+    "name": "Ricky Rubio",
+    "team": "CLE",
+    "college": "None",
+    "height": 187.96,
+    "weight": 86.18248,
+    "ppg": 5.2,
+    "rpg": 2.1,
+    "apg": 3.5
+  },
+  {
+    "name": "Reggie Jackson",
+    "team": "DEN",
+    "college": "Boston College",
+    "height": 187.96,
+    "weight": 94.347136,
+    "ppg": 10.2,
+    "rpg": 2.1,
+    "apg": 3.4
+  },
+  {
+    "name": "PJ Dozier",
+    "team": "SAC",
+    "college": "South Carolina",
+    "height": 198.12,
+    "weight": 92.98636,
+    "ppg": 1.4,
+    "rpg": 0.9,
+    "apg": 0.6
+  },
+  {
+    "name": "Montrezl Harrell",
+    "team": "PHI",
+    "college": "Louisville",
+    "height": 200.66,
+    "weight": 108.86208,
+    "ppg": 5.6,
+    "rpg": 2.8,
+    "apg": 0.6
+  },
+  {
+    "name": "P.J. Tucker",
+    "team": "PHI",
+    "college": "Texas",
+    "height": 195.58,
+    "weight": 111.13004,
+    "ppg": 3.5,
+    "rpg": 3.9,
+    "apg": 0.8
+  },
+  {
+    "name": "Naz Reid",
+    "team": "MIN",
+    "college": "Louisiana State",
+    "height": 205.74,
+    "weight": 119.748288,
+    "ppg": 11.5,
+    "rpg": 4.9,
+    "apg": 1.1
+  },
+  {
+    "name": "Nathan Knight",
+    "team": "MIN",
+    "college": "William & Mary",
+    "height": 203.2,
+    "weight": 114.758776,
+    "ppg": 3.7,
+    "rpg": 1.5,
+    "apg": 0.3
+  },
+  {
+    "name": "Nassir Little",
+    "team": "POR",
+    "college": "North Carolina",
+    "height": 195.58,
+    "weight": 99.79024,
+    "ppg": 6.6,
+    "rpg": 2.6,
+    "apg": 0.9
+  },
+  {
+    "name": "Naji Marshall",
+    "team": "NOP",
+    "college": "Xavier",
+    "height": 200.66,
+    "weight": 99.79024,
+    "ppg": 9.1,
+    "rpg": 3.6,
+    "apg": 2.5
+  },
+  {
+    "name": "Myles Turner",
+    "team": "IND",
+    "college": "Texas",
+    "height": 210.82,
+    "weight": 113.398,
+    "ppg": 18.0,
+    "rpg": 7.5,
+    "apg": 1.4
+  },
+  {
+    "name": "Moussa Diabate",
+    "team": "LAC",
+    "college": "Michigan",
+    "height": 208.28,
+    "weight": 95.25432,
+    "ppg": 2.7,
+    "rpg": 2.3,
+    "apg": 0.2
+  },
+  {
+    "name": "Moses Moody",
+    "team": "GSW",
+    "college": "Arkansas",
+    "height": 195.58,
+    "weight": 95.707912,
+    "ppg": 4.8,
+    "rpg": 1.7,
+    "apg": 0.8
+  },
+  {
+    "name": "Moses Brown",
+    "team": "BKN",
+    "college": "UCLA",
+    "height": 218.44,
+    "weight": 111.13004,
+    "ppg": 4.3,
+    "rpg": 3.9,
+    "apg": 0.1
+  },
+  {
+    "name": "Moritz Wagner",
+    "team": "ORL",
+    "college": "Michigan",
+    "height": 210.82,
+    "weight": 111.13004,
+    "ppg": 10.5,
+    "rpg": 4.5,
+    "apg": 1.5
+  },
+  {
+    "name": "Monte Morris",
+    "team": "WAS",
+    "college": "Iowa State",
+    "height": 187.96,
+    "weight": 83.007336,
+    "ppg": 10.3,
+    "rpg": 3.4,
+    "apg": 5.3
+  },
+  {
+    "name": "Mo Bamba",
+    "team": "LAL",
+    "college": "Texas",
+    "height": 213.36,
+    "weight": 104.779752,
+    "ppg": 6.6,
+    "rpg": 4.6,
+    "apg": 0.9
+  },
+  {
+    "name": "Mitchell Robinson",
+    "team": "NYK",
+    "college": "Western Kentucky",
+    "height": 213.36,
+    "weight": 108.86208,
+    "ppg": 7.4,
+    "rpg": 9.4,
+    "apg": 0.9
+  },
+  {
+    "name": "Miles McBride",
+    "team": "NYK",
+    "college": "West Virginia",
+    "height": 187.96,
+    "weight": 88.45044,
+    "ppg": 3.5,
+    "rpg": 0.8,
+    "apg": 1.1
+  },
+  {
+    "name": "Mike Muscala",
+    "team": "BOS",
+    "college": "Bucknell",
+    "height": 210.82,
+    "weight": 108.86208,
+    "ppg": 6.1,
+    "rpg": 3.2,
+    "apg": 0.8
+  },
+  {
+    "name": "Mike Conley",
+    "team": "MIN",
+    "college": "Ohio State",
+    "height": 185.42,
+    "weight": 79.3786,
+    "ppg": 11.9,
+    "rpg": 2.7,
+    "apg": 6.7
+  },
+  {
+    "name": "Sam Merrill",
+    "team": "CLE",
+    "college": "Utah State",
+    "height": 193.04,
+    "weight": 92.98636,
+    "ppg": 5.0,
+    "rpg": 1.8,
+    "apg": 1.0
+  },
+  {
+    "name": "Mikal Bridges",
+    "team": "BKN",
+    "college": "Villanova",
+    "height": 198.12,
+    "weight": 94.800728,
+    "ppg": 20.1,
+    "rpg": 4.4,
+    "apg": 3.3
+  },
+  {
+    "name": "Neemias Queta",
+    "team": "SAC",
+    "college": "Utah State",
+    "height": 213.36,
+    "weight": 112.490816,
+    "ppg": 2.4,
+    "rpg": 2.2,
+    "apg": 0.2
+  },
+  {
+    "name": "P.J. Washington",
+    "team": "CHA",
+    "college": "Kentucky",
+    "height": 200.66,
+    "weight": 104.32616,
+    "ppg": 15.7,
+    "rpg": 4.9,
+    "apg": 2.4
+  },
+  {
+    "name": "Nerlens Noel",
+    "team": "BKN",
+    "college": "Kentucky",
+    "height": 208.28,
+    "weight": 99.79024,
+    "ppg": 2.1,
+    "rpg": 2.7,
+    "apg": 0.6
+  },
+  {
+    "name": "Nick Richards",
+    "team": "CHA",
+    "college": "Kentucky",
+    "height": 213.36,
+    "weight": 111.13004,
+    "ppg": 8.2,
+    "rpg": 6.4,
+    "apg": 0.6
+  },
+  {
+    "name": "Ousmane Dieng",
+    "team": "OKC",
+    "college": "None",
+    "height": 205.74,
+    "weight": 83.91452,
+    "ppg": 4.9,
+    "rpg": 2.7,
+    "apg": 1.2
+  },
+  {
+    "name": "Otto Porter Jr.",
+    "team": "TOR",
+    "college": "Georgetown",
+    "height": 203.2,
+    "weight": 89.811216,
+    "ppg": 5.5,
+    "rpg": 2.4,
+    "apg": 1.0
+  },
+  {
+    "name": "Oshae Brissett",
+    "team": "IND",
+    "college": "Syracuse",
+    "height": 200.66,
+    "weight": 95.25432,
+    "ppg": 6.1,
+    "rpg": 3.4,
+    "apg": 0.7
+  },
+  {
+    "name": "Orlando Robinson",
+    "team": "MIA",
+    "college": "Fresno State",
+    "height": 208.28,
+    "weight": 106.59412,
+    "ppg": 3.7,
+    "rpg": 4.1,
+    "apg": 0.8
+  },
+  {
+    "name": "Onyeka Okongwu",
+    "team": "ATL",
+    "college": "Southern California",
+    "height": 205.74,
+    "weight": 108.86208,
+    "ppg": 9.9,
+    "rpg": 7.2,
+    "apg": 1.0
+  },
+  {
+    "name": "Omer Yurtseven",
+    "team": "MIA",
+    "college": "Georgetown",
+    "height": 210.82,
+    "weight": 124.7378,
+    "ppg": 4.4,
+    "rpg": 2.6,
+    "apg": 0.2
+  },
+  {
+    "name": "Olivier Sarr",
+    "team": "OKC",
+    "college": "Kentucky",
+    "height": 210.82,
+    "weight": 108.86208,
+    "ppg": 4.0,
+    "rpg": 3.4,
+    "apg": 0.4
+  },
+  {
+    "name": "Ochai Agbaji",
+    "team": "UTA",
+    "college": "Kansas",
+    "height": 195.58,
+    "weight": 97.52228,
+    "ppg": 7.9,
+    "rpg": 2.1,
+    "apg": 1.1
+  },
+  {
+    "name": "Obi Toppin",
+    "team": "NYK",
+    "college": "Dayton",
+    "height": 205.74,
+    "weight": 99.79024,
+    "ppg": 7.4,
+    "rpg": 2.8,
+    "apg": 1.0
+  },
+  {
+    "name": "O.G. Anunoby",
+    "team": "TOR",
+    "college": "Indiana",
+    "height": 200.66,
+    "weight": 105.233344,
+    "ppg": 16.8,
+    "rpg": 5.0,
+    "apg": 2.0
+  },
+  {
+    "name": "Norman Powell",
+    "team": "LAC",
+    "college": "UCLA",
+    "height": 193.04,
+    "weight": 97.52228,
+    "ppg": 17.0,
+    "rpg": 2.9,
+    "apg": 1.8
+  },
+  {
+    "name": "Noah Vonleh",
+    "team": "BOS",
+    "college": "Indiana",
+    "height": 208.28,
+    "weight": 116.573144,
+    "ppg": 1.1,
+    "rpg": 2.1,
+    "apg": 0.3
+  },
+  {
+    "name": "Nikola Vucevic",
+    "team": "CHI",
+    "college": "Southern California",
+    "height": 208.28,
+    "weight": 117.93392,
+    "ppg": 17.6,
+    "rpg": 11.0,
+    "apg": 3.2
+  },
+  {
+    "name": "Nikola Jovic",
+    "team": "MIA",
+    "college": "None",
+    "height": 208.28,
+    "weight": 92.98636,
+    "ppg": 5.5,
+    "rpg": 2.1,
+    "apg": 0.7
+  },
+  {
+    "name": "Nikola Jokic",
+    "team": "DEN",
+    "college": "None",
+    "height": 210.82,
+    "weight": 128.820128,
+    "ppg": 24.5,
+    "rpg": 11.8,
+    "apg": 9.8
+  },
+  {
+    "name": "Nicolas Batum",
+    "team": "LAC",
+    "college": "None",
+    "height": 203.2,
+    "weight": 104.32616,
+    "ppg": 6.1,
+    "rpg": 3.8,
+    "apg": 1.6
+  },
+  {
+    "name": "Nickeil Alexander-Walker",
+    "team": "MIN",
+    "college": "Virginia Tech",
+    "height": 195.58,
+    "weight": 92.98636,
+    "ppg": 6.2,
+    "rpg": 1.7,
+    "apg": 1.8
+  },
+  {
+    "name": "Nic Claxton",
+    "team": "BKN",
+    "college": "Georgia",
+    "height": 210.82,
+    "weight": 97.52228,
+    "ppg": 12.6,
+    "rpg": 9.2,
+    "apg": 1.9
+  },
+  {
+    "name": "Sandro Mamukelashvili",
+    "team": "SAS",
+    "college": "Seton Hall",
+    "height": 208.28,
+    "weight": 108.86208,
+    "ppg": 6.1,
+    "rpg": 4.3,
+    "apg": 1.4
+  },
+  {
+    "name": "Wesley Matthews",
+    "team": "MIL",
+    "college": "Marquette",
+    "height": 195.58,
+    "weight": 99.79024,
+    "ppg": 3.4,
+    "rpg": 2.2,
+    "apg": 0.7
+  },
+  {
+    "name": "Scottie Barnes",
+    "team": "TOR",
+    "college": "Florida State",
+    "height": 203.2,
+    "weight": 102.0582,
+    "ppg": 15.3,
+    "rpg": 6.6,
+    "apg": 4.8
+  },
+  {
+    "name": "Vernon Carey Jr.",
+    "team": "UTA",
+    "college": "Duke",
+    "height": 208.28,
+    "weight": 122.46984,
+    "ppg": 0.5,
+    "rpg": 1.0,
+    "apg": 0.3
+  },
+  {
+    "name": "Usman Garuba",
+    "team": "HOU",
+    "college": "None",
+    "height": 203.2,
+    "weight": 103.872568,
+    "ppg": 3.0,
+    "rpg": 4.1,
+    "apg": 0.9
+  },
+  {
+    "name": "Udonis Haslem",
+    "team": "MIA",
+    "college": "Florida",
+    "height": 200.66,
+    "weight": 106.59412,
+    "ppg": 3.9,
+    "rpg": 1.6,
+    "apg": 0.0
+  },
+  {
+    "name": "Udoka Azubuike",
+    "team": "UTA",
+    "college": "Kansas",
+    "height": 210.82,
+    "weight": 122.46984,
+    "ppg": 3.5,
+    "rpg": 3.3,
+    "apg": 0.3
+  },
+  {
+    "name": "Tyus Jones",
+    "team": "MEM",
+    "college": "Duke",
+    "height": 187.96,
+    "weight": 88.904032,
+    "ppg": 10.3,
+    "rpg": 2.5,
+    "apg": 5.2
+  },
+  {
+    "name": "Tyrese Maxey",
+    "team": "PHI",
+    "college": "Kentucky",
+    "height": 187.96,
+    "weight": 90.7184,
+    "ppg": 20.3,
+    "rpg": 2.9,
+    "apg": 3.5
+  },
+  {
+    "name": "Tyrese Martin",
+    "team": "ATL",
+    "college": "Connecticut",
+    "height": 198.12,
+    "weight": 97.52228,
+    "ppg": 1.3,
+    "rpg": 0.8,
+    "apg": 0.1
+  },
+  {
+    "name": "Tyrese Haliburton",
+    "team": "IND",
+    "college": "Iowa State",
+    "height": 195.58,
+    "weight": 83.91452,
+    "ppg": 20.7,
+    "rpg": 3.7,
+    "apg": 10.4
+  },
+  {
+    "name": "Tyler Herro",
+    "team": "MIA",
+    "college": "Kentucky",
+    "height": 195.58,
+    "weight": 88.45044,
+    "ppg": 20.1,
+    "rpg": 5.4,
+    "apg": 4.2
+  },
+  {
+    "name": "Tyler Dorsey",
+    "team": "DAL",
+    "college": "Oregon",
+    "height": 193.04,
+    "weight": 81.64656,
+    "ppg": 3.0,
+    "rpg": 0.7,
+    "apg": 0.0
+  },
+  {
+    "name": "TyTy Washington Jr.",
+    "team": "HOU",
+    "college": "Kentucky",
+    "height": 190.5,
+    "weight": 88.45044,
+    "ppg": 4.7,
+    "rpg": 1.5,
+    "apg": 1.5
+  },
+  {
+    "name": "Ty Jerome",
+    "team": "GSW",
+    "college": "Virginia",
+    "height": 195.58,
+    "weight": 88.45044,
+    "ppg": 6.9,
+    "rpg": 1.7,
+    "apg": 3.0
+  },
+  {
+    "name": "Troy Brown Jr.",
+    "team": "LAL",
+    "college": "Oregon",
+    "height": 200.66,
+    "weight": 97.52228,
+    "ppg": 7.1,
+    "rpg": 4.1,
+    "apg": 1.3
+  },
+  {
+    "name": "Trey Murphy III",
+    "team": "NOP",
+    "college": "Virginia",
+    "height": 203.2,
+    "weight": 93.439952,
+    "ppg": 14.5,
+    "rpg": 3.6,
+    "apg": 1.4
+  },
+  {
+    "name": "Trey Lyles",
+    "team": "SAC",
+    "college": "Kentucky",
+    "height": 205.74,
+    "weight": 106.140528,
+    "ppg": 7.6,
+    "rpg": 4.1,
+    "apg": 0.9
+  },
+  {
+    "name": "Trevor Keels",
+    "team": "NYK",
+    "college": "Duke",
+    "height": 193.04,
+    "weight": 100.243832,
+    "ppg": 1.0,
+    "rpg": 0.7,
+    "apg": 0.0
+  },
+  {
+    "name": "Trevor Hudgins",
+    "team": "HOU",
+    "college": "Northwest Missouri State",
+    "height": 182.88,
+    "weight": 81.64656,
+    "ppg": 1.8,
+    "rpg": 0.0,
+    "apg": 0.6
+  },
+  {
+    "name": "Victor Oladipo",
+    "team": "MIA",
+    "college": "Indiana",
+    "height": 190.5,
+    "weight": 96.615096,
+    "ppg": 10.7,
+    "rpg": 3.0,
+    "apg": 3.5
+  },
+  {
+    "name": "Trevelin Queen",
+    "team": "IND",
+    "college": "New Mexico State",
+    "height": 198.12,
+    "weight": 86.18248,
+    "ppg": 3.0,
+    "rpg": 2.4,
+    "apg": 0.9
+  },
+  {
+    "name": "Vince Williams Jr.",
+    "team": "MEM",
+    "college": "Virginia Commonwealth",
+    "height": 193.04,
+    "weight": 92.98636,
+    "ppg": 2.0,
+    "rpg": 1.0,
+    "apg": 0.3
+  },
+  {
+    "name": "Vlatko Cancar",
+    "team": "DEN",
+    "college": "None",
+    "height": 203.2,
+    "weight": 107.047712,
+    "ppg": 5.0,
+    "rpg": 2.1,
+    "apg": 1.3
+  },
+  {
+    "name": "Michael Porter Jr.",
+    "team": "DEN",
+    "college": "Missouri",
+    "height": 208.28,
+    "weight": 98.883056,
+    "ppg": 17.4,
+    "rpg": 5.5,
+    "apg": 1.0
+  },
+  {
+    "name": "Zion Williamson",
+    "team": "NOP",
+    "college": "Duke",
+    "height": 198.12,
+    "weight": 128.820128,
+    "ppg": 26.0,
+    "rpg": 7.0,
+    "apg": 4.6
+  },
+  {
+    "name": "Ziaire Williams",
+    "team": "MEM",
+    "college": "Stanford",
+    "height": 205.74,
+    "weight": 83.91452,
+    "ppg": 5.7,
+    "rpg": 2.1,
+    "apg": 0.9
+  },
+  {
+    "name": "Zeke Nnaji",
+    "team": "DEN",
+    "college": "Arizona",
+    "height": 205.74,
+    "weight": 108.86208,
+    "ppg": 5.2,
+    "rpg": 2.6,
+    "apg": 0.3
+  },
+  {
+    "name": "Zach LaVine",
+    "team": "CHI",
+    "college": "UCLA",
+    "height": 195.58,
+    "weight": 90.7184,
+    "ppg": 24.8,
+    "rpg": 4.5,
+    "apg": 4.2
+  },
+  {
+    "name": "Zach Collins",
+    "team": "SAS",
+    "college": "Gonzaga",
+    "height": 210.82,
+    "weight": 113.398,
+    "ppg": 11.6,
+    "rpg": 6.4,
+    "apg": 2.9
+  },
+  {
+    "name": "Yuta Watanabe",
+    "team": "BKN",
+    "college": "George Washington",
+    "height": 203.2,
+    "weight": 97.52228,
+    "ppg": 5.6,
+    "rpg": 2.4,
+    "apg": 0.8
+  },
+  {
+    "name": "Xavier Tillman",
+    "team": "MEM",
+    "college": "Michigan State",
+    "height": 200.66,
+    "weight": 111.13004,
+    "ppg": 7.0,
+    "rpg": 5.0,
+    "apg": 1.6
+  },
+  {
+    "name": "Xavier Sneed",
+    "team": "CHA",
+    "college": "Kansas State",
+    "height": 195.58,
+    "weight": 97.52228,
+    "ppg": 4.3,
+    "rpg": 1.3,
+    "apg": 1.3
+  },
+  {
+    "name": "Xavier Moon",
+    "team": "LAC",
+    "college": "Morehead State",
+    "height": 182.88,
+    "weight": 74.84268,
+    "ppg": 1.8,
+    "rpg": 0.8,
+    "apg": 1.3
+  },
+  {
+    "name": "Xavier Cooks",
+    "team": "WAS",
+    "college": "Winthrop",
+    "height": 203.2,
+    "weight": 83.007336,
+    "ppg": 3.8,
+    "rpg": 3.8,
+    "apg": 0.6
+  },
+  {
+    "name": "Willy Hernangomez",
+    "team": "NOP",
+    "college": "None",
+    "height": 210.82,
+    "weight": 113.398,
+    "ppg": 6.9,
+    "rpg": 4.7,
+    "apg": 0.9
+  },
+  {
+    "name": "Will Barton",
+    "team": "TOR",
+    "college": "Memphis",
+    "height": 195.58,
+    "weight": 82.10015200000001,
+    "ppg": 6.8,
+    "rpg": 2.4,
+    "apg": 2.0
+  },
+  {
+    "name": "Wenyen Gabriel",
+    "team": "LAL",
+    "college": "Kentucky",
+    "height": 205.74,
+    "weight": 92.98636,
+    "ppg": 5.5,
+    "rpg": 4.2,
+    "apg": 0.5
+  },
+  {
+    "name": "Wendell Moore Jr.",
+    "team": "MIN",
+    "college": "Duke",
+    "height": 195.58,
+    "weight": 97.52228,
+    "ppg": 1.4,
+    "rpg": 0.6,
+    "apg": 0.6
+  },
+  {
+    "name": "Wendell Carter Jr.",
+    "team": "ORL",
+    "college": "Duke",
+    "height": 208.28,
+    "weight": 122.46984,
+    "ppg": 15.2,
+    "rpg": 8.7,
+    "apg": 2.3
+  },
+  {
+    "name": "Walker Kessler",
+    "team": "UTA",
+    "college": "Auburn",
+    "height": 213.36,
+    "weight": 111.13004,
+    "ppg": 9.2,
+    "rpg": 8.4,
+    "apg": 0.9
+  },
+  {
+    "name": "Vit Krejci",
+    "team": "ATL",
+    "college": "None",
+    "height": 203.2,
+    "weight": 88.45044,
+    "ppg": 1.2,
+    "rpg": 0.9,
+    "apg": 0.6
+  },
+  {
+    "name": "Santi Aldama",
+    "team": "MEM",
+    "college": "Loyola-Maryland",
+    "height": 213.36,
+    "weight": 97.52228,
+    "ppg": 9.0,
+    "rpg": 4.8,
+    "apg": 1.3
+  },
+  {
+    "name": "Trent Forrest",
+    "team": "ATL",
+    "college": "Florida State",
+    "height": 193.04,
+    "weight": 95.25432,
+    "ppg": 2.3,
+    "rpg": 1.6,
+    "apg": 1.7
+  },
+  {
+    "name": "Tre Mann",
+    "team": "OKC",
+    "college": "Florida",
+    "height": 190.5,
+    "weight": 80.73937600000001,
+    "ppg": 7.7,
+    "rpg": 2.3,
+    "apg": 1.8
+  },
+  {
+    "name": "T.J. McConnell",
+    "team": "IND",
+    "college": "Arizona",
+    "height": 185.42,
+    "weight": 86.18248,
+    "ppg": 8.7,
+    "rpg": 3.1,
+    "apg": 5.3
+  },
+  {
+    "name": "Svi Mykhailiuk",
+    "team": "CHA",
+    "college": "Kansas",
+    "height": 200.66,
+    "weight": 92.98636,
+    "ppg": 6.9,
+    "rpg": 1.7,
+    "apg": 1.7
+  },
+  {
+    "name": "Steven Adams",
+    "team": "MEM",
+    "college": "Pittsburgh",
+    "height": 210.82,
+    "weight": 120.20188,
+    "ppg": 8.6,
+    "rpg": 11.5,
+    "apg": 2.3
+  },
+  {
+    "name": "Sterling Brown",
+    "team": "LAL",
+    "college": "Southern Methodist",
+    "height": 195.58,
+    "weight": 99.336648,
+    "ppg": 0.0,
+    "rpg": 2.0,
+    "apg": 0.5
+  },
+  {
+    "name": "Stephen Curry",
+    "team": "GSW",
+    "college": "Davidson",
+    "height": 187.96,
+    "weight": 83.91452,
+    "ppg": 29.4,
+    "rpg": 6.1,
+    "apg": 6.3
+  },
+  {
+    "name": "Stanley Umude",
+    "team": "DET",
+    "college": "Arkansas",
+    "height": 198.12,
+    "weight": 95.25432,
+    "ppg": 2.0,
+    "rpg": 0.0,
+    "apg": 0.0
+  },
+  {
+    "name": "Stanley Johnson",
+    "team": "SAS",
+    "college": "Arizona",
+    "height": 198.12,
+    "weight": 109.769264,
+    "ppg": 5.8,
+    "rpg": 3.2,
+    "apg": 2.2
+  },
+  {
+    "name": "Spencer Dinwiddie",
+    "team": "BKN",
+    "college": "Colorado",
+    "height": 195.58,
+    "weight": 97.52228,
+    "ppg": 17.3,
+    "rpg": 3.4,
+    "apg": 6.5
+  },
+  {
+    "name": "Skylar Mays",
+    "team": "POR",
+    "college": "Louisiana State",
+    "height": 193.04,
+    "weight": 92.98636,
+    "ppg": 15.3,
+    "rpg": 3.2,
+    "apg": 8.3
+  },
+  {
+    "name": "Simone Fontecchio",
+    "team": "UTA",
+    "college": "None",
+    "height": 200.66,
+    "weight": 94.800728,
+    "ppg": 6.3,
+    "rpg": 1.7,
+    "apg": 0.8
+  },
+  {
+    "name": "Shaquille Harrison",
+    "team": "LAL",
+    "college": "Tulsa",
+    "height": 193.04,
+    "weight": 88.45044,
+    "ppg": 8.8,
+    "rpg": 4.4,
+    "apg": 6.0
+  },
+  {
+    "name": "Shake Milton",
+    "team": "PHI",
+    "college": "Southern Methodist",
+    "height": 195.58,
+    "weight": 92.98636,
+    "ppg": 8.4,
+    "rpg": 2.5,
+    "apg": 3.2
+  },
+  {
+    "name": "Shai Gilgeous-Alexander",
+    "team": "OKC",
+    "college": "Kentucky",
+    "height": 198.12,
+    "weight": 88.45044,
+    "ppg": 31.4,
+    "rpg": 4.8,
+    "apg": 5.5
+  },
+  {
+    "name": "Shaedon Sharpe",
+    "team": "POR",
+    "college": "Kentucky",
+    "height": 195.58,
+    "weight": 90.7184,
+    "ppg": 9.9,
+    "rpg": 3.0,
+    "apg": 1.2
+  },
+  {
+    "name": "Seth Curry",
+    "team": "BKN",
+    "college": "Duke",
+    "height": 185.42,
+    "weight": 83.91452,
+    "ppg": 9.2,
+    "rpg": 1.6,
+    "apg": 1.6
+  },
+  {
+    "name": "Serge Ibaka",
+    "team": "MIL",
+    "college": "None",
+    "height": 210.82,
+    "weight": 106.59412,
+    "ppg": 4.1,
+    "rpg": 2.8,
+    "apg": 0.3
+  },
+  {
+    "name": "Scotty Pippen Jr.",
+    "team": "LAL",
+    "college": "Vanderbilt",
+    "height": 185.42,
+    "weight": 77.11064,
+    "ppg": 2.3,
+    "rpg": 0.7,
+    "apg": 0.3
+  },
+  {
+    "name": "T.J. Warren",
+    "team": "PHX",
+    "college": "North Carolina State",
+    "height": 203.2,
+    "weight": 99.79024,
+    "ppg": 7.5,
+    "rpg": 2.9,
+    "apg": 1.0
+  },
+  {
+    "name": "Trendon Watford",
+    "team": "POR",
+    "college": "Louisiana State",
+    "height": 203.2,
+    "weight": 107.501304,
+    "ppg": 7.4,
+    "rpg": 3.8,
+    "apg": 2.1
+  },
+  {
+    "name": "Taj Gibson",
+    "team": "WAS",
+    "college": "Southern California",
+    "height": 205.74,
+    "weight": 105.233344,
+    "ppg": 3.4,
+    "rpg": 1.9,
+    "apg": 0.7
+  },
+  {
+    "name": "Tari Eason",
+    "team": "HOU",
+    "college": "Louisiana State",
+    "height": 203.2,
+    "weight": 97.52228,
+    "ppg": 9.3,
+    "rpg": 6.0,
+    "apg": 1.1
+  },
+  {
+    "name": "Tre Jones",
+    "team": "SAS",
+    "college": "Duke",
+    "height": 185.42,
+    "weight": 83.91452,
+    "ppg": 12.9,
+    "rpg": 3.6,
+    "apg": 6.6
+  },
+  {
+    "name": "Trae Young",
+    "team": "ATL",
+    "college": "Oklahoma",
+    "height": 185.42,
+    "weight": 74.389088,
+    "ppg": 26.2,
+    "rpg": 3.0,
+    "apg": 10.2
+  },
+  {
+    "name": "Torrey Craig",
+    "team": "PHX",
+    "college": "South Carolina Upstate",
+    "height": 200.66,
+    "weight": 100.243832,
+    "ppg": 7.4,
+    "rpg": 5.4,
+    "apg": 1.5
+  },
+  {
+    "name": "Tony Bradley",
+    "team": "CHI",
+    "college": "North Carolina",
+    "height": 210.82,
+    "weight": 112.490816,
+    "ppg": 1.6,
+    "rpg": 0.9,
+    "apg": 0.1
+  },
+  {
+    "name": "Tobias Harris",
+    "team": "PHI",
+    "college": "Tennessee",
+    "height": 200.66,
+    "weight": 102.511792,
+    "ppg": 14.7,
+    "rpg": 5.7,
+    "apg": 2.5
+  },
+  {
+    "name": "Tim Hardaway Jr.",
+    "team": "DAL",
+    "college": "Michigan",
+    "height": 195.58,
+    "weight": 92.98636,
+    "ppg": 14.4,
+    "rpg": 3.5,
+    "apg": 1.8
+  },
+  {
+    "name": "Thomas Bryant",
+    "team": "DEN",
+    "college": "Indiana",
+    "height": 208.28,
+    "weight": 112.490816,
+    "ppg": 9.8,
+    "rpg": 5.7,
+    "apg": 0.5
+  },
+  {
+    "name": "Theo Pinson",
+    "team": "DAL",
+    "college": "North Carolina",
+    "height": 200.66,
+    "weight": 96.161504,
+    "ppg": 2.4,
+    "rpg": 1.6,
+    "apg": 1.2
+  },
+  {
+    "name": "Theo Maledon",
+    "team": "CHA",
+    "college": "None",
+    "height": 195.58,
+    "weight": 79.3786,
+    "ppg": 6.7,
+    "rpg": 2.8,
+    "apg": 3.5
+  },
+  {
+    "name": "Thanasis Antetokounmpo",
+    "team": "MIL",
+    "college": "None",
+    "height": 200.66,
+    "weight": 99.336648,
+    "ppg": 1.4,
+    "rpg": 1.2,
+    "apg": 0.4
+  },
+  {
+    "name": "Thaddeus Young",
+    "team": "TOR",
+    "college": "Georgia Tech",
+    "height": 203.2,
+    "weight": 106.59412,
+    "ppg": 4.4,
+    "rpg": 3.1,
+    "apg": 1.4
+  },
+  {
+    "name": "Terry Taylor",
+    "team": "CHI",
+    "college": "Austin Peay",
+    "height": 193.04,
+    "weight": 104.32616,
+    "ppg": 2.9,
+    "rpg": 1.5,
+    "apg": 0.3
+  },
+  {
+    "name": "Terry Rozier",
+    "team": "CHA",
+    "college": "Louisville",
+    "height": 185.42,
+    "weight": 86.18248,
+    "ppg": 21.1,
+    "rpg": 4.1,
+    "apg": 5.1
+  },
+  {
+    "name": "Terrence Ross",
+    "team": "PHX",
+    "college": "Washington",
+    "height": 200.66,
+    "weight": 93.439952,
+    "ppg": 8.3,
+    "rpg": 2.4,
+    "apg": 1.5
+  },
+  {
+    "name": "Terence Davis",
+    "team": "SAC",
+    "college": "Mississippi",
+    "height": 193.04,
+    "weight": 91.171992,
+    "ppg": 6.7,
+    "rpg": 2.2,
+    "apg": 1.0
+  },
+  {
+    "name": "Terance Mann",
+    "team": "LAC",
+    "college": "Florida State",
+    "height": 195.58,
+    "weight": 97.52228,
+    "ppg": 8.8,
+    "rpg": 3.4,
+    "apg": 2.3
+  },
+  {
+    "name": "Taurean Prince",
+    "team": "MIN",
+    "college": "Baylor",
+    "height": 198.12,
+    "weight": 98.883056,
+    "ppg": 9.1,
+    "rpg": 2.4,
+    "apg": 1.6
+  },
+  {
+    "name": "Talen Horton-Tucker",
+    "team": "UTA",
+    "college": "Iowa State",
+    "height": 193.04,
+    "weight": 106.140528,
+    "ppg": 10.7,
+    "rpg": 3.2,
+    "apg": 3.8
+  },
+  {
+    "name": "Michael Foster Jr.",
+    "team": "PHI",
+    "college": "None",
+    "height": 203.2,
+    "weight": 113.398,
+    "ppg": 0.0,
+    "rpg": 0.0,
+    "apg": 0.0
+  },
+  {
+    "name": "Lindell Wigginton",
+    "team": "MIL",
+    "college": "Iowa State",
+    "height": 185.42,
+    "weight": 85.728888,
+    "ppg": 7.1,
+    "rpg": 1.0,
+    "apg": 2.0
+  },
+  {
+    "name": "Micah Potter",
+    "team": "UTA",
+    "college": "Wisconsin",
+    "height": 203.2,
+    "weight": 112.490816,
+    "ppg": 3.4,
+    "rpg": 2.3,
+    "apg": 0.6
+  },
+  {
+    "name": "Dennis Smith Jr.",
+    "team": "CHA",
+    "college": "North Carolina State",
+    "height": 187.96,
+    "weight": 92.98636,
+    "ppg": 8.8,
+    "rpg": 3.1,
+    "apg": 4.8
+  },
+  {
+    "name": "Deonte Burton",
+    "team": "SAC",
+    "college": "Iowa State",
+    "height": 193.04,
+    "weight": 108.86208,
+    "ppg": 0.0,
+    "rpg": 0.0,
+    "apg": 0.0
+  },
+  {
+    "name": "Dereon Seabron",
+    "team": "NOP",
+    "college": "North Carolina State",
+    "height": 195.58,
+    "weight": 81.64656,
+    "ppg": 0.8,
+    "rpg": 0.2,
+    "apg": 0.0
+  },
+  {
+    "name": "Derrick Jones Jr.",
+    "team": "CHI",
+    "college": "UNLV",
+    "height": 198.12,
+    "weight": 95.25432,
+    "ppg": 5.0,
+    "rpg": 2.4,
+    "apg": 0.5
+  },
+  {
+    "name": "Derrick Rose",
+    "team": "NYK",
+    "college": "Memphis",
+    "height": 190.5,
+    "weight": 90.7184,
+    "ppg": 5.6,
+    "rpg": 1.5,
+    "apg": 1.7
+  },
+  {
+    "name": "Derrick White",
+    "team": "BOS",
+    "college": "Colorado",
+    "height": 193.04,
+    "weight": 86.18248,
+    "ppg": 12.4,
+    "rpg": 3.6,
+    "apg": 3.9
+  },
+  {
+    "name": "Desmond Bane",
+    "team": "MEM",
+    "college": "TCU",
+    "height": 195.58,
+    "weight": 97.52228,
+    "ppg": 21.5,
+    "rpg": 5.0,
+    "apg": 4.4
+  },
+  {
+    "name": "Devin Booker",
+    "team": "PHX",
+    "college": "Kentucky",
+    "height": 195.58,
+    "weight": 93.439952,
+    "ppg": 27.8,
+    "rpg": 4.5,
+    "apg": 5.5
+  },
+  {
+    "name": "Devin Vassell",
+    "team": "SAS",
+    "college": "Florida State",
+    "height": 195.58,
+    "weight": 90.7184,
+    "ppg": 18.5,
+    "rpg": 3.9,
+    "apg": 3.6
+  },
+  {
+    "name": "Devon Dotson",
+    "team": "WAS",
+    "college": "Kansas",
+    "height": 185.42,
+    "weight": 83.91452,
+    "ppg": 0.5,
+    "rpg": 1.7,
+    "apg": 1.3
+  },
+  {
+    "name": "Devonte' Graham",
+    "team": "SAS",
+    "college": "Kansas",
+    "height": 185.42,
+    "weight": 88.45044,
+    "ppg": 7.4,
+    "rpg": 1.7,
+    "apg": 2.7
+  },
+  {
+    "name": "Dewayne Dedmon",
+    "team": "PHI",
+    "college": "Southern California",
+    "height": 208.28,
+    "weight": 111.13004,
+    "ppg": 5.2,
+    "rpg": 3.5,
+    "apg": 0.7
+  },
+  {
+    "name": "Dillon Brooks",
+    "team": "MEM",
+    "college": "Oregon",
+    "height": 198.12,
+    "weight": 102.0582,
+    "ppg": 14.3,
+    "rpg": 3.3,
+    "apg": 2.6
+  },
+  {
+    "name": "Domantas Sabonis",
+    "team": "SAC",
+    "college": "Gonzaga",
+    "height": 215.9,
+    "weight": 108.86208,
+    "ppg": 19.1,
+    "rpg": 12.3,
+    "apg": 7.3
+  },
+  {
+    "name": "Dominick Barlow",
+    "team": "SAS",
+    "college": "None",
+    "height": 205.74,
+    "weight": 97.52228,
+    "ppg": 3.9,
+    "rpg": 3.6,
+    "apg": 0.9
+  },
+  {
+    "name": "Donovan Mitchell",
+    "team": "CLE",
+    "college": "Louisville",
+    "height": 185.42,
+    "weight": 97.52228,
+    "ppg": 28.3,
+    "rpg": 4.3,
+    "apg": 4.4
+  },
+  {
+    "name": "Donovan Williams",
+    "team": "ATL",
+    "college": "UNLV",
+    "height": 198.12,
+    "weight": 86.18248,
+    "ppg": 2.0,
+    "rpg": 1.0,
+    "apg": 0.0
+  },
+  {
+    "name": "Donte DiVincenzo",
+    "team": "GSW",
+    "college": "Villanova",
+    "height": 193.04,
+    "weight": 92.079176,
+    "ppg": 9.4,
+    "rpg": 4.5,
+    "apg": 3.5
+  },
+  {
+    "name": "Dorian Finney-Smith",
+    "team": "BKN",
+    "college": "Florida",
+    "height": 200.66,
+    "weight": 99.79024,
+    "ppg": 8.3,
+    "rpg": 4.8,
+    "apg": 1.5
+  },
+  {
+    "name": "Dennis Schroder",
+    "team": "LAL",
+    "college": "None",
+    "height": 185.42,
+    "weight": 78.017824,
+    "ppg": 12.6,
+    "rpg": 2.5,
+    "apg": 4.5
+  },
+  {
+    "name": "Doug McDermott",
+    "team": "SAS",
+    "college": "Creighton",
+    "height": 198.12,
+    "weight": 102.0582,
+    "ppg": 10.2,
+    "rpg": 2.2,
+    "apg": 1.4
+  },
+  {
+    "name": "Deni Avdija",
+    "team": "WAS",
+    "college": "None",
+    "height": 205.74,
+    "weight": 95.25432,
+    "ppg": 9.2,
+    "rpg": 6.4,
+    "apg": 2.8
+  },
+  {
+    "name": "Dejounte Murray",
+    "team": "ATL",
+    "college": "Washington",
+    "height": 195.58,
+    "weight": 81.64656,
+    "ppg": 20.5,
+    "rpg": 5.3,
+    "apg": 6.1
+  },
+  {
+    "name": "Danny Green",
+    "team": "CLE",
+    "college": "North Carolina",
+    "height": 198.12,
+    "weight": 97.52228,
+    "ppg": 5.5,
+    "rpg": 1.3,
+    "apg": 0.5
+  },
+  {
+    "name": "Danuel House Jr.",
+    "team": "PHI",
+    "college": "Texas A&M",
+    "height": 198.12,
+    "weight": 99.79024,
+    "ppg": 4.8,
+    "rpg": 1.7,
+    "apg": 0.8
+  },
+  {
+    "name": "Dario Saric",
+    "team": "OKC",
+    "college": "None",
+    "height": 208.28,
+    "weight": 102.0582,
+    "ppg": 6.4,
+    "rpg": 3.6,
+    "apg": 1.3
+  },
+  {
+    "name": "Darius Bazley",
+    "team": "PHX",
+    "college": "None",
+    "height": 205.74,
+    "weight": 97.975872,
+    "ppg": 5.2,
+    "rpg": 3.2,
+    "apg": 0.9
+  },
+  {
+    "name": "Darius Days",
+    "team": "HOU",
+    "college": "Louisiana State",
+    "height": 200.66,
+    "weight": 111.13004,
+    "ppg": 3.8,
+    "rpg": 1.5,
+    "apg": 0.3
+  },
+  {
+    "name": "Darius Garland",
+    "team": "CLE",
+    "college": "Vanderbilt",
+    "height": 185.42,
+    "weight": 87.089664,
+    "ppg": 21.6,
+    "rpg": 2.7,
+    "apg": 7.8
+  },
+  {
+    "name": "David Duke Jr.",
+    "team": "BKN",
+    "college": "Providence",
+    "height": 193.04,
+    "weight": 92.532768,
+    "ppg": 3.7,
+    "rpg": 1.3,
+    "apg": 0.9
+  },
+  {
+    "name": "David Roddy",
+    "team": "MEM",
+    "college": "Colorado State",
+    "height": 193.04,
+    "weight": 115.66596,
+    "ppg": 6.7,
+    "rpg": 2.8,
+    "apg": 0.8
+  },
+  {
+    "name": "Davion Mitchell",
+    "team": "SAC",
+    "college": "Baylor",
+    "height": 182.88,
+    "weight": 91.625584,
+    "ppg": 5.6,
+    "rpg": 1.3,
+    "apg": 2.3
+  },
+  {
+    "name": "Davis Bertans",
+    "team": "DAL",
+    "college": "None",
+    "height": 208.28,
+    "weight": 102.0582,
+    "ppg": 4.6,
+    "rpg": 1.2,
+    "apg": 0.5
+  },
+  {
+    "name": "Davon Reed",
+    "team": "LAL",
+    "college": "Miami",
+    "height": 195.58,
+    "weight": 93.439952,
+    "ppg": 2.1,
+    "rpg": 1.4,
+    "apg": 0.5
+  },
+  {
+    "name": "Day'Ron Sharpe",
+    "team": "BKN",
+    "college": "North Carolina",
+    "height": 205.74,
+    "weight": 120.20188,
+    "ppg": 4.7,
+    "rpg": 4.2,
+    "apg": 0.8
+  },
+  {
+    "name": "De'Aaron Fox",
+    "team": "SAC",
+    "college": "Kentucky",
+    "height": 190.5,
+    "weight": 83.91452,
+    "ppg": 25.0,
+    "rpg": 4.2,
+    "apg": 6.1
+  },
+  {
+    "name": "De'Andre Hunter",
+    "team": "ATL",
+    "college": "Virginia",
+    "height": 203.2,
+    "weight": 100.243832,
+    "ppg": 15.4,
+    "rpg": 4.2,
+    "apg": 1.4
+  },
+  {
+    "name": "De'Anthony Melton",
+    "team": "PHI",
+    "college": "Southern California",
+    "height": 187.96,
+    "weight": 90.7184,
+    "ppg": 10.1,
+    "rpg": 4.1,
+    "apg": 2.6
+  },
+  {
+    "name": "DeAndre Jordan",
+    "team": "DEN",
+    "college": "Texas A&M",
+    "height": 210.82,
+    "weight": 120.20188,
+    "ppg": 5.1,
+    "rpg": 5.2,
+    "apg": 0.9
+  },
+  {
+    "name": "DeMar DeRozan",
+    "team": "CHI",
+    "college": "Southern California",
+    "height": 198.12,
+    "weight": 99.79024,
+    "ppg": 24.5,
+    "rpg": 4.6,
+    "apg": 5.1
+  },
+  {
+    "name": "Dean Wade",
+    "team": "CLE",
+    "college": "Kansas State",
+    "height": 205.74,
+    "weight": 103.418976,
+    "ppg": 4.7,
+    "rpg": 3.4,
+    "apg": 0.8
+  },
+  {
+    "name": "Deandre Ayton",
+    "team": "PHX",
+    "college": "Arizona",
+    "height": 213.36,
+    "weight": 113.398,
+    "ppg": 18.0,
+    "rpg": 10.0,
+    "apg": 1.7
+  },
+  {
+    "name": "Delon Wright",
+    "team": "WAS",
+    "college": "Utah",
+    "height": 195.58,
+    "weight": 83.91452,
+    "ppg": 7.4,
+    "rpg": 3.6,
+    "apg": 3.9
+  },
+  {
+    "name": "Draymond Green",
+    "team": "GSW",
+    "college": "Michigan State",
+    "height": 198.12,
+    "weight": 104.32616,
+    "ppg": 8.5,
+    "rpg": 7.2,
+    "apg": 6.8
+  },
+  {
+    "name": "Drew Eubanks",
+    "team": "POR",
+    "college": "Oregon State",
+    "height": 208.28,
+    "weight": 111.13004,
+    "ppg": 6.6,
+    "rpg": 5.4,
+    "apg": 1.3
+  },
+  {
+    "name": "Dru Smith",
+    "team": "BKN",
+    "college": "Missouri",
+    "height": 190.5,
+    "weight": 92.079176,
+    "ppg": 2.9,
+    "rpg": 1.6,
+    "apg": 1.5
+  },
+  {
+    "name": "George Hill",
+    "team": "IND",
+    "college": "Indiana-Purdue Indianapolis",
+    "height": 193.04,
+    "weight": 85.275296,
+    "ppg": 5.0,
+    "rpg": 1.8,
+    "apg": 2.4
+  },
+  {
+    "name": "Georges Niang",
+    "team": "PHI",
+    "college": "Iowa State",
+    "height": 200.66,
+    "weight": 104.32616,
+    "ppg": 8.2,
+    "rpg": 2.4,
+    "apg": 1.0
+  },
+  {
+    "name": "Giannis Antetokounmpo",
+    "team": "MIL",
+    "college": "None",
+    "height": 213.36,
+    "weight": 110.222856,
+    "ppg": 31.1,
+    "rpg": 11.8,
+    "apg": 5.7
+  },
+  {
+    "name": "Goga Bitadze",
+    "team": "ORL",
+    "college": "None",
+    "height": 210.82,
+    "weight": 113.398,
+    "ppg": 4.4,
+    "rpg": 3.6,
+    "apg": 1.0
+  },
+  {
+    "name": "Goran Dragic",
+    "team": "MIL",
+    "college": "None",
+    "height": 193.04,
+    "weight": 86.18248,
+    "ppg": 6.3,
+    "rpg": 1.4,
+    "apg": 2.6
+  },
+  {
+    "name": "Gordon Hayward",
+    "team": "CHA",
+    "college": "Butler",
+    "height": 200.66,
+    "weight": 102.0582,
+    "ppg": 14.7,
+    "rpg": 4.3,
+    "apg": 4.1
+  },
+  {
+    "name": "Gorgui Dieng",
+    "team": "SAS",
+    "college": "Louisville",
+    "height": 208.28,
+    "weight": 112.490816,
+    "ppg": 3.9,
+    "rpg": 3.5,
+    "apg": 1.7
+  },
+  {
+    "name": "Grant Williams",
+    "team": "BOS",
+    "college": "Tennessee",
+    "height": 198.12,
+    "weight": 107.047712,
+    "ppg": 8.1,
+    "rpg": 4.6,
+    "apg": 1.7
+  },
+  {
+    "name": "Grayson Allen",
+    "team": "MIL",
+    "college": "Duke",
+    "height": 193.04,
+    "weight": 89.811216,
+    "ppg": 10.4,
+    "rpg": 3.3,
+    "apg": 2.3
+  },
+  {
+    "name": "Greg Brown III",
+    "team": "POR",
+    "college": "Texas",
+    "height": 200.66,
+    "weight": 93.439952,
+    "ppg": 1.8,
+    "rpg": 1.2,
+    "apg": 0.2
+  },
+  {
+    "name": "Hamidou Diallo",
+    "team": "DET",
+    "college": "Kentucky",
+    "height": 195.58,
+    "weight": 91.625584,
+    "ppg": 9.3,
+    "rpg": 3.5,
+    "apg": 1.0
+  },
+  {
+    "name": "Harrison Barnes",
+    "team": "SAC",
+    "college": "North Carolina",
+    "height": 203.2,
+    "weight": 102.0582,
+    "ppg": 15.0,
+    "rpg": 4.5,
+    "apg": 1.6
+  },
+  {
+    "name": "Haywood Highsmith",
+    "team": "MIA",
+    "college": "Wheeling Jesuit",
+    "height": 195.58,
+    "weight": 99.79024,
+    "ppg": 4.4,
+    "rpg": 3.5,
+    "apg": 0.8
+  },
+  {
+    "name": "Herbert Jones",
+    "team": "NOP",
+    "college": "Alabama",
+    "height": 200.66,
+    "weight": 93.439952,
+    "ppg": 9.8,
+    "rpg": 4.1,
+    "apg": 2.5
+  },
+  {
+    "name": "Immanuel Quickley",
+    "team": "NYK",
+    "college": "Kentucky",
+    "height": 187.96,
+    "weight": 86.18248,
+    "ppg": 14.9,
+    "rpg": 4.2,
+    "apg": 3.4
+  },
+  {
+    "name": "Isaac Okoro",
+    "team": "CLE",
+    "college": "Auburn",
+    "height": 195.58,
+    "weight": 102.0582,
+    "ppg": 6.4,
+    "rpg": 2.5,
+    "apg": 1.1
+  },
+  {
+    "name": "Isaiah Hartenstein",
+    "team": "NYK",
+    "college": "None",
+    "height": 213.36,
+    "weight": 113.398,
+    "ppg": 5.0,
+    "rpg": 6.5,
+    "apg": 1.2
+  },
+  {
+    "name": "Isaiah Jackson",
+    "team": "IND",
+    "college": "Kentucky",
+    "height": 205.74,
+    "weight": 92.98636,
+    "ppg": 7.2,
+    "rpg": 4.5,
+    "apg": 0.8
+  },
+  {
+    "name": "Isaiah Joe",
+    "team": "OKC",
+    "college": "Arkansas",
+    "height": 190.5,
+    "weight": 74.84268,
+    "ppg": 9.5,
+    "rpg": 2.4,
+    "apg": 1.2
+  },
+  {
+    "name": "Gary Trent Jr.",
+    "team": "TOR",
+    "college": "Duke",
+    "height": 195.58,
+    "weight": 94.800728,
+    "ppg": 17.4,
+    "rpg": 2.6,
+    "apg": 1.6
+  },
+  {
+    "name": "Gary Payton II",
+    "team": "GSW",
+    "college": "Oregon State",
+    "height": 187.96,
+    "weight": 88.45044,
+    "ppg": 4.6,
+    "rpg": 3.1,
+    "apg": 1.4
+  },
+  {
+    "name": "Gary Harris",
+    "team": "ORL",
+    "college": "Michigan State",
+    "height": 193.04,
+    "weight": 95.25432,
+    "ppg": 8.3,
+    "rpg": 2.0,
+    "apg": 1.2
+  },
+  {
+    "name": "Garrison Mathews",
+    "team": "ATL",
+    "college": "Lipscomb",
+    "height": 198.12,
+    "weight": 97.52228,
+    "ppg": 4.8,
+    "rpg": 1.4,
+    "apg": 0.5
+  },
+  {
+    "name": "Duane Washington Jr.",
+    "team": "NYK",
+    "college": "Ohio State",
+    "height": 187.96,
+    "weight": 89.357624,
+    "ppg": 7.9,
+    "rpg": 1.2,
+    "apg": 2.0
+  },
+  {
+    "name": "Duncan Robinson",
+    "team": "MIA",
+    "college": "Michigan",
+    "height": 200.66,
+    "weight": 97.52228,
+    "ppg": 6.4,
+    "rpg": 1.6,
+    "apg": 1.1
+  },
+  {
+    "name": "Dwight Powell",
+    "team": "DAL",
+    "college": "Stanford",
+    "height": 208.28,
+    "weight": 108.86208,
+    "ppg": 6.7,
+    "rpg": 4.1,
+    "apg": 0.9
+  },
+  {
+    "name": "Dylan Windler",
+    "team": "CLE",
+    "college": "Belmont",
+    "height": 200.66,
+    "weight": 88.904032,
+    "ppg": 1.7,
+    "rpg": 0.0,
+    "apg": 0.3
+  },
+  {
+    "name": "Dyson Daniels",
+    "team": "NOP",
+    "college": "None",
+    "height": 200.66,
+    "weight": 90.264808,
+    "ppg": 3.8,
+    "rpg": 3.2,
+    "apg": 2.3
+  },
+  {
+    "name": "Edmond Sumner",
+    "team": "BKN",
+    "college": "Xavier",
+    "height": 193.04,
+    "weight": 88.904032,
+    "ppg": 7.1,
+    "rpg": 1.5,
+    "apg": 1.3
+  },
+  {
+    "name": "Eric Gordon",
+    "team": "LAC",
+    "college": "Indiana",
+    "height": 190.5,
+    "weight": 97.52228,
+    "ppg": 12.4,
+    "rpg": 1.9,
+    "apg": 2.7
+  },
+  {
+    "name": "Eugene Omoruyi",
+    "team": "DET",
+    "college": "Oregon",
+    "height": 198.12,
+    "weight": 106.59412,
+    "ppg": 7.0,
+    "rpg": 2.8,
+    "apg": 0.7
+  },
+  {
+    "name": "Evan Fournier",
+    "team": "NYK",
+    "college": "None",
+    "height": 198.12,
+    "weight": 92.98636,
+    "ppg": 6.1,
+    "rpg": 1.8,
+    "apg": 1.3
+  },
+  {
+    "name": "Daniel Theis",
+    "team": "IND",
+    "college": "None",
+    "height": 203.2,
+    "weight": 111.13004,
+    "ppg": 7.0,
+    "rpg": 3.1,
+    "apg": 1.3
+  },
+  {
+    "name": "Evan Mobley",
+    "team": "CLE",
+    "college": "Southern California",
+    "height": 210.82,
+    "weight": 97.52228,
+    "ppg": 16.2,
+    "rpg": 9.0,
+    "apg": 2.8
+  },
+  {
+    "name": "Frank Jackson",
+    "team": "UTA",
+    "college": "Duke",
+    "height": 190.5,
+    "weight": 92.98636,
+    "ppg": 0.0,
+    "rpg": 2.0,
+    "apg": 1.0
+  },
+  {
+    "name": "Frank Kaminsky",
+    "team": "HOU",
+    "college": "Wisconsin",
+    "height": 213.36,
+    "weight": 108.86208,
+    "ppg": 2.5,
+    "rpg": 1.4,
+    "apg": 0.9
+  },
+  {
+    "name": "Frank Ntilikina",
+    "team": "DAL",
+    "college": "None",
+    "height": 193.04,
+    "weight": 90.7184,
+    "ppg": 2.9,
+    "rpg": 1.3,
+    "apg": 1.2
+  },
+  {
+    "name": "Franz Wagner",
+    "team": "ORL",
+    "college": "Michigan",
+    "height": 208.28,
+    "weight": 99.79024,
+    "ppg": 18.6,
+    "rpg": 4.1,
+    "apg": 3.5
+  },
+  {
+    "name": "Fred VanVleet",
+    "team": "TOR",
+    "college": "Wichita State",
+    "height": 182.88,
+    "weight": 89.357624,
+    "ppg": 19.3,
+    "rpg": 4.1,
+    "apg": 7.2
+  },
+  {
+    "name": "Furkan Korkmaz",
+    "team": "PHI",
+    "college": "None",
+    "height": 200.66,
+    "weight": 91.625584,
+    "ppg": 3.8,
+    "rpg": 1.1,
+    "apg": 0.6
+  },
+  {
+    "name": "Gabe Vincent",
+    "team": "MIA",
+    "college": "California-Santa Barbara",
+    "height": 187.96,
+    "weight": 90.7184,
+    "ppg": 9.4,
+    "rpg": 2.1,
+    "apg": 2.5
+  },
+  {
+    "name": "Gabe York",
+    "team": "IND",
+    "college": "Arizona",
+    "height": 190.5,
+    "weight": 86.18248,
+    "ppg": 8.0,
+    "rpg": 2.0,
+    "apg": 1.7
+  },
+  {
+    "name": "Garrett Temple",
+    "team": "NOP",
+    "college": "Louisiana State",
+    "height": 198.12,
+    "weight": 88.45044,
+    "ppg": 2.0,
+    "rpg": 0.7,
+    "apg": 0.5
+  },
+  {
+    "name": "Facundo Campazzo",
+    "team": "DAL",
+    "college": "None",
+    "height": 177.8,
+    "weight": 88.45044,
+    "ppg": 1.3,
+    "rpg": 0.3,
+    "apg": 1.1
+  },
+  {
+    "name": "Daniel Gafford",
+    "team": "WAS",
+    "college": "Arkansas",
+    "height": 208.28,
+    "weight": 106.140528,
+    "ppg": 9.0,
+    "rpg": 5.6,
+    "apg": 1.1
+  },
+  {
+    "name": "Damion Lee",
+    "team": "PHX",
+    "college": "Drexel",
+    "height": 195.58,
+    "weight": 95.25432,
+    "ppg": 8.2,
+    "rpg": 3.0,
+    "apg": 1.3
+  },
+  {
+    "name": "Damian Lillard",
+    "team": "POR",
+    "college": "Weber State",
+    "height": 187.96,
+    "weight": 88.45044,
+    "ppg": 32.2,
+    "rpg": 4.8,
+    "apg": 7.3
+  },
+  {
+    "name": "Anthony Gill",
+    "team": "WAS",
+    "college": "Virginia",
+    "height": 203.2,
+    "weight": 104.32616,
+    "ppg": 3.3,
+    "rpg": 1.7,
+    "apg": 0.6
+  },
+  {
+    "name": "Anthony Lamb",
+    "team": "GSW",
+    "college": "Vermont",
+    "height": 198.12,
+    "weight": 102.965384,
+    "ppg": 6.7,
+    "rpg": 3.5,
+    "apg": 1.5
+  },
+  {
+    "name": "Austin Reaves",
+    "team": "LAL",
+    "college": "Oklahoma",
+    "height": 195.58,
+    "weight": 89.357624,
+    "ppg": 13.0,
+    "rpg": 3.0,
+    "apg": 3.4
+  },
+  {
+    "name": "Austin Rivers",
+    "team": "MIN",
+    "college": "Duke",
+    "height": 193.04,
+    "weight": 90.7184,
+    "ppg": 4.9,
+    "rpg": 1.6,
+    "apg": 1.4
+  },
+  {
+    "name": "Ayo Dosunmu",
+    "team": "CHI",
+    "college": "Illinois",
+    "height": 195.58,
+    "weight": 90.7184,
+    "ppg": 8.6,
+    "rpg": 2.8,
+    "apg": 2.6
+  },
+  {
+    "name": "Bam Adebayo",
+    "team": "MIA",
+    "college": "Kentucky",
+    "height": 205.74,
+    "weight": 115.66596,
+    "ppg": 20.4,
+    "rpg": 9.2,
+    "apg": 3.2
+  },
+  {
+    "name": "Ben Simmons",
+    "team": "BKN",
+    "college": "Louisiana State",
+    "height": 208.28,
+    "weight": 108.86208,
+    "ppg": 6.9,
+    "rpg": 6.3,
+    "apg": 6.1
+  },
+  {
+    "name": "Bennedict Mathurin",
+    "team": "IND",
+    "college": "Arizona",
+    "height": 195.58,
+    "weight": 95.25432,
+    "ppg": 16.7,
+    "rpg": 4.1,
+    "apg": 1.5
+  },
+  {
+    "name": "Bismack Biyombo",
+    "team": "PHX",
+    "college": "None",
+    "height": 203.2,
+    "weight": 115.66596,
+    "ppg": 4.3,
+    "rpg": 4.3,
+    "apg": 0.9
+  },
+  {
+    "name": "Blake Griffin",
+    "team": "BOS",
+    "college": "Oklahoma",
+    "height": 205.74,
+    "weight": 113.398,
+    "ppg": 4.1,
+    "rpg": 3.8,
+    "apg": 1.5
+  },
+  {
+    "name": "Blake Wesley",
+    "team": "SAS",
+    "college": "Notre Dame",
+    "height": 193.04,
+    "weight": 83.91452,
+    "ppg": 5.0,
+    "rpg": 2.2,
+    "apg": 2.6
+  },
+  {
+    "name": "Boban Marjanovic",
+    "team": "HOU",
+    "college": "None",
+    "height": 223.52,
+    "weight": 131.54168,
+    "ppg": 3.3,
+    "rpg": 1.9,
+    "apg": 0.3
+  },
+  {
+    "name": "Bobby Portis",
+    "team": "MIL",
+    "college": "Arkansas",
+    "height": 210.82,
+    "weight": 113.398,
+    "ppg": 14.1,
+    "rpg": 9.6,
+    "apg": 1.5
+  },
+  {
+    "name": "Bogdan Bogdanovic",
+    "team": "ATL",
+    "college": "None",
+    "height": 195.58,
+    "weight": 102.0582,
+    "ppg": 14.0,
+    "rpg": 3.1,
+    "apg": 2.8
+  },
+  {
+    "name": "Bojan Bogdanovic",
+    "team": "DET",
+    "college": "None",
+    "height": 200.66,
+    "weight": 102.511792,
+    "ppg": 21.6,
+    "rpg": 3.8,
+    "apg": 2.6
+  },
+  {
+    "name": "Bol Bol",
+    "team": "ORL",
+    "college": "Oregon",
+    "height": 218.44,
+    "weight": 99.79024,
+    "ppg": 9.1,
+    "rpg": 5.8,
+    "apg": 1.0
+  },
+  {
+    "name": "Bones Hyland",
+    "team": "LAC",
+    "college": "Virginia Commonwealth",
+    "height": 187.96,
+    "weight": 76.657048,
+    "ppg": 11.8,
+    "rpg": 2.4,
+    "apg": 3.1
+  },
+  {
+    "name": "Bradley Beal",
+    "team": "WAS",
+    "college": "Florida",
+    "height": 193.04,
+    "weight": 93.893544,
+    "ppg": 23.2,
+    "rpg": 3.9,
+    "apg": 5.4
+  },
+  {
+    "name": "Brandon Boston Jr.",
+    "team": "LAC",
+    "college": "Kentucky",
+    "height": 198.12,
+    "weight": 85.275296,
+    "ppg": 6.5,
+    "rpg": 1.4,
+    "apg": 0.9
+  },
+  {
+    "name": "Anthony Edwards",
+    "team": "MIN",
+    "college": "Georgia",
+    "height": 193.04,
+    "weight": 102.0582,
+    "ppg": 24.6,
+    "rpg": 5.8,
+    "apg": 4.4
+  },
+  {
+    "name": "Anthony Davis",
+    "team": "LAL",
+    "college": "Kentucky",
+    "height": 208.28,
+    "weight": 114.758776,
+    "ppg": 25.9,
+    "rpg": 12.5,
+    "apg": 2.6
+  },
+  {
+    "name": "Anfernee Simons",
+    "team": "POR",
+    "college": "None",
+    "height": 190.5,
+    "weight": 82.10015200000001,
+    "ppg": 21.1,
+    "rpg": 2.6,
+    "apg": 4.1
+  },
+  {
+    "name": "Andrew Wiggins",
+    "team": "GSW",
+    "college": "Kansas",
+    "height": 200.66,
+    "weight": 89.357624,
+    "ppg": 17.1,
+    "rpg": 5.0,
+    "apg": 2.3
+  },
+  {
+    "name": "A.J. Lawson",
+    "team": "DAL",
+    "college": "South Carolina",
+    "height": 198.12,
+    "weight": 81.19296800000001,
+    "ppg": 3.7,
+    "rpg": 1.4,
+    "apg": 0.1
+  },
+  {
+    "name": "AJ Green",
+    "team": "MIL",
+    "college": "Northern Iowa",
+    "height": 195.58,
+    "weight": 86.18248,
+    "ppg": 4.4,
+    "rpg": 1.3,
+    "apg": 0.6
+  },
+  {
+    "name": "AJ Griffin",
+    "team": "ATL",
+    "college": "Duke",
+    "height": 198.12,
+    "weight": 99.79024,
+    "ppg": 8.9,
+    "rpg": 2.1,
+    "apg": 1.0
+  },
+  {
+    "name": "Aaron Gordon",
+    "team": "DEN",
+    "college": "Arizona",
+    "height": 203.2,
+    "weight": 106.59412,
+    "ppg": 16.3,
+    "rpg": 6.6,
+    "apg": 3.0
+  },
+  {
+    "name": "Aaron Holiday",
+    "team": "ATL",
+    "college": "UCLA",
+    "height": 182.88,
+    "weight": 83.91452,
+    "ppg": 3.9,
+    "rpg": 1.2,
+    "apg": 1.4
+  },
+  {
+    "name": "Aaron Nesmith",
+    "team": "IND",
+    "college": "Vanderbilt",
+    "height": 195.58,
+    "weight": 97.52228,
+    "ppg": 10.1,
+    "rpg": 3.8,
+    "apg": 1.3
+  },
+  {
+    "name": "Aaron Wiggins",
+    "team": "OKC",
+    "college": "Maryland",
+    "height": 195.58,
+    "weight": 86.18248,
+    "ppg": 6.8,
+    "rpg": 3.0,
+    "apg": 1.1
+  },
+  {
+    "name": "Admiral Schofield",
+    "team": "ORL",
+    "college": "Tennessee",
+    "height": 195.58,
+    "weight": 109.315672,
+    "ppg": 4.2,
+    "rpg": 1.7,
+    "apg": 0.8
+  },
+  {
+    "name": "Al Horford",
+    "team": "BOS",
+    "college": "Florida",
+    "height": 205.74,
+    "weight": 108.86208,
+    "ppg": 9.8,
+    "rpg": 6.2,
+    "apg": 3.0
+  },
+  {
+    "name": "Brandon Clarke",
+    "team": "MEM",
+    "college": "Gonzaga",
+    "height": 203.2,
+    "weight": 97.52228,
+    "ppg": 10.0,
+    "rpg": 5.5,
+    "apg": 1.3
+  },
+  {
+    "name": "Alec Burks",
+    "team": "DET",
+    "college": "Colorado",
+    "height": 198.12,
+    "weight": 97.068688,
+    "ppg": 12.8,
+    "rpg": 3.1,
+    "apg": 2.2
+  },
+  {
+    "name": "Alex Caruso",
+    "team": "CHI",
+    "college": "Texas A&M",
+    "height": 195.58,
+    "weight": 84.368112,
+    "ppg": 5.6,
+    "rpg": 2.9,
+    "apg": 2.9
+  },
+  {
+    "name": "Alex Len",
+    "team": "SAC",
+    "college": "Maryland",
+    "height": 218.44,
+    "weight": 113.398,
+    "ppg": 1.7,
+    "rpg": 2.3,
+    "apg": 0.5
+  },
+  {
+    "name": "Alize Johnson",
+    "team": "SAS",
+    "college": "Missouri State",
+    "height": 203.2,
+    "weight": 96.161504,
+    "ppg": 1.8,
+    "rpg": 2.5,
+    "apg": 0.3
+  },
+  {
+    "name": "Alondes Williams",
+    "team": "BKN",
+    "college": "Wake Forest",
+    "height": 193.04,
+    "weight": 95.25432,
+    "ppg": 0.0,
+    "rpg": 1.0,
+    "apg": 0.0
+  },
+  {
+    "name": "Alperen Sengun",
+    "team": "HOU",
+    "college": "None",
+    "height": 210.82,
+    "weight": 110.222856,
+    "ppg": 14.8,
+    "rpg": 9.0,
+    "apg": 3.9
+  },
+  {
+    "name": "Amir Coffey",
+    "team": "LAC",
+    "college": "Minnesota",
+    "height": 200.66,
+    "weight": 95.25432,
+    "ppg": 3.4,
+    "rpg": 1.1,
+    "apg": 1.1
+  },
+  {
+    "name": "Andre Drummond",
+    "team": "CHI",
+    "college": "Connecticut",
+    "height": 210.82,
+    "weight": 126.552168,
+    "ppg": 6.0,
+    "rpg": 6.6,
+    "apg": 0.5
+  },
+  {
+    "name": "Andre Iguodala",
+    "team": "GSW",
+    "college": "Arizona",
+    "height": 198.12,
+    "weight": 97.52228,
+    "ppg": 2.1,
+    "rpg": 2.1,
+    "apg": 2.4
+  },
+  {
+    "name": "Andrew Nembhard",
+    "team": "IND",
+    "college": "Gonzaga",
+    "height": 190.5,
+    "weight": 86.636072,
+    "ppg": 9.5,
+    "rpg": 2.7,
+    "apg": 4.5
+  },
+  {
+    "name": "Aleksej Pokusevski",
+    "team": "OKC",
+    "college": "None",
+    "height": 213.36,
+    "weight": 95.25432,
+    "ppg": 8.1,
+    "rpg": 4.7,
+    "apg": 1.9
+  },
+  {
+    "name": "Isaiah Livers",
+    "team": "DET",
+    "college": "Michigan",
+    "height": 198.12,
+    "weight": 105.233344,
+    "ppg": 6.7,
+    "rpg": 2.8,
+    "apg": 0.8
+  },
+  {
+    "name": "Brandon Ingram",
+    "team": "NOP",
+    "college": "Duke",
+    "height": 203.2,
+    "weight": 86.18248,
+    "ppg": 24.7,
+    "rpg": 5.5,
+    "apg": 5.8
+  },
+  {
+    "name": "Brook Lopez",
+    "team": "MIL",
+    "college": "Stanford",
+    "height": 215.9,
+    "weight": 127.912944,
+    "ppg": 15.9,
+    "rpg": 6.7,
+    "apg": 1.3
+  },
+  {
+    "name": "Chris Silva",
+    "team": "DAL",
+    "college": "South Carolina",
+    "height": 203.2,
+    "weight": 106.140528,
+    "ppg": 2.0,
+    "rpg": 0.0,
+    "apg": 0.0
+  },
+  {
+    "name": "Christian Braun",
+    "team": "DEN",
+    "college": "Kansas",
+    "height": 198.12,
+    "weight": 99.79024,
+    "ppg": 4.7,
+    "rpg": 2.4,
+    "apg": 0.8
+  },
+  {
+    "name": "Christian Koloko",
+    "team": "TOR",
+    "college": "Arizona",
+    "height": 213.36,
+    "weight": 104.32616,
+    "ppg": 3.1,
+    "rpg": 2.9,
+    "apg": 0.5
+  },
+  {
+    "name": "Christian Wood",
+    "team": "DAL",
+    "college": "UNLV",
+    "height": 205.74,
+    "weight": 97.068688,
+    "ppg": 16.6,
+    "rpg": 7.3,
+    "apg": 1.8
+  },
+  {
+    "name": "Chuma Okeke",
+    "team": "ORL",
+    "college": "Auburn",
+    "height": 203.2,
+    "weight": 103.872568,
+    "ppg": 4.7,
+    "rpg": 3.6,
+    "apg": 1.4
+  },
+  {
+    "name": "Clint Capela",
+    "team": "ATL",
+    "college": "None",
+    "height": 208.28,
+    "weight": 116.119552,
+    "ppg": 12.0,
+    "rpg": 11.0,
+    "apg": 0.9
+  },
+  {
+    "name": "Coby White",
+    "team": "CHI",
+    "college": "North Carolina",
+    "height": 195.58,
+    "weight": 88.45044,
+    "ppg": 9.7,
+    "rpg": 2.9,
+    "apg": 2.8
+  },
+  {
+    "name": "Cody Martin",
+    "team": "CHA",
+    "college": "Nevada",
+    "height": 198.12,
+    "weight": 92.98636,
+    "ppg": 5.0,
+    "rpg": 3.4,
+    "apg": 1.6
+  },
+  {
+    "name": "Cody Zeller",
+    "team": "MIA",
+    "college": "Indiana",
+    "height": 210.82,
+    "weight": 108.86208,
+    "ppg": 6.5,
+    "rpg": 4.3,
+    "apg": 0.7
+  },
+  {
+    "name": "Cole Anthony",
+    "team": "ORL",
+    "college": "North Carolina",
+    "height": 190.5,
+    "weight": 83.91452,
+    "ppg": 13.0,
+    "rpg": 4.8,
+    "apg": 3.9
+  },
+  {
+    "name": "Cole Swider",
+    "team": "LAL",
+    "college": "Syracuse",
+    "height": 205.74,
+    "weight": 99.79024,
+    "ppg": 1.3,
+    "rpg": 1.0,
+    "apg": 0.6
+  },
+  {
+    "name": "Collin Sexton",
+    "team": "UTA",
+    "college": "Alabama",
+    "height": 187.96,
+    "weight": 86.18248,
+    "ppg": 14.3,
+    "rpg": 2.2,
+    "apg": 2.9
+  },
+  {
+    "name": "Corey Kispert",
+    "team": "WAS",
+    "college": "Gonzaga",
+    "height": 198.12,
+    "weight": 101.604608,
+    "ppg": 11.1,
+    "rpg": 2.8,
+    "apg": 1.2
+  },
+  {
+    "name": "Cory Joseph",
+    "team": "DET",
+    "college": "Texas",
+    "height": 190.5,
+    "weight": 90.7184,
+    "ppg": 6.9,
+    "rpg": 1.7,
+    "apg": 3.5
+  },
+  {
+    "name": "D'Angelo Russell",
+    "team": "LAL",
+    "college": "Ohio State",
+    "height": 193.04,
+    "weight": 87.543256,
+    "ppg": 17.8,
+    "rpg": 3.0,
+    "apg": 6.2
+  },
+  {
+    "name": "Daishen Nix",
+    "team": "HOU",
+    "college": "None",
+    "height": 193.04,
+    "weight": 102.511792,
+    "ppg": 4.0,
+    "rpg": 1.7,
+    "apg": 2.3
+  },
+  {
+    "name": "Dalano Banton",
+    "team": "TOR",
+    "college": "Nebraska",
+    "height": 200.66,
+    "weight": 92.532768,
+    "ppg": 4.6,
+    "rpg": 1.5,
+    "apg": 1.2
+  },
+  {
+    "name": "Dalen Terry",
+    "team": "CHI",
+    "college": "Arizona",
+    "height": 200.66,
+    "weight": 88.45044,
+    "ppg": 2.2,
+    "rpg": 1.0,
+    "apg": 0.6
+  },
+  {
+    "name": "Damian Jones",
+    "team": "UTA",
+    "college": "Vanderbilt",
+    "height": 210.82,
+    "weight": 111.13004,
+    "ppg": 3.5,
+    "rpg": 3.0,
+    "apg": 0.4
+  },
+  {
+    "name": "Chris Paul",
+    "team": "PHX",
+    "college": "Wake Forest",
+    "height": 182.88,
+    "weight": 79.3786,
+    "ppg": 13.9,
+    "rpg": 4.3,
+    "apg": 8.9
+  },
+  {
+    "name": "Chris Duarte",
+    "team": "IND",
+    "college": "Oregon",
+    "height": 195.58,
+    "weight": 86.18248,
+    "ppg": 7.9,
+    "rpg": 2.5,
+    "apg": 1.4
+  },
+  {
+    "name": "Chris Boucher",
+    "team": "TOR",
+    "college": "Oregon",
+    "height": 205.74,
+    "weight": 90.7184,
+    "ppg": 9.4,
+    "rpg": 5.5,
+    "apg": 0.4
+  },
+  {
+    "name": "Chimezie Metu",
+    "team": "SAC",
+    "college": "Southern California",
+    "height": 205.74,
+    "weight": 102.0582,
+    "ppg": 4.9,
+    "rpg": 3.0,
+    "apg": 0.6
+  },
+  {
+    "name": "Bruce Brown",
+    "team": "DEN",
+    "college": "Miami",
+    "height": 193.04,
+    "weight": 91.625584,
+    "ppg": 11.5,
+    "rpg": 4.1,
+    "apg": 3.4
+  },
+  {
+    "name": "Bruno Fernando",
+    "team": "ATL",
+    "college": "Maryland",
+    "height": 208.28,
+    "weight": 108.86208,
+    "ppg": 3.9,
+    "rpg": 3.5,
+    "apg": 0.8
+  },
+  {
+    "name": "Bryce McGowens",
+    "team": "CHA",
+    "college": "Nebraska",
+    "height": 198.12,
+    "weight": 79.3786,
+    "ppg": 5.3,
+    "rpg": 2.0,
+    "apg": 1.2
+  },
+  {
+    "name": "Bryn Forbes",
+    "team": "MIN",
+    "college": "Michigan State",
+    "height": 187.96,
+    "weight": 92.98636,
+    "ppg": 3.6,
+    "rpg": 0.6,
+    "apg": 0.7
+  },
+  {
+    "name": "Buddy Boeheim",
+    "team": "DET",
+    "college": "Syracuse",
+    "height": 198.12,
+    "weight": 92.98636,
+    "ppg": 1.6,
+    "rpg": 0.6,
+    "apg": 0.4
+  },
+  {
+    "name": "Buddy Hield",
+    "team": "IND",
+    "college": "Oklahoma",
+    "height": 193.04,
+    "weight": 99.79024,
+    "ppg": 16.8,
+    "rpg": 5.0,
+    "apg": 2.8
+  },
+  {
+    "name": "CJ McCollum",
+    "team": "NOP",
+    "college": "Lehigh",
+    "height": 190.5,
+    "weight": 86.18248,
+    "ppg": 20.9,
+    "rpg": 4.4,
+    "apg": 5.7
+  },
+  {
+    "name": "Cade Cunningham",
+    "team": "DET",
+    "college": "Oklahoma State",
+    "height": 200.66,
+    "weight": 99.79024,
+    "ppg": 19.9,
+    "rpg": 6.2,
+    "apg": 6.0
+  },
+  {
+    "name": "Caleb Houstan",
+    "team": "ORL",
+    "college": "Michigan",
+    "height": 203.2,
+    "weight": 92.98636,
+    "ppg": 3.8,
+    "rpg": 1.9,
+    "apg": 0.6
+  },
+  {
+    "name": "Braxton Key",
+    "team": "DET",
+    "college": "Virginia",
+    "height": 203.2,
+    "weight": 102.0582,
+    "ppg": 1.3,
+    "rpg": 0.3,
+    "apg": 0.0
+  },
+  {
+    "name": "Caleb Martin",
+    "team": "MIA",
+    "college": "Nevada",
+    "height": 195.58,
+    "weight": 92.98636,
+    "ppg": 9.6,
+    "rpg": 4.8,
+    "apg": 1.6
+  },
+  {
+    "name": "Cam Thomas",
+    "team": "BKN",
+    "college": "Louisiana State",
+    "height": 190.5,
+    "weight": 95.25432,
+    "ppg": 10.6,
+    "rpg": 1.7,
+    "apg": 1.4
+  },
+  {
+    "name": "Cameron Johnson",
+    "team": "BKN",
+    "college": "North Carolina",
+    "height": 203.2,
+    "weight": 95.25432,
+    "ppg": 15.5,
+    "rpg": 4.4,
+    "apg": 1.9
+  },
+  {
+    "name": "Cameron Payne",
+    "team": "PHX",
+    "college": "Murray State",
+    "height": 185.42,
+    "weight": 83.007336,
+    "ppg": 10.3,
+    "rpg": 2.2,
+    "apg": 4.5
+  },
+  {
+    "name": "Caris LeVert",
+    "team": "CLE",
+    "college": "Michigan",
+    "height": 198.12,
+    "weight": 92.98636,
+    "ppg": 12.1,
+    "rpg": 3.8,
+    "apg": 3.9
+  },
+  {
+    "name": "Carlik Jones",
+    "team": "CHI",
+    "college": "Louisville",
+    "height": 182.88,
+    "weight": 78.92500799999999,
+    "ppg": 2.9,
+    "rpg": 0.7,
+    "apg": 0.9
+  },
+  {
+    "name": "Cedi Osman",
+    "team": "CLE",
+    "college": "None",
+    "height": 200.66,
+    "weight": 104.32616,
+    "ppg": 8.7,
+    "rpg": 2.3,
+    "apg": 1.5
+  },
+  {
+    "name": "Chance Comanche",
+    "team": "POR",
+    "college": "Arizona",
+    "height": 208.28,
+    "weight": 95.25432,
+    "ppg": 7.0,
+    "rpg": 3.0,
+    "apg": 0.0
+  },
+  {
+    "name": "Charles Bassey",
+    "team": "SAS",
+    "college": "Western Kentucky",
+    "height": 205.74,
+    "weight": 104.32616,
+    "ppg": 5.7,
+    "rpg": 5.5,
+    "apg": 1.4
+  },
+  {
+    "name": "Chima Moneke",
+    "team": "SAC",
+    "college": "Cal-Davis",
+    "height": 195.58,
+    "weight": 101.151016,
+    "ppg": 1.0,
+    "rpg": 1.0,
+    "apg": 0.5
+  },
+  {
+    "name": "Cam Reddish",
+    "team": "POR",
+    "college": "Duke",
+    "height": 200.66,
+    "weight": 98.429464,
+    "ppg": 9.7,
+    "rpg": 2.2,
+    "apg": 1.4
+  },
+  {
+    "name": "Michael Carter-Williams",
+    "team": "ORL",
+    "college": "Syracuse",
+    "height": 195.58,
+    "weight": 86.18248,
+    "ppg": 4.3,
+    "rpg": 1.3,
+    "apg": 1.8
+  },
+  {
+    "name": "Isaiah Mobley",
+    "team": "CLE",
+    "college": "Southern California",
+    "height": 203.2,
+    "weight": 107.954896,
+    "ppg": 2.6,
+    "rpg": 1.7,
+    "apg": 0.3
+  },
+  {
+    "name": "Isaiah Stewart",
+    "team": "DET",
+    "college": "Washington",
+    "height": 203.2,
+    "weight": 113.398,
+    "ppg": 11.3,
+    "rpg": 8.1,
+    "apg": 1.4
+  },
+  {
+    "name": "Kenyon Martin Jr.",
+    "team": "HOU",
+    "college": "None",
+    "height": 200.66,
+    "weight": 97.52228,
+    "ppg": 12.7,
+    "rpg": 5.5,
+    "apg": 1.5
+  },
+  {
+    "name": "Keon Ellis",
+    "team": "SAC",
+    "college": "Alabama",
+    "height": 190.5,
+    "weight": 79.3786,
+    "ppg": 1.5,
+    "rpg": 0.5,
+    "apg": 0.4
+  },
+  {
+    "name": "Keon Johnson",
+    "team": "POR",
+    "college": "Tennessee",
+    "height": 190.5,
+    "weight": 83.91452,
+    "ppg": 4.7,
+    "rpg": 1.1,
+    "apg": 1.5
+  },
+  {
+    "name": "Kessler Edwards",
+    "team": "SAC",
+    "college": "Pepperdine",
+    "height": 200.66,
+    "weight": 92.079176,
+    "ppg": 2.8,
+    "rpg": 1.7,
+    "apg": 0.6
+  },
+  {
+    "name": "Kevin Durant",
+    "team": "PHX",
+    "college": "Texas",
+    "height": 208.28,
+    "weight": 108.86208,
+    "ppg": 29.1,
+    "rpg": 6.7,
+    "apg": 5.0
+  },
+  {
+    "name": "Kevin Huerter",
+    "team": "SAC",
+    "college": "Maryland",
+    "height": 200.66,
+    "weight": 89.811216,
+    "ppg": 15.2,
+    "rpg": 3.3,
+    "apg": 2.9
+  },
+  {
+    "name": "Kevin Knox II",
+    "team": "POR",
+    "college": "Kentucky",
+    "height": 200.66,
+    "weight": 97.52228,
+    "ppg": 6.6,
+    "rpg": 2.8,
+    "apg": 0.5
+  },
+  {
+    "name": "Kevin Love",
+    "team": "MIA",
+    "college": "UCLA",
+    "height": 203.2,
+    "weight": 113.851592,
+    "ppg": 8.2,
+    "rpg": 6.4,
+    "apg": 1.9
+  },
+  {
+    "name": "Kevin Porter Jr.",
+    "team": "HOU",
+    "college": "Southern California",
+    "height": 193.04,
+    "weight": 92.079176,
+    "ppg": 19.2,
+    "rpg": 5.3,
+    "apg": 5.7
+  },
+  {
+    "name": "Kevon Harris",
+    "team": "ORL",
+    "college": "Stephen F. Austin",
+    "height": 198.12,
+    "weight": 97.975872,
+    "ppg": 4.1,
+    "rpg": 2.1,
+    "apg": 0.5
+  },
+  {
+    "name": "Kevon Looney",
+    "team": "GSW",
+    "college": "UCLA",
+    "height": 205.74,
+    "weight": 100.697424,
+    "ppg": 7.0,
+    "rpg": 9.3,
+    "apg": 2.5
+  },
+  {
+    "name": "Khem Birch",
+    "team": "SAS",
+    "college": "UNLV",
+    "height": 203.2,
+    "weight": 105.68693600000002,
+    "ppg": 2.2,
+    "rpg": 1.3,
+    "apg": 0.4
+  },
+  {
+    "name": "Khris Middleton",
+    "team": "MIL",
+    "college": "Texas A&M",
+    "height": 200.66,
+    "weight": 100.697424,
+    "ppg": 15.1,
+    "rpg": 4.2,
+    "apg": 4.9
+  },
+  {
+    "name": "Killian Hayes",
+    "team": "DET",
+    "college": "None",
+    "height": 195.58,
+    "weight": 88.45044,
+    "ppg": 10.3,
+    "rpg": 2.9,
+    "apg": 6.2
+  },
+  {
+    "name": "Kira Lewis Jr.",
+    "team": "NOP",
+    "college": "Alabama",
+    "height": 185.42,
+    "weight": 77.11064,
+    "ppg": 4.6,
+    "rpg": 1.3,
+    "apg": 0.9
+  },
+  {
+    "name": "Klay Thompson",
+    "team": "GSW",
+    "college": "Washington State",
+    "height": 198.12,
+    "weight": 99.79024,
+    "ppg": 21.9,
+    "rpg": 4.1,
+    "apg": 2.4
+  },
+  {
+    "name": "Kobi Simmons",
+    "team": "CHA",
+    "college": "Arizona",
+    "height": 195.58,
+    "weight": 81.64656,
+    "ppg": 1.0,
+    "rpg": 0.8,
+    "apg": 1.0
+  },
+  {
+    "name": "Kris Dunn",
+    "team": "UTA",
+    "college": "Providence",
+    "height": 190.5,
+    "weight": 92.98636,
+    "ppg": 13.2,
+    "rpg": 4.5,
+    "apg": 5.6
+  },
+  {
+    "name": "Kristaps Porzingis",
+    "team": "WAS",
+    "college": "None",
+    "height": 220.98,
+    "weight": 108.86208,
+    "ppg": 23.2,
+    "rpg": 8.4,
+    "apg": 2.7
+  },
+  {
+    "name": "Kentavious Caldwell-Pope",
+    "team": "DEN",
+    "college": "Georgia",
+    "height": 195.58,
+    "weight": 92.532768,
+    "ppg": 10.8,
+    "rpg": 2.7,
+    "apg": 2.4
+  },
+  {
+    "name": "Kyle Anderson",
+    "team": "MIN",
+    "college": "UCLA",
+    "height": 205.74,
+    "weight": 104.32616,
+    "ppg": 9.4,
+    "rpg": 5.3,
+    "apg": 4.9
+  },
+  {
+    "name": "Kenrich Williams",
+    "team": "OKC",
+    "college": "TCU",
+    "height": 198.12,
+    "weight": 95.25432,
+    "ppg": 8.0,
+    "rpg": 4.9,
+    "apg": 2.0
+  },
+  {
+    "name": "Kennedy Chandler",
+    "team": "MEM",
+    "college": "Tennessee",
+    "height": 180.34,
+    "weight": 77.11064,
+    "ppg": 2.2,
+    "rpg": 1.1,
+    "apg": 1.6
+  },
+  {
+    "name": "Julius Randle",
+    "team": "NYK",
+    "college": "Kentucky",
+    "height": 203.2,
+    "weight": 113.398,
+    "ppg": 25.1,
+    "rpg": 10.0,
+    "apg": 4.1
+  },
+  {
+    "name": "Justin Champagnie",
+    "team": "BOS",
+    "college": "Pittsburgh",
+    "height": 198.12,
+    "weight": 93.439952,
+    "ppg": 2.2,
+    "rpg": 1.6,
+    "apg": 0.8
+  },
+  {
+    "name": "Justin Holiday",
+    "team": "DAL",
+    "college": "Washington",
+    "height": 198.12,
+    "weight": 81.64656,
+    "ppg": 4.5,
+    "rpg": 1.2,
+    "apg": 0.9
+  },
+  {
+    "name": "Justin Jackson",
+    "team": "BOS",
+    "college": "North Carolina",
+    "height": 203.2,
+    "weight": 99.79024,
+    "ppg": 0.9,
+    "rpg": 0.7,
+    "apg": 0.4
+  },
+  {
+    "name": "Justin Minaya",
+    "team": "POR",
+    "college": "Providence",
+    "height": 200.66,
+    "weight": 95.25432,
+    "ppg": 4.3,
+    "rpg": 3.8,
+    "apg": 1.0
+  },
+  {
+    "name": "Justise Winslow",
+    "team": "POR",
+    "college": "Duke",
+    "height": 198.12,
+    "weight": 100.697424,
+    "ppg": 6.8,
+    "rpg": 5.0,
+    "apg": 3.4
+  },
+  {
+    "name": "Jusuf Nurkic",
+    "team": "POR",
+    "college": "None",
+    "height": 213.36,
+    "weight": 131.54168,
+    "ppg": 13.3,
+    "rpg": 9.1,
+    "apg": 2.9
+  },
+  {
+    "name": "KZ Okpala",
+    "team": "SAC",
+    "college": "Stanford",
+    "height": 203.2,
+    "weight": 97.52228,
+    "ppg": 1.3,
+    "rpg": 1.0,
+    "apg": 0.4
+  },
+  {
+    "name": "Kai Jones",
+    "team": "CHA",
+    "college": "Texas",
+    "height": 210.82,
+    "weight": 100.243832,
+    "ppg": 3.4,
+    "rpg": 2.7,
+    "apg": 0.3
+  },
+  {
+    "name": "Karl-Anthony Towns",
+    "team": "MIN",
+    "college": "Kentucky",
+    "height": 213.36,
+    "weight": 112.490816,
+    "ppg": 20.8,
+    "rpg": 8.1,
+    "apg": 4.8
+  },
+  {
+    "name": "Kawhi Leonard",
+    "team": "LAC",
+    "college": "San Diego State",
+    "height": 200.66,
+    "weight": 102.0582,
+    "ppg": 23.8,
+    "rpg": 6.5,
+    "apg": 3.9
+  },
+  {
+    "name": "Keegan Murray",
+    "team": "SAC",
+    "college": "Iowa",
+    "height": 203.2,
+    "weight": 102.0582,
+    "ppg": 12.2,
+    "rpg": 4.6,
+    "apg": 1.2
+  },
+  {
+    "name": "Keita Bates-Diop",
+    "team": "SAS",
+    "college": "Ohio State",
+    "height": 203.2,
+    "weight": 103.872568,
+    "ppg": 9.7,
+    "rpg": 3.7,
+    "apg": 1.5
+  },
+  {
+    "name": "Keldon Johnson",
+    "team": "SAS",
+    "college": "Kentucky",
+    "height": 195.58,
+    "weight": 99.79024,
+    "ppg": 22.0,
+    "rpg": 5.0,
+    "apg": 2.9
+  },
+  {
+    "name": "Kelly Olynyk",
+    "team": "UTA",
+    "college": "Gonzaga",
+    "height": 210.82,
+    "weight": 108.86208,
+    "ppg": 12.5,
+    "rpg": 6.2,
+    "apg": 3.7
+  },
+  {
+    "name": "Kelly Oubre Jr.",
+    "team": "CHA",
+    "college": "Kansas",
+    "height": 198.12,
+    "weight": 92.079176,
+    "ppg": 20.3,
+    "rpg": 5.2,
+    "apg": 1.1
+  },
+  {
+    "name": "Kemba Walker",
+    "team": "DAL",
+    "college": "Connecticut",
+    "height": 182.88,
+    "weight": 83.46092800000001,
+    "ppg": 8.0,
+    "rpg": 1.8,
+    "apg": 2.1
+  },
+  {
+    "name": "Kendall Brown",
+    "team": "IND",
+    "college": "Baylor",
+    "height": 200.66,
+    "weight": 92.98636,
+    "ppg": 1.5,
+    "rpg": 1.0,
+    "apg": 0.5
+  },
+  {
+    "name": "Kendrick Nunn",
+    "team": "WAS",
+    "college": "Oakland",
+    "height": 190.5,
+    "weight": 86.18248,
+    "ppg": 7.1,
+    "rpg": 1.6,
+    "apg": 1.3
+  },
+  {
+    "name": "Kenneth Lofton Jr.",
+    "team": "MEM",
+    "college": "Louisiana Tech",
+    "height": 198.12,
+    "weight": 124.7378,
+    "ppg": 5.0,
+    "rpg": 2.1,
+    "apg": 0.8
+  },
+  {
+    "name": "Kyle Kuzma",
+    "team": "WAS",
+    "college": "Utah",
+    "height": 205.74,
+    "weight": 100.243832,
+    "ppg": 21.2,
+    "rpg": 7.2,
+    "apg": 3.7
+  },
+  {
+    "name": "Kyle Lowry",
+    "team": "MIA",
+    "college": "Villanova",
+    "height": 182.88,
+    "weight": 88.904032,
+    "ppg": 11.2,
+    "rpg": 4.1,
+    "apg": 5.1
+  },
+  {
+    "name": "Kyrie Irving",
+    "team": "DAL",
+    "college": "Duke",
+    "height": 187.96,
+    "weight": 88.45044,
+    "ppg": 27.1,
+    "rpg": 5.1,
+    "apg": 5.5
+  },
+  {
+    "name": "Mamadi Diakite",
+    "team": "CLE",
+    "college": "Virginia",
+    "height": 205.74,
+    "weight": 103.418976,
+    "ppg": 2.6,
+    "rpg": 1.4,
+    "apg": 0.4
+  },
+  {
+    "name": "MarJon Beauchamp",
+    "team": "MIL",
+    "college": "None",
+    "height": 200.66,
+    "weight": 90.264808,
+    "ppg": 5.1,
+    "rpg": 2.2,
+    "apg": 0.7
+  },
+  {
+    "name": "Marcus Morris Sr.",
+    "team": "LAC",
+    "college": "Kansas",
+    "height": 203.2,
+    "weight": 98.883056,
+    "ppg": 11.2,
+    "rpg": 4.0,
+    "apg": 1.8
+  },
+  {
+    "name": "Marcus Smart",
+    "team": "BOS",
+    "college": "Oklahoma State",
+    "height": 193.04,
+    "weight": 99.79024,
+    "ppg": 11.5,
+    "rpg": 3.1,
+    "apg": 6.3
+  },
+  {
+    "name": "Mark Williams",
+    "team": "CHA",
+    "college": "Duke",
+    "height": 213.36,
+    "weight": 108.86208,
+    "ppg": 9.0,
+    "rpg": 7.1,
+    "apg": 0.4
+  },
+  {
+    "name": "Markelle Fultz",
+    "team": "ORL",
+    "college": "Washington",
+    "height": 193.04,
+    "weight": 94.800728,
+    "ppg": 14.0,
+    "rpg": 3.9,
+    "apg": 5.7
+  },
+  {
+    "name": "Markieff Morris",
+    "team": "DAL",
+    "college": "Kansas",
+    "height": 205.74,
+    "weight": 111.13004,
+    "ppg": 3.8,
+    "rpg": 2.0,
+    "apg": 0.9
+  },
+  {
+    "name": "Marko Simonovic",
+    "team": "CHI",
+    "college": "None",
+    "height": 213.36,
+    "weight": 99.79024,
+    "ppg": 0.9,
+    "rpg": 0.3,
+    "apg": 0.0
+  },
+  {
+    "name": "Marvin Bagley III",
+    "team": "DET",
+    "college": "Duke",
+    "height": 208.28,
+    "weight": 106.59412,
+    "ppg": 12.0,
+    "rpg": 6.4,
+    "apg": 0.9
+  },
+  {
+    "name": "Mason Plumlee",
+    "team": "LAC",
+    "college": "Duke",
+    "height": 213.36,
+    "weight": 115.212368,
+    "ppg": 10.8,
+    "rpg": 8.9,
+    "apg": 3.1
+  },
+  {
+    "name": "Matisse Thybulle",
+    "team": "POR",
+    "college": "Washington",
+    "height": 195.58,
+    "weight": 91.171992,
+    "ppg": 4.1,
+    "rpg": 2.0,
+    "apg": 0.7
+  },
+  {
+    "name": "Matt Ryan",
+    "team": "MIN",
+    "college": "Tennessee-Chattanooga",
+    "height": 198.12,
+    "weight": 97.52228,
+    "ppg": 3.6,
+    "rpg": 0.8,
+    "apg": 0.5
+  },
+  {
+    "name": "Matthew Dellavedova",
+    "team": "SAC",
+    "college": "None",
+    "height": 190.5,
+    "weight": 90.7184,
+    "ppg": 1.5,
+    "rpg": 0.4,
+    "apg": 1.3
+  },
+  {
+    "name": "Max Christie",
+    "team": "LAL",
+    "college": "Michigan State",
+    "height": 195.58,
+    "weight": 86.18248,
+    "ppg": 3.1,
+    "rpg": 1.8,
+    "apg": 0.5
+  },
+  {
+    "name": "Max Strus",
+    "team": "MIA",
+    "college": "DePaul",
+    "height": 195.58,
+    "weight": 97.52228,
+    "ppg": 11.5,
+    "rpg": 3.2,
+    "apg": 2.1
+  },
+  {
+    "name": "Maxi Kleber",
+    "team": "DAL",
+    "college": "None",
+    "height": 208.28,
+    "weight": 108.86208,
+    "ppg": 5.9,
+    "rpg": 3.6,
+    "apg": 1.4
+  },
+  {
+    "name": "McKinley Wright IV",
+    "team": "DAL",
+    "college": "Colorado",
+    "height": 180.34,
+    "weight": 87.089664,
+    "ppg": 4.2,
+    "rpg": 1.7,
+    "apg": 2.1
+  },
+  {
+    "name": "Meyers Leonard",
+    "team": "MIL",
+    "college": "Illinois",
+    "height": 213.36,
+    "weight": 117.93392,
+    "ppg": 4.8,
+    "rpg": 3.8,
+    "apg": 0.1
+  },
+  {
+    "name": "Mfiondu Kabengele",
+    "team": "BOS",
+    "college": "Florida State",
+    "height": 208.28,
+    "weight": 113.398,
+    "ppg": 1.5,
+    "rpg": 2.5,
+    "apg": 0.0
+  },
+  {
+    "name": "Malik Monk",
+    "team": "SAC",
+    "college": "Kentucky",
+    "height": 190.5,
+    "weight": 90.7184,
+    "ppg": 13.5,
+    "rpg": 2.6,
+    "apg": 3.9
+  },
+  {
+    "name": "Malik Beasley",
+    "team": "LAL",
+    "college": "Florida State",
+    "height": 193.04,
+    "weight": 84.821704,
+    "ppg": 12.7,
+    "rpg": 3.5,
+    "apg": 1.5
+  },
+  {
+    "name": "Malcolm Hill",
+    "team": "CHI",
+    "college": "Illinois",
+    "height": 198.12,
+    "weight": 99.79024,
+    "ppg": 1.0,
+    "rpg": 0.6,
+    "apg": 0.0
+  },
+  {
+    "name": "Malcolm Brogdon",
+    "team": "BOS",
+    "college": "Virginia",
+    "height": 193.04,
+    "weight": 103.872568,
+    "ppg": 14.9,
+    "rpg": 4.2,
+    "apg": 3.7
+  },
+  {
+    "name": "LaMelo Ball",
+    "team": "CHA",
+    "college": "None",
+    "height": 200.66,
+    "weight": 81.64656,
+    "ppg": 23.3,
+    "rpg": 6.4,
+    "apg": 8.4
+  },
+  {
+    "name": "Lamar Stevens",
+    "team": "CLE",
+    "college": "Penn State",
+    "height": 198.12,
+    "weight": 104.32616,
+    "ppg": 5.3,
+    "rpg": 3.3,
+    "apg": 0.5
+  },
+  {
+    "name": "Landry Shamet",
+    "team": "PHX",
+    "college": "Wichita State",
+    "height": 193.04,
+    "weight": 86.18248,
+    "ppg": 8.7,
+    "rpg": 1.7,
+    "apg": 2.3
+  },
+  {
+    "name": "Larry Nance Jr.",
+    "team": "NOP",
+    "college": "Wyoming",
+    "height": 203.2,
+    "weight": 111.13004,
+    "ppg": 6.8,
+    "rpg": 5.4,
+    "apg": 1.8
+  },
+  {
+    "name": "Lauri Markkanen",
+    "team": "UTA",
+    "college": "Arizona",
+    "height": 213.36,
+    "weight": 108.86208,
+    "ppg": 25.6,
+    "rpg": 8.6,
+    "apg": 1.9
+  },
+  {
+    "name": "LeBron James",
+    "team": "LAL",
+    "college": "None",
+    "height": 205.74,
+    "weight": 113.398,
+    "ppg": 28.9,
+    "rpg": 8.3,
+    "apg": 6.8
+  },
+  {
+    "name": "Leandro Bolmaro",
+    "team": "UTA",
+    "college": "None",
+    "height": 198.12,
+    "weight": 90.7184,
+    "ppg": 0.4,
+    "rpg": 0.5,
+    "apg": 0.5
+  },
+  {
+    "name": "Lester Quinones",
+    "team": "GSW",
+    "college": "Memphis",
+    "height": 193.04,
+    "weight": 94.347136,
+    "ppg": 2.5,
+    "rpg": 0.8,
+    "apg": 0.5
+  },
+  {
+    "name": "Lindy Waters III",
+    "team": "OKC",
+    "college": "Oklahoma State",
+    "height": 198.12,
+    "weight": 95.25432,
+    "ppg": 5.2,
+    "rpg": 1.8,
+    "apg": 0.7
+  },
+  {
+    "name": "Julian Champagnie",
+    "team": "SAS",
+    "college": "St. John's",
+    "height": 200.66,
+    "weight": 98.429464,
+    "ppg": 9.7,
+    "rpg": 3.5,
+    "apg": 0.6
+  },
+  {
+    "name": "Lonnie Walker IV",
+    "team": "LAL",
+    "college": "Miami",
+    "height": 193.04,
+    "weight": 92.532768,
+    "ppg": 11.7,
+    "rpg": 1.9,
+    "apg": 1.1
+  },
+  {
+    "name": "Luguentz Dort",
+    "team": "OKC",
+    "college": "Arizona State",
+    "height": 193.04,
+    "weight": 99.79024,
+    "ppg": 13.7,
+    "rpg": 4.6,
+    "apg": 2.1
+  },
+  {
+    "name": "Luka Doncic",
+    "team": "DAL",
+    "college": "None",
+    "height": 200.66,
+    "weight": 104.32616,
+    "ppg": 32.4,
+    "rpg": 8.6,
+    "apg": 8.0
+  },
+  {
+    "name": "Luka Garza",
+    "team": "MIN",
+    "college": "Iowa",
+    "height": 208.28,
+    "weight": 110.222856,
+    "ppg": 6.5,
+    "rpg": 2.3,
+    "apg": 0.6
+  },
+  {
+    "name": "Luka Samanic",
+    "team": "UTA",
+    "college": "None",
+    "height": 208.28,
+    "weight": 102.965384,
+    "ppg": 9.9,
+    "rpg": 4.3,
+    "apg": 2.1
+  },
+  {
+    "name": "Luke Kennard",
+    "team": "MEM",
+    "college": "Duke",
+    "height": 195.58,
+    "weight": 93.439952,
+    "ppg": 9.3,
+    "rpg": 2.7,
+    "apg": 1.5
+  },
+  {
+    "name": "Luke Kornet",
+    "team": "BOS",
+    "college": "Vanderbilt",
+    "height": 218.44,
+    "weight": 113.398,
+    "ppg": 3.8,
+    "rpg": 2.9,
+    "apg": 0.8
+  },
+  {
+    "name": "Mac McClung",
+    "team": "PHI",
+    "college": "Texas Tech",
+    "height": 187.96,
+    "weight": 83.91452,
+    "ppg": 12.5,
+    "rpg": 5.0,
+    "apg": 4.5
+  },
+  {
+    "name": "Malachi Flynn",
+    "team": "TOR",
+    "college": "San Diego State",
+    "height": 185.42,
+    "weight": 79.3786,
+    "ppg": 4.6,
+    "rpg": 1.4,
+    "apg": 1.3
+  },
+  {
+    "name": "Malaki Branham",
+    "team": "SAS",
+    "college": "Ohio State",
+    "height": 193.04,
+    "weight": 81.64656,
+    "ppg": 10.2,
+    "rpg": 2.7,
+    "apg": 1.9
+  },
+  {
+    "name": "Louis King",
+    "team": "PHI",
+    "college": "Oregon",
+    "height": 200.66,
+    "weight": 92.98636,
+    "ppg": 20.0,
+    "rpg": 4.0,
+    "apg": 2.0
+  },
+  {
+    "name": "Juancho Hernangomez",
+    "team": "TOR",
+    "college": "None",
+    "height": 205.74,
+    "weight": 97.068688,
+    "ppg": 2.9,
+    "rpg": 2.9,
+    "apg": 0.6
+  },
+  {
+    "name": "Juan Toscano-Anderson",
+    "team": "UTA",
+    "college": "Marquette",
+    "height": 198.12,
+    "weight": 94.800728,
+    "ppg": 3.0,
+    "rpg": 2.4,
+    "apg": 1.3
+  },
+  {
+    "name": "Jrue Holiday",
+    "team": "MIL",
+    "college": "UCLA",
+    "height": 195.58,
+    "weight": 92.98636,
+    "ppg": 19.3,
+    "rpg": 5.1,
+    "apg": 7.4
+  },
+  {
+    "name": "Jalen McDaniels",
+    "team": "PHI",
+    "college": "San Diego State",
+    "height": 205.74,
+    "weight": 92.98636,
+    "ppg": 9.4,
+    "rpg": 4.3,
+    "apg": 1.6
+  },
+  {
+    "name": "Jalen Smith",
+    "team": "IND",
+    "college": "Maryland",
+    "height": 205.74,
+    "weight": 97.52228,
+    "ppg": 9.4,
+    "rpg": 5.8,
+    "apg": 1.0
+  },
+  {
+    "name": "Jalen Suggs",
+    "team": "ORL",
+    "college": "Gonzaga",
+    "height": 195.58,
+    "weight": 92.98636,
+    "ppg": 9.9,
+    "rpg": 3.0,
+    "apg": 2.9
+  },
+  {
+    "name": "Jalen Williams",
+    "team": "OKC",
+    "college": "Santa Clara",
+    "height": 195.58,
+    "weight": 95.707912,
+    "ppg": 14.1,
+    "rpg": 4.5,
+    "apg": 3.3
+  },
+  {
+    "name": "Jamal Cain",
+    "team": "MIA",
+    "college": "Oakland",
+    "height": 198.12,
+    "weight": 86.636072,
+    "ppg": 5.4,
+    "rpg": 2.9,
+    "apg": 0.7
+  },
+  {
+    "name": "Jamal Murray",
+    "team": "DEN",
+    "college": "Kentucky",
+    "height": 193.04,
+    "weight": 97.52228,
+    "ppg": 20.0,
+    "rpg": 4.0,
+    "apg": 6.2
+  },
+  {
+    "name": "Jamaree Bouyea",
+    "team": "WAS",
+    "college": "San Francisco",
+    "height": 187.96,
+    "weight": 81.64656,
+    "ppg": 3.0,
+    "rpg": 1.2,
+    "apg": 0.8
+  },
+  {
+    "name": "James Bouknight",
+    "team": "CHA",
+    "college": "Connecticut",
+    "height": 193.04,
+    "weight": 86.18248,
+    "ppg": 5.6,
+    "rpg": 2.1,
+    "apg": 1.2
+  },
+  {
+    "name": "James Harden",
+    "team": "PHI",
+    "college": "Arizona State",
+    "height": 195.58,
+    "weight": 99.79024,
+    "ppg": 21.0,
+    "rpg": 6.1,
+    "apg": 10.7
+  },
+  {
+    "name": "James Johnson",
+    "team": "IND",
+    "college": "Wake Forest",
+    "height": 200.66,
+    "weight": 108.86208,
+    "ppg": 2.8,
+    "rpg": 1.7,
+    "apg": 0.8
+  },
+  {
+    "name": "James Wiseman",
+    "team": "DET",
+    "college": "Memphis",
+    "height": 213.36,
+    "weight": 108.86208,
+    "ppg": 10.0,
+    "rpg": 5.9,
+    "apg": 0.7
+  },
+  {
+    "name": "Jared Butler",
+    "team": "OKC",
+    "college": "Baylor",
+    "height": 190.5,
+    "weight": 87.543256,
+    "ppg": 6.2,
+    "rpg": 0.7,
+    "apg": 1.3
+  },
+  {
+    "name": "Jared Rhoden",
+    "team": "DET",
+    "college": "Seton Hall",
+    "height": 198.12,
+    "weight": 95.25432,
+    "ppg": 3.2,
+    "rpg": 2.6,
+    "apg": 0.3
+  },
+  {
+    "name": "Jaren Jackson Jr.",
+    "team": "MEM",
+    "college": "Michigan State",
+    "height": 208.28,
+    "weight": 109.769264,
+    "ppg": 18.6,
+    "rpg": 6.8,
+    "apg": 1.0
+  },
+  {
+    "name": "Jarred Vanderbilt",
+    "team": "LAL",
+    "college": "Kentucky",
+    "height": 203.2,
+    "weight": 97.068688,
+    "ppg": 7.9,
+    "rpg": 7.5,
+    "apg": 2.4
+  },
+  {
+    "name": "Jarrell Brantley",
+    "team": "UTA",
+    "college": "College of Charleston",
+    "height": 195.58,
+    "weight": 113.398,
+    "ppg": 5.5,
+    "rpg": 1.5,
+    "apg": 0.8
+  },
+  {
+    "name": "Jarrett Allen",
+    "team": "CLE",
+    "college": "Texas",
+    "height": 205.74,
+    "weight": 110.222856,
+    "ppg": 14.3,
+    "rpg": 9.8,
+    "apg": 1.7
+  },
+  {
+    "name": "Jarrett Culver",
+    "team": "ATL",
+    "college": "Texas Tech",
+    "height": 198.12,
+    "weight": 88.45044,
+    "ppg": 4.4,
+    "rpg": 3.8,
+    "apg": 0.6
+  },
+  {
+    "name": "Jason Preston",
+    "team": "LAC",
+    "college": "Ohio",
+    "height": 190.5,
+    "weight": 82.10015200000001,
+    "ppg": 2.9,
+    "rpg": 1.6,
+    "apg": 1.9
+  },
+  {
+    "name": "Jalen Johnson",
+    "team": "ATL",
+    "college": "Duke",
+    "height": 203.2,
+    "weight": 99.336648,
+    "ppg": 5.6,
+    "rpg": 4.0,
+    "apg": 1.2
+  },
+  {
+    "name": "Jalen Green",
+    "team": "HOU",
+    "college": "None",
+    "height": 193.04,
+    "weight": 84.368112,
+    "ppg": 22.1,
+    "rpg": 3.7,
+    "apg": 3.7
+  },
+  {
+    "name": "Jalen Duren",
+    "team": "DET",
+    "college": "Memphis",
+    "height": 210.82,
+    "weight": 113.398,
+    "ppg": 9.1,
+    "rpg": 8.9,
+    "apg": 1.1
+  },
+  {
+    "name": "Jalen Brunson",
+    "team": "NYK",
+    "college": "Villanova",
+    "height": 187.96,
+    "weight": 86.18248,
+    "ppg": 24.0,
+    "rpg": 3.5,
+    "apg": 6.2
+  },
+  {
+    "name": "Isaiah Todd",
+    "team": "WAS",
+    "college": "None",
+    "height": 205.74,
+    "weight": 99.336648,
+    "ppg": 1.5,
+    "rpg": 2.0,
+    "apg": 0.7
+  },
+  {
+    "name": "Ish Smith",
+    "team": "DEN",
+    "college": "Wake Forest",
+    "height": 182.88,
+    "weight": 79.3786,
+    "ppg": 2.5,
+    "rpg": 1.3,
+    "apg": 2.3
+  },
+  {
+    "name": "Ish Wainright",
+    "team": "PHX",
+    "college": "Baylor",
+    "height": 195.58,
+    "weight": 113.398,
+    "ppg": 4.2,
+    "rpg": 2.3,
+    "apg": 0.9
+  },
+  {
+    "name": "Ivica Zubac",
+    "team": "LAC",
+    "college": "None",
+    "height": 213.36,
+    "weight": 108.86208,
+    "ppg": 10.8,
+    "rpg": 9.9,
+    "apg": 1.0
+  },
+  {
+    "name": "JD Davison",
+    "team": "BOS",
+    "college": "Alabama",
+    "height": 185.42,
+    "weight": 88.45044,
+    "ppg": 1.6,
+    "rpg": 0.8,
+    "apg": 0.9
+  },
+  {
+    "name": "JT Thor",
+    "team": "CHA",
+    "college": "Auburn",
+    "height": 205.74,
+    "weight": 92.079176,
+    "ppg": 3.8,
+    "rpg": 2.2,
+    "apg": 0.5
+  },
+  {
+    "name": "Ja Morant",
+    "team": "MEM",
+    "college": "Murray State",
+    "height": 187.96,
+    "weight": 78.92500799999999,
+    "ppg": 26.2,
+    "rpg": 5.9,
+    "apg": 8.1
+  },
+  {
+    "name": "JaVale McGee",
+    "team": "DAL",
+    "college": "Nevada",
+    "height": 213.36,
+    "weight": 122.46984,
+    "ppg": 4.4,
+    "rpg": 2.5,
+    "apg": 0.3
+  },
+  {
+    "name": "Jabari Smith Jr.",
+    "team": "HOU",
+    "college": "Auburn",
+    "height": 210.82,
+    "weight": 99.79024,
+    "ppg": 12.8,
+    "rpg": 7.2,
+    "apg": 1.3
+  },
+  {
+    "name": "Javonte Green",
+    "team": "CHI",
+    "college": "Radford",
+    "height": 195.58,
+    "weight": 92.98636,
+    "ppg": 5.2,
+    "rpg": 2.8,
+    "apg": 0.7
+  },
+  {
+    "name": "Jabari Walker",
+    "team": "POR",
+    "college": "Colorado",
+    "height": 200.66,
+    "weight": 90.7184,
+    "ppg": 3.9,
+    "rpg": 2.3,
+    "apg": 0.6
+  },
+  {
+    "name": "Jacob Gilyard",
+    "team": "MEM",
+    "college": "Richmond",
+    "height": 175.26,
+    "weight": 72.57472,
+    "ppg": 3.0,
+    "rpg": 4.0,
+    "apg": 7.0
+  },
+  {
+    "name": "Jaden Hardy",
+    "team": "DAL",
+    "college": "None",
+    "height": 190.5,
+    "weight": 89.811216,
+    "ppg": 8.8,
+    "rpg": 1.9,
+    "apg": 1.4
+  },
+  {
+    "name": "Jaden Ivey",
+    "team": "DET",
+    "college": "Purdue",
+    "height": 193.04,
+    "weight": 88.45044,
+    "ppg": 16.3,
+    "rpg": 3.9,
+    "apg": 5.2
+  },
+  {
+    "name": "Jaden McDaniels",
+    "team": "MIN",
+    "college": "Washington",
+    "height": 205.74,
+    "weight": 83.91452,
+    "ppg": 12.1,
+    "rpg": 3.9,
+    "apg": 1.9
+  },
+  {
+    "name": "Jaden Springer",
+    "team": "PHI",
+    "college": "Tennessee",
+    "height": 193.04,
+    "weight": 91.625584,
+    "ppg": 2.6,
+    "rpg": 0.9,
+    "apg": 0.5
+  },
+  {
+    "name": "Jae Crowder",
+    "team": "MIL",
+    "college": "Marquette",
+    "height": 198.12,
+    "weight": 106.59412,
+    "ppg": 6.9,
+    "rpg": 3.8,
+    "apg": 1.5
+  },
+  {
+    "name": "Jae'Sean Tate",
+    "team": "HOU",
+    "college": "Ohio State",
+    "height": 195.58,
+    "weight": 104.32616,
+    "ppg": 9.1,
+    "rpg": 3.8,
+    "apg": 2.7
+  },
+  {
+    "name": "Jake LaRavia",
+    "team": "MEM",
+    "college": "Wake Forest",
+    "height": 200.66,
+    "weight": 106.59412,
+    "ppg": 3.0,
+    "rpg": 1.8,
+    "apg": 0.6
+  },
+  {
+    "name": "Jakob Poeltl",
+    "team": "TOR",
+    "college": "Utah",
+    "height": 215.9,
+    "weight": 111.13004,
+    "ppg": 12.5,
+    "rpg": 9.1,
+    "apg": 2.7
+  },
+  {
+    "name": "Jack White",
+    "team": "DEN",
+    "college": "Duke",
+    "height": 200.66,
+    "weight": 102.0582,
+    "ppg": 1.2,
+    "rpg": 1.0,
+    "apg": 0.2
+  },
+  {
+    "name": "Isaiah Roby",
+    "team": "NYK",
+    "college": "Nebraska",
+    "height": 203.2,
+    "weight": 104.32616,
+    "ppg": 4.1,
+    "rpg": 2.6,
+    "apg": 0.9
+  },
+  {
+    "name": "Jaxson Hayes",
+    "team": "NOP",
+    "college": "Texas",
+    "height": 213.36,
+    "weight": 99.79024,
+    "ppg": 5.0,
+    "rpg": 2.8,
+    "apg": 0.7
+  },
+  {
+    "name": "Jay Scrubb",
+    "team": "ORL",
+    "college": "John A. Logan",
+    "height": 195.58,
+    "weight": 99.79024,
+    "ppg": 6.5,
+    "rpg": 3.0,
+    "apg": 0.5
+  },
+  {
+    "name": "Jonas Valanciunas",
+    "team": "NOP",
+    "college": "None",
+    "height": 210.82,
+    "weight": 120.20188,
+    "ppg": 14.1,
+    "rpg": 10.2,
+    "apg": 1.8
+  },
+  {
+    "name": "Jonathan Isaac",
+    "team": "ORL",
+    "college": "Florida State",
+    "height": 208.28,
+    "weight": 104.32616,
+    "ppg": 5.0,
+    "rpg": 4.0,
+    "apg": 0.5
+  },
+  {
+    "name": "Jonathan Kuminga",
+    "team": "GSW",
+    "college": "None",
+    "height": 200.66,
+    "weight": 102.0582,
+    "ppg": 9.9,
+    "rpg": 3.4,
+    "apg": 1.9
+  },
+  {
+    "name": "Jordan Clarkson",
+    "team": "UTA",
+    "college": "Missouri",
+    "height": 195.58,
+    "weight": 87.996848,
+    "ppg": 20.8,
+    "rpg": 4.0,
+    "apg": 4.4
+  },
+  {
+    "name": "Jordan Goodwin",
+    "team": "WAS",
+    "college": "St. Louis",
+    "height": 190.5,
+    "weight": 90.7184,
+    "ppg": 6.6,
+    "rpg": 3.3,
+    "apg": 2.7
+  },
+  {
+    "name": "Jordan Hall",
+    "team": "SAS",
+    "college": "St. Joseph's (PA)",
+    "height": 200.66,
+    "weight": 97.52228,
+    "ppg": 3.1,
+    "rpg": 1.3,
+    "apg": 1.2
+  },
+  {
+    "name": "Jordan McLaughlin",
+    "team": "MIN",
+    "college": "Southern California",
+    "height": 182.88,
+    "weight": 83.91452,
+    "ppg": 3.7,
+    "rpg": 1.4,
+    "apg": 3.4
+  },
+  {
+    "name": "Jordan Nwora",
+    "team": "IND",
+    "college": "Louisville",
+    "height": 205.74,
+    "weight": 102.0582,
+    "ppg": 8.7,
+    "rpg": 3.7,
+    "apg": 1.4
+  },
+  {
+    "name": "Jordan Poole",
+    "team": "GSW",
+    "college": "Michigan",
+    "height": 193.04,
+    "weight": 87.996848,
+    "ppg": 20.4,
+    "rpg": 2.7,
+    "apg": 4.5
+  },
+  {
+    "name": "Jordan Schakel",
+    "team": "WAS",
+    "college": "San Diego State",
+    "height": 198.12,
+    "weight": 90.7184,
+    "ppg": 1.5,
+    "rpg": 0.0,
+    "apg": 0.5
+  },
+  {
+    "name": "Jose Alvarado",
+    "team": "NOP",
+    "college": "Georgia Tech",
+    "height": 182.88,
+    "weight": 81.19296800000001,
+    "ppg": 9.0,
+    "rpg": 2.3,
+    "apg": 3.0
+  },
+  {
+    "name": "Josh Christopher",
+    "team": "HOU",
+    "college": "Arizona State",
+    "height": 193.04,
+    "weight": 97.52228,
+    "ppg": 5.8,
+    "rpg": 1.1,
+    "apg": 1.1
+  },
+  {
+    "name": "Josh Giddey",
+    "team": "OKC",
+    "college": "None",
+    "height": 203.2,
+    "weight": 97.975872,
+    "ppg": 16.6,
+    "rpg": 7.9,
+    "apg": 6.2
+  },
+  {
+    "name": "Josh Green",
+    "team": "DAL",
+    "college": "Arizona",
+    "height": 200.66,
+    "weight": 90.7184,
+    "ppg": 9.1,
+    "rpg": 3.0,
+    "apg": 1.7
+  },
+  {
+    "name": "Josh Hart",
+    "team": "NYK",
+    "college": "Villanova",
+    "height": 193.04,
+    "weight": 97.52228,
+    "ppg": 9.8,
+    "rpg": 7.8,
+    "apg": 3.8
+  },
+  {
+    "name": "Josh Minott",
+    "team": "MIN",
+    "college": "Memphis",
+    "height": 203.2,
+    "weight": 92.98636,
+    "ppg": 3.1,
+    "rpg": 1.7,
+    "apg": 0.3
+  },
+  {
+    "name": "Josh Okogie",
+    "team": "PHX",
+    "college": "Georgia Tech",
+    "height": 193.04,
+    "weight": 96.615096,
+    "ppg": 7.3,
+    "rpg": 3.5,
+    "apg": 1.5
+  },
+  {
+    "name": "Josh Richardson",
+    "team": "NOP",
+    "college": "Tennessee",
+    "height": 198.12,
+    "weight": 90.7184,
+    "ppg": 10.1,
+    "rpg": 2.7,
+    "apg": 2.7
+  },
+  {
+    "name": "Joshua Primo",
+    "team": "SAS",
+    "college": "Alabama",
+    "height": 198.12,
+    "weight": 85.728888,
+    "ppg": 7.0,
+    "rpg": 3.3,
+    "apg": 4.5
+  },
+  {
+    "name": "Johnny Juzang",
+    "team": "UTA",
+    "college": "UCLA",
+    "height": 198.12,
+    "weight": 94.800728,
+    "ppg": 4.8,
+    "rpg": 2.2,
+    "apg": 0.4
+  },
+  {
+    "name": "Johnny Davis",
+    "team": "WAS",
+    "college": "Wisconsin",
+    "height": 193.04,
+    "weight": 88.45044,
+    "ppg": 5.8,
+    "rpg": 2.3,
+    "apg": 1.0
+  },
+  {
+    "name": "John Wall",
+    "team": "LAC",
+    "college": "Kentucky",
+    "height": 190.5,
+    "weight": 95.25432,
+    "ppg": 11.4,
+    "rpg": 2.7,
+    "apg": 5.2
+  },
+  {
+    "name": "John Konchar",
+    "team": "MEM",
+    "college": "Indiana-Purdue Fort Wayne",
+    "height": 195.58,
+    "weight": 95.25432,
+    "ppg": 5.1,
+    "rpg": 4.3,
+    "apg": 1.4
+  },
+  {
+    "name": "Jaylen Brown",
+    "team": "BOS",
+    "college": "California",
+    "height": 198.12,
+    "weight": 101.151016,
+    "ppg": 26.6,
+    "rpg": 6.9,
+    "apg": 3.5
+  },
+  {
+    "name": "Jaylen Nowell",
+    "team": "MIN",
+    "college": "Washington",
+    "height": 193.04,
+    "weight": 91.171992,
+    "ppg": 10.8,
+    "rpg": 2.6,
+    "apg": 2.0
+  },
+  {
+    "name": "Jaylin Williams",
+    "team": "OKC",
+    "college": "Arkansas",
+    "height": 205.74,
+    "weight": 108.86208,
+    "ppg": 5.9,
+    "rpg": 4.9,
+    "apg": 1.6
+  },
+  {
+    "name": "Jayson Tatum",
+    "team": "BOS",
+    "college": "Duke",
+    "height": 203.2,
+    "weight": 95.25432,
+    "ppg": 30.1,
+    "rpg": 8.8,
+    "apg": 4.6
+  },
+  {
+    "name": "Jeenathan Williams",
+    "team": "POR",
+    "college": "Buffalo",
+    "height": 195.58,
+    "weight": 92.98636,
+    "ppg": 10.6,
+    "rpg": 3.0,
+    "apg": 2.0
+  },
+  {
+    "name": "Jeff Dowtin Jr.",
+    "team": "TOR",
+    "college": "Rhode Island",
+    "height": 190.5,
+    "weight": 80.28578399999998,
+    "ppg": 2.4,
+    "rpg": 0.9,
+    "apg": 1.2
+  },
+  {
+    "name": "Jeff Green",
+    "team": "DEN",
+    "college": "Georgetown",
+    "height": 203.2,
+    "weight": 106.59412,
+    "ppg": 7.8,
+    "rpg": 2.6,
+    "apg": 1.2
+  },
+  {
+    "name": "Jerami Grant",
+    "team": "POR",
+    "college": "Syracuse",
+    "height": 203.2,
+    "weight": 95.25432,
+    "ppg": 20.5,
+    "rpg": 4.5,
+    "apg": 2.4
+  },
+  {
+    "name": "Jeremiah Robinson-Earl",
+    "team": "OKC",
+    "college": "Villanova",
+    "height": 203.2,
+    "weight": 108.86208,
+    "ppg": 6.8,
+    "rpg": 4.2,
+    "apg": 1.0
+  },
+  {
+    "name": "Jay Huff",
+    "team": "WAS",
+    "college": "Virginia",
+    "height": 215.9,
+    "weight": 108.86208,
+    "ppg": 7.3,
+    "rpg": 3.0,
+    "apg": 1.4
+  },
+  {
+    "name": "Jeremy Sochan",
+    "team": "SAS",
+    "college": "Baylor",
+    "height": 203.2,
+    "weight": 104.32616,
+    "ppg": 11.0,
+    "rpg": 5.3,
+    "apg": 2.5
+  },
+  {
+    "name": "Jevon Carter",
+    "team": "MIL",
+    "college": "West Virginia",
+    "height": 185.42,
+    "weight": 90.7184,
+    "ppg": 8.0,
+    "rpg": 2.5,
+    "apg": 2.4
+  },
+  {
+    "name": "Jimmy Butler",
+    "team": "MIA",
+    "college": "Marquette",
+    "height": 200.66,
+    "weight": 104.32616,
+    "ppg": 22.9,
+    "rpg": 5.9,
+    "apg": 5.3
+  },
+  {
+    "name": "Jock Landale",
+    "team": "PHX",
+    "college": "St. Mary's",
+    "height": 210.82,
+    "weight": 115.66596,
+    "ppg": 6.6,
+    "rpg": 4.1,
+    "apg": 1.0
+  },
+  {
+    "name": "Joe Harris",
+    "team": "BKN",
+    "college": "Virginia",
+    "height": 198.12,
+    "weight": 99.79024,
+    "ppg": 7.6,
+    "rpg": 2.2,
+    "apg": 1.4
+  },
+  {
+    "name": "Joe Ingles",
+    "team": "MIL",
+    "college": "None",
+    "height": 205.74,
+    "weight": 99.79024,
+    "ppg": 6.9,
+    "rpg": 2.8,
+    "apg": 3.3
+  },
+  {
+    "name": "Joe Wieskamp",
+    "team": "TOR",
+    "college": "Iowa",
+    "height": 198.12,
+    "weight": 92.98636,
+    "ppg": 1.0,
+    "rpg": 0.4,
+    "apg": 0.3
+  },
+  {
+    "name": "Joel Embiid",
+    "team": "PHI",
+    "college": "Kansas",
+    "height": 213.36,
+    "weight": 127.00576,
+    "ppg": 33.1,
+    "rpg": 10.2,
+    "apg": 4.2
+  },
+  {
+    "name": "John Butler Jr.",
+    "team": "POR",
+    "college": "Florida State",
+    "height": 213.36,
+    "weight": 86.18248,
+    "ppg": 2.4,
+    "rpg": 0.9,
+    "apg": 0.6
+  },
+  {
+    "name": "John Collins",
+    "team": "ATL",
+    "college": "Wake Forest",
+    "height": 205.74,
+    "weight": 102.511792,
+    "ppg": 13.1,
+    "rpg": 6.5,
+    "apg": 1.2
+  },
+  {
+    "name": "Jericho Sims",
+    "team": "NYK",
+    "college": "Texas",
+    "height": 208.28,
+    "weight": 113.398,
+    "ppg": 3.4,
+    "rpg": 4.7,
+    "apg": 0.5
+  },
+  {
+    "name": "JaMychal Green",
+    "team": "GSW",
+    "college": "Alabama",
+    "height": 205.74,
+    "weight": 102.965384,
+    "ppg": 6.4,
+    "rpg": 3.6,
+    "apg": 0.9
+  }
+]

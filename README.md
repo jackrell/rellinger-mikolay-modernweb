@@ -1,4 +1,4 @@
-# React + Vite Yoga App
+# React + Vite NBA Team Builder App
 
 ## Jack Rellinger, Danny Mikolay
 
