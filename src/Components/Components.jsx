@@ -12,6 +12,7 @@ import EditTeam from "./Manage/EditTeam";
 import CreateTeam from "./Manage/CreateTeam";
 import PlayerProfile from "./View/PlayerProfile";
 import Auth from "./Auth/Auth";
+import SimulateGame from "./Simulate/GamePreview";
 
 // Route protection and utility components
 import ProtectedRoute from "../Common/ProtectedRoute";
@@ -28,8 +29,9 @@ export default function Components() {
         <Route path="/" element={<HomePage />} />
         <Route path="/view-teams" element={<ViewTeams />} />
         <Route path="/team/:teamId" element={<TeamDetails />} />
-        <Route path="/player/:playerId" element={<PlayerProfile />} /> {/* Player profile route */}
+        <Route path="/player/:playerId" element={<PlayerProfile />} />
         <Route path="/auth" element={<Auth />} />
+        <Route path="/simulate" element={<SimulateGame />} /> {/* ✅ NEW ROUTE */}
 
         {/* Protected Routes - only accessible to authenticated users */}
         <Route element={<ProtectedRoute />}>
