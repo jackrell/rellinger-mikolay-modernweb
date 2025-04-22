@@ -35,25 +35,32 @@ app.post("/api/simulate-game", async (req, res) => {
 
   const formatRoster = (team) => {
     const name = team.name || "Unknown Team";
-    const createdBy = team.createdByUsername || "Unknown";
     const players = (team.players || []).map((p, i) => `${i + 1}. ${p.name}`).join("\n");
-    return `🏀 ${name} (created by ${createdBy})\n${players}`;
+    return `${name}\n${players}`;
   };
 
   const prompt = `
-You are simulating a fictional 5v5 NBA game between two user-created five man teams. Respond in the following structured format:
+You are simulating a fictional 5v5 NBA game between two user-created lineups. Respond in this exact JSON format, and nothing else:
 
-1. Final Score: [Team A Name] [Score A] - [Score B] [Team B Name]
-2. MVP: [Player Name] — [Statline, e.g. "32 PTS, 10 REB, 7 AST"]
-3. Summary: [3–5 sentences describing the flow and key moments of the game]
+\`\`\`json
+{
+  "teamA": "Team A Name",
+  "teamB": "Team B Name",
+  "scoreA": 120,
+  "scoreB": 115,
+  "mvp": "Player Name — 32 PTS, 10 REB, 7 AST",
+  "summary": "A few fun sentences describing the game’s flow and standout moments."
+}
+\`\`\`
+
+Make the summary exciting and dramatic. Do NOT include commentary or explanation before or after the JSON block. Player stats are there as a guide, players can often over or under perform their stat projections. The MVPs can vary, they can be, but are not always the best players. Upsets can happen, but reasonably. There are no bench players so do not mention the bench.
 
 --- TEAM A ---
 ${formatRoster(teamA)}
 
 --- TEAM B ---
 ${formatRoster(teamB)}
-
-Don't say anything about who created the team. Make it interesting, there's always a chance for an upset.`;
+`;
 
   try {
     const response = await fetch("https://api.together.xyz/v1/chat/completions", {
@@ -79,27 +86,19 @@ Don't say anything about who created the team. Make it interesting, there's alwa
     const data = await response.json();
     const aiOutput = data.choices[0].message.content;
 
-    // Extract Final Score
-    const scoreRegex = /Final Score:\s*(.+?)\s+(\d+)\s*-\s*(\d+)\s+(.+)/i;
-    const scoreMatch = aiOutput.match(scoreRegex);
+    // Extract JSON block from response using regex
+    const jsonMatch = aiOutput.match(/```json\s*([\s\S]*?)\s*```/i);
+    if (!jsonMatch) {
+      throw new Error("No valid JSON block found in AI response.");
+    }
 
-    const mvpMatch = aiOutput.match(/MVP:\s*(.+)/i);
-    const summaryMatch = aiOutput.match(/Summary:\s*([\s\S]*)/i);
+    const parsed = JSON.parse(jsonMatch[1]);
 
-    const result = {
-      teamA: scoreMatch ? scoreMatch[1].trim() : "Team A",
-      scoreA: scoreMatch ? parseInt(scoreMatch[2]) : "N/A",
-      scoreB: scoreMatch ? parseInt(scoreMatch[3]) : "N/A",
-      teamB: scoreMatch ? scoreMatch[4].trim() : "Team B",
-      mvp: mvpMatch ? mvpMatch[1].trim() : "N/A",
-      summary: summaryMatch ? summaryMatch[1].trim() : "N/A"
-    };
-
-    console.log("✅ Parsed Simulation Result:", result);
-    res.json({ result });
+    console.log("✅ Parsed Simulation Result:", parsed);
+    res.json({ result: parsed });
   } catch (err) {
-    console.error("❌ Simulation error:", err);
-    res.status(500).json({ error: "Failed to simulate game." });
+    console.error("❌ Failed to parse JSON response:", err);
+    res.status(500).json({ error: "Invalid JSON format returned from AI." });
   }
 });
 
