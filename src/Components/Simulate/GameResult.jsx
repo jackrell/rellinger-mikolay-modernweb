@@ -87,7 +87,29 @@ export default function GameResult() {
         <p>{result.summary}</p>
       </div>
 
-      <div style={{ marginTop: "2rem" }}>
+      {/* Action Buttons */}
+      <div style={{ marginTop: "2rem", display: "flex", justifyContent: "center", gap: "1rem" }}>
+        {/* View Box Score Button */}
+        <button
+          onClick={() => navigate("/simulate/boxscore", {
+            state: {
+              boxScore: result.boxScore,
+              teamA: result.teamA,
+              teamB: result.teamB
+            }
+          })}
+          style={{
+            padding: "0.5rem 1rem",
+            backgroundColor: "#fff",
+            border: "1px solid black",
+            cursor: "pointer",
+            borderRadius: "4px"
+          }}
+        >
+          📋 View Full Box Score
+        </button>
+
+        {/* Back to Teams Button */}
         <button
           onClick={() => navigate("/view-teams")}
           style={{

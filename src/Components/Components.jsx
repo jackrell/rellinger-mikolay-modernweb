@@ -14,6 +14,7 @@ import PlayerProfile from "./View/PlayerProfile";
 import Auth from "./Auth/Auth";
 import SimulateGame from "./Simulate/GamePreview";
 import GameResult from "./Simulate/GameResult";
+import BoxScore from "./Simulate/BoxScore";
 
 // Route protection and utility components
 import ProtectedRoute from "../Common/ProtectedRoute";
@@ -33,7 +34,8 @@ export default function Components() {
         <Route path="/player/:playerId" element={<PlayerProfile />} />
         <Route path="/auth" element={<Auth />} />
         <Route path="/simulate" element={<SimulateGame />} />
-        <Route path="/simulate/result" element={<GameResult />} /> {/* ✅ NEW ROUTE */}
+        <Route path="/simulate/result" element={<GameResult />} />
+        <Route path="/simulate/boxscore" element={<BoxScore />} /> 
 
         {/* Protected Routes - only accessible to authenticated users */}
         <Route element={<ProtectedRoute />}>

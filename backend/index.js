@@ -15,7 +15,6 @@ app.use(cors({
   methods: ["GET", "POST", "OPTIONS"],
   credentials: true
 }));
-
 app.use(express.json());
 
 // Test route
@@ -48,23 +47,36 @@ app.post("/api/simulate-game", async (req, res) => {
 
   const includeMatchupInstructions = hasPositions(teamA) && hasPositions(teamB);
 
-const prompt = `
-You are simulating a fictional 5v5 NBA game between two user-created lineups. Respond in this exact JSON format, and nothing else:
+  const prompt = `
+You are simulating a fictional 5v5 NBA game between two user-created starting lineups.
 
-\`\`\`json
+Respond ONLY in the following strict JSON format (NO commentary, NO markdown, NO explanations):
+
 {
   "teamA": "Team A Name",
   "teamB": "Team B Name",
   "scoreA": 120,
   "scoreB": 115,
   "mvp": "Player Name — 32 PTS, 10 REB, 7 AST",
-  "summary": "A few fun sentences describing the game’s flow and standout moments."
+  "summary": "An exciting 3–5 sentence description of the game flow and drama.",
+  "boxScore": {
+    "teamAPlayers": [
+      { "name": "Player A1", "pts": 25, "reb": 8, "ast": 5 },
+      { "name": "Player A2", "pts": 18, "reb": 4, "ast": 7 }
+    ],
+    "teamBPlayers": [
+      { "name": "Player B1", "pts": 30, "reb": 10, "ast": 2 },
+      { "name": "Player B2", "pts": 14, "reb": 6, "ast": 5 }
+    ]
+  }
 }
-\`\`\`
 
-Make the summary exciting and dramatic. Do NOT include commentary or explanation before or after the JSON block. Player stats are there as a guide, players can often over or under perform their projections. The MVPs can vary. Upsets can happen, but reasonably. No bench players, only starters.
+- Summaries should highlight key moments and possible upsets.
+- Player performances should vary realistically.
+- Use ONLY starters provided. Do not add imaginary bench players.
+- Output only the valid JSON block without extra symbols or markdown.
 
-${includeMatchupInstructions ? "Since positional data is provided, feel free to comment briefly on key position matchups (e.g., point guard vs point guard, center vs center) if relevant to the game's story." : ""}
+${includeMatchupInstructions ? "If positional data is given, use it to add flavor to how key matchups shaped the outcome." : ""}
 
 --- TEAM A ---
 ${formatRoster(teamA)}
@@ -83,7 +95,7 @@ ${formatRoster(teamB)}
       body: JSON.stringify({
         model: "meta-llama/Llama-3.3-70B-Instruct-Turbo-Free",
         messages: [{ role: "user", content: prompt }],
-        max_tokens: 500,
+        max_tokens: 1000,
         temperature: 0.8
       })
     });
@@ -97,19 +109,28 @@ ${formatRoster(teamB)}
     const data = await response.json();
     const aiOutput = data.choices[0].message.content;
 
-    // Extract JSON block from response using regex
-    const jsonMatch = aiOutput.match(/```json\s*([\s\S]*?)\s*```/i);
-    if (!jsonMatch) {
-      throw new Error("No valid JSON block found in AI response.");
+    // Attempt to directly parse the JSON (no regex for markdown fences)
+    try {
+      const parsed = JSON.parse(aiOutput);
+      console.log("✅ Parsed Simulation Result:", parsed);
+
+      // 🏀 Flatten box score here
+      const flatBoxScore = [
+        ...(parsed.boxScore.teamAPlayers || []).map(player => ({ ...player, team: "A" })),
+        ...(parsed.boxScore.teamBPlayers || []).map(player => ({ ...player, team: "B" }))
+      ];
+
+      parsed.boxScore = flatBoxScore; // ✨ Now boxScore is a flat array
+
+      res.json({ result: parsed });
+    } catch (parseError) {
+      console.error("❌ Failed to parse JSON response:", parseError);
+      res.status(500).json({ error: "Invalid JSON format returned from AI." });
     }
 
-    const parsed = JSON.parse(jsonMatch[1]);
-
-    console.log("✅ Parsed Simulation Result:", parsed);
-    res.json({ result: parsed });
   } catch (err) {
-    console.error("❌ Failed to parse JSON response:", err);
-    res.status(500).json({ error: "Invalid JSON format returned from AI." });
+    console.error("❌ Simulation error:", err);
+    res.status(500).json({ error: "Failed to simulate game." });
   }
 });
 
