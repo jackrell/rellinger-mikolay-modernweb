@@ -37,22 +37,36 @@ export default function TeamDetails() {
       <h3>Players:</h3>
       <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
         {Array.isArray(team.get("players")) ? (
-          team.get("players").map((player, index) => (
-            <li key={index} style={{ marginBottom: "1rem" }}>
-              <strong>{player.name}</strong> — {player.team || "N/A"}<br />
-              PPG: {player.ppg ?? "N/A"}, RPG: {player.rpg ?? "N/A"}, APG: {player.apg ?? "N/A"}<br />
-              {/* Button to navigate to player profile page */}
-              <button
-                onClick={() => navigate(`/player/${encodeURIComponent(player.name)}`)}
-                style={{
-                  marginTop: "0.5rem",
-                  cursor: "pointer"
-                }}
-              >
-                🔍 View Player Profile
-              </button>
-            </li>
-          ))
+          [...team.get("players")]
+            .sort((a, b) => {
+              const positionOrder = { PG: 1, SG: 2, SF: 3, PF: 4, C: 5 };
+              return (
+                (positionOrder[a.position] || 99) -
+                (positionOrder[b.position] || 99)
+              );
+            })
+            .map((player, index) => (
+              <li key={index} style={{ marginBottom: "1rem" }}>
+                <strong>{player.name}</strong>{" "}
+                {player.position ? `(${player.position})` : ""} —{" "}
+                {player.team || "N/A"}
+                <br />
+                PPG: {player.ppg ?? "N/A"}, RPG: {player.rpg ?? "N/A"}, APG:{" "}
+                {player.apg ?? "N/A"}
+                <br />
+                <button
+                  onClick={() =>
+                    navigate(`/player/${encodeURIComponent(player.name)}`)
+                  }
+                  style={{
+                    marginTop: "0.5rem",
+                    cursor: "pointer",
+                  }}
+                >
+                  🔍 View Player Profile
+                </button>
+              </li>
+            ))
         ) : (
           <li>No players found.</li> // Fallback if no players are listed
         )}
@@ -73,7 +87,7 @@ export default function TeamDetails() {
           color: "#000",
           border: "1px solid black",
           borderRadius: "4px",
-          cursor: "pointer"
+          cursor: "pointer",
         }}
       >
         🔙 Back to All Teams

@@ -35,11 +35,20 @@ app.post("/api/simulate-game", async (req, res) => {
 
   const formatRoster = (team) => {
     const name = team.name || "Unknown Team";
-    const players = (team.players || []).map((p, i) => `${i + 1}. ${p.name}`).join("\n");
+    const players = (team.players || []).map((p, i) => {
+      const position = p.position ? ` (${p.position})` : "";
+      return `${i + 1}. ${p.name}${position}`;
+    }).join("\n");
     return `${name}\n${players}`;
   };
 
-  const prompt = `
+  const hasPositions = (team) => {
+    return (team.players || []).every(player => player.position);
+  };
+
+  const includeMatchupInstructions = hasPositions(teamA) && hasPositions(teamB);
+
+const prompt = `
 You are simulating a fictional 5v5 NBA game between two user-created lineups. Respond in this exact JSON format, and nothing else:
 
 \`\`\`json
@@ -53,7 +62,9 @@ You are simulating a fictional 5v5 NBA game between two user-created lineups. Re
 }
 \`\`\`
 
-Make the summary exciting and dramatic. Do NOT include commentary or explanation before or after the JSON block. Player stats are there as a guide, players can often over or under perform their stat projections. The MVPs can vary, they can be, but are not always the best players. Upsets can happen, but reasonably. There are no bench players so do not mention the bench.
+Make the summary exciting and dramatic. Do NOT include commentary or explanation before or after the JSON block. Player stats are there as a guide, players can often over or under perform their projections. The MVPs can vary. Upsets can happen, but reasonably. No bench players, only starters.
+
+${includeMatchupInstructions ? "Since positional data is provided, feel free to comment briefly on key position matchups (e.g., point guard vs point guard, center vs center) if relevant to the game's story." : ""}
 
 --- TEAM A ---
 ${formatRoster(teamA)}

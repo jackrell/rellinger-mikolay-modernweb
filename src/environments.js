@@ -5,3 +5,7 @@ const Env = {
 };
 
 export default Env;
+
+// for backend stuff like python and togetherAI requests
+export const BACKEND_URL =
+  import.meta.env.VITE_BACKEND_URL || "http://localhost:5050";

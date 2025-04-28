@@ -67,11 +67,11 @@ export default function EditTeam() {
 
   // Save changes to the backend
   const handleSaveChanges = async () => {
-    if (!teamName || selectedPlayers.length !== 5) {
-      alert("Please enter a team name and select exactly 5 players.");
+    if (!teamName || selectedPlayers.length !== 5 || selectedPlayers.some(p => !p.position)) {
+      alert("Please enter a team name, select exactly 5 players, and assign a position to each player.");
       return;
     }
-
+  
     try {
       await updateTeam(teamId, {
         name: teamName,
@@ -82,6 +82,15 @@ export default function EditTeam() {
       console.error("Error updating team:", err.message);
       alert("Failed to save changes.");
     }
+  };
+  
+
+  const handleChangePosition = (index, newPosition) => {
+    setSelectedPlayers(prev => {
+      const updated = [...prev];
+      updated[index] = { ...updated[index], position: newPosition };
+      return updated;
+    });
   };
 
   return (
@@ -134,16 +143,50 @@ export default function EditTeam() {
       {/* Selected Players Section */}
       <div>
         <h3>🏀 Selected Players ({selectedPlayers.length}/5)</h3>
-        <ul>
-          {selectedPlayers.map((player, index) => (
-            <li key={index}>
-              {player.name}
-              <button onClick={() => handleRemovePlayer(index)} style={{ marginLeft: "1rem" }}>
-                ❌ Remove
-              </button>
-            </li>
-          ))}
-        </ul>
+        <ul style={{ listStyleType: "none", padding: 0 }}>
+  {selectedPlayers.map((player, index) => (
+    <li
+      key={index}
+      style={{
+        marginBottom: "1rem",
+        borderBottom: "1px solid #ccc",
+        paddingBottom: "0.5rem",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+      }}
+    >
+      <div>
+        <strong>{player.name}</strong> 
+        <div style={{ fontSize: "0.9rem", color: "#666", marginTop: "0.3rem" }}>
+          Position: 
+          <select
+            value={player.position || ""}
+            onChange={(e) => handleChangePosition(index, e.target.value)}
+            style={{ marginLeft: "0.5rem", padding: "0.3rem" }}
+          >
+            <option value="">Select position</option>
+            <option value="PG">PG</option>
+            <option value="SG">SG</option>
+            <option value="SF">SF</option>
+            <option value="PF">PF</option>
+            <option value="C">C</option>
+          </select>
+        </div>
+      </div>
+
+      <button
+        onClick={() => handleRemovePlayer(index)}
+        style={{
+          marginLeft: "1rem",
+        }}
+      >
+        ❌ Remove
+      </button>
+    </li>
+  ))}
+</ul>
+
 
         {/* Save Button */}
         <button onClick={handleSaveChanges} style={{ marginTop: "1rem", padding: "0.5rem 1rem" }}>
