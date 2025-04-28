@@ -2,6 +2,11 @@
 
 ## Jack Rellinger, Danny Mikolay
 
+Notes on the nba_api python block in backend:
+- Tried to use nba_api from github to create a more robust player dataset with historical players
+- Encountered multiple issues when using the api repeatedly, resulted in failure after ~ 100 calls
+- Tried multiple workarounds, defaulted back to our static original players.json 
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

@@ -6,7 +6,7 @@ let cachedPlayers = null;
 export async function loadAllPlayers() {
   if (cachedPlayers) return cachedPlayers;
 
-  const res = await fetch("/players.json");
+  const res = await fetch("/src/assets/players.json");
   const data = await res.json();
   cachedPlayers = data;
   return data;

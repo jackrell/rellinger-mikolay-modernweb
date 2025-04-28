@@ -10,7 +10,11 @@ export default function GamePreview() {
   const [loading, setLoading] = useState(false);
 
   if (!teamA || !teamB) {
-    return <p style={{ padding: "2rem" }}>Error: Two teams must be selected for simulation.</p>;
+    return (
+      <p style={{ padding: "2rem" }}>
+        Error: Two teams must be selected for simulation.
+      </p>
+    );
   }
 
   const handleSimulation = async () => {
@@ -19,7 +23,7 @@ export default function GamePreview() {
       const response = await fetch("http://localhost:5050/api/simulate-game", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ teamA, teamB })
+        body: JSON.stringify({ teamA, teamB }),
       });
 
       const data = await response.json();
@@ -38,29 +42,40 @@ export default function GamePreview() {
     }
   };
 
-  const renderTeamColumn = (team) => (
-    <div
-      style={{
-        flex: 1,
-        padding: "1rem",
-        border: "1px solid #ccc",
-        borderRadius: "8px",
-        textAlign: "center"
-      }}
-    >
-      <h2 style={{ marginTop: 0 }}>{team.name}</h2>
-      <ul style={{ listStyleType: "none", padding: 0, marginTop: "1rem" }}>
-        {team.players.map((player, index) => (
-          <li key={index} style={{ marginBottom: "0.5rem" }}>
-            {player.name}
-          </li>
-        ))}
-      </ul>
-      <p style={{ fontStyle: "italic", color: "#555" }}>
-        Created by: {team.createdByUsername || "Unknown"}
-      </p>
-    </div>
-  );
+  const renderTeamColumn = (team) => {
+    // Sort players if positions exist
+    const sortedPlayers = [...team.players].sort((a, b) => {
+      const positionOrder = { PG: 1, SG: 2, SF: 3, PF: 4, C: 5 };
+      const aPos = positionOrder[a.position] || 99;
+      const bPos = positionOrder[b.position] || 99;
+      return aPos - bPos;
+    });
+
+    return (
+      <div
+        style={{
+          flex: 1,
+          padding: "1rem",
+          border: "1px solid #ccc",
+          borderRadius: "8px",
+          textAlign: "center",
+        }}
+      >
+        <h2 style={{ marginTop: 0 }}>{team.name}</h2>
+        <ul style={{ listStyleType: "none", padding: 0, marginTop: "1rem" }}>
+          {sortedPlayers.map((player, index) => (
+            <li key={index} style={{ marginBottom: "0.5rem" }}>
+              <strong>{player.name}</strong>
+              {player.position ? ` (${player.position})` : ""}
+            </li>
+          ))}
+        </ul>
+        <p style={{ fontStyle: "italic", color: "#555" }}>
+          Created by: {team.createdByUsername || "Unknown"}
+        </p>
+      </div>
+    );
+  };
 
   return (
     <div style={{ padding: "2rem", position: "relative" }}>
@@ -76,13 +91,15 @@ export default function GamePreview() {
           backgroundColor: "#fff",
           border: "1px solid black",
           cursor: "pointer",
-          borderRadius: "4px"
+          borderRadius: "4px",
         }}
       >
         ❌ Cancel
       </button>
 
-      <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>🏀 Game Preview</h2>
+      <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>
+        🏀 Game Preview
+      </h2>
 
       <div
         style={{
@@ -90,7 +107,7 @@ export default function GamePreview() {
           justifyContent: "center",
           alignItems: "center",
           gap: "2rem",
-          marginBottom: "2rem"
+          marginBottom: "2rem",
         }}
       >
         {renderTeamColumn(teamA)}
@@ -108,7 +125,7 @@ export default function GamePreview() {
             backgroundColor: "#fff",
             border: "1px solid black",
             cursor: loading ? "not-allowed" : "pointer",
-            borderRadius: "4px"
+            borderRadius: "4px",
           }}
         >
           🧠 {loading ? "Simulating..." : "Start Simulation"}

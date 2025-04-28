@@ -5,7 +5,17 @@ import { useNavigate } from "react-router-dom";
 import { searchPlayers } from "../../services/GetData";
 import { createTeam } from "../../Common/Services/ManageService";
 import Select from "react-select";
-import players from "../../../public/players.json";
+import players from "/src/assets/players.json";
+import Court from "./Court";
+
+// definition for slots
+const DEFAULT_SLOTS = [
+  { id: "PG", label: "PG", x: 255, y: 250, player: null }, // Bottom
+  { id: "SG", label: "SG", x: 110, y: 180, player: null },
+  { id: "SF", label: "SF", x: 400, y: 190, player: null },
+  { id: "PF", label: "PF", x: 150, y: 40, player: null },
+  { id: "C", label: "C", x: 370, y: 40, player: null }, // Top
+];
 
 export default function CreateTeam() {
   const navigate = useNavigate();
@@ -13,6 +23,7 @@ export default function CreateTeam() {
   // State for team name, player selections, search, filters, and loading state
   const [teamName, setTeamName] = useState("");
   const [selectedPlayers, setSelectedPlayers] = useState([]);
+  const [slots, setSlots] = useState(DEFAULT_SLOTS);
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -22,7 +33,7 @@ export default function CreateTeam() {
     minHeight: "",
     maxHeight: "",
     minWeight: "",
-    maxWeight: ""
+    maxWeight: "",
   });
 
   // Styling for dropdowns (Select)
@@ -32,9 +43,9 @@ export default function CreateTeam() {
       border: "1px solid black",
       boxShadow: "none",
       "&:hover": {
-        border: "1px solid black"
-      }
-    })
+        border: "1px solid black",
+      },
+    }),
   };
 
   // Converts cm to feet/inches (e.g., 6'2")
@@ -52,47 +63,67 @@ export default function CreateTeam() {
 
   // Generate height options from player data
   const heightOptions = Array.from(
-    new Set(players.map(p => p.height).filter(Boolean))
+    new Set(players.map((p) => p.height).filter(Boolean))
   )
     .sort((a, b) => a - b)
-    .map(cm => ({
+    .map((cm) => ({
       label: cmToFeetInches(cm),
-      value: cm
+      value: cm,
     }));
 
   // Generate weight options in lbs
   const weightOptions = Array.from(
-    new Set(players.map(p => p.weight).filter(Boolean))
+    new Set(players.map((p) => p.weight).filter(Boolean))
   )
-    .map(kg => kgToLbs(kg))
+    .map((kg) => kgToLbs(kg))
     .sort((a, b) => a - b)
-    .map(lbs => ({
+    .map((lbs) => ({
       label: `${lbs} lbs`,
-      value: lbs
+      value: lbs,
     }));
 
   // NBA teams and abbreviations
   const nbaTeams = [
-    { label: "Atlanta Hawks", value: "ATL" }, { label: "Boston Celtics", value: "BOS" },
-    { label: "Brooklyn Nets", value: "BKN" }, { label: "Charlotte Hornets", value: "CHA" },
-    { label: "Chicago Bulls", value: "CHI" }, { label: "Cleveland Cavaliers", value: "CLE" },
-    { label: "Dallas Mavericks", value: "DAL" }, { label: "Denver Nuggets", value: "DEN" },
-    { label: "Detroit Pistons", value: "DET" }, { label: "Golden State Warriors", value: "GSW" },
-    { label: "Houston Rockets", value: "HOU" }, { label: "Indiana Pacers", value: "IND" },
-    { label: "LA Clippers", value: "LAC" }, { label: "Los Angeles Lakers", value: "LAL" },
-    { label: "Memphis Grizzlies", value: "MEM" }, { label: "Miami Heat", value: "MIA" },
-    { label: "Milwaukee Bucks", value: "MIL" }, { label: "Minnesota Timberwolves", value: "MIN" },
-    { label: "New Orleans Pelicans", value: "NOP" }, { label: "New York Knicks", value: "NYK" },
-    { label: "Oklahoma City Thunder", value: "OKC" }, { label: "Orlando Magic", value: "ORL" },
-    { label: "Philadelphia 76ers", value: "PHI" }, { label: "Phoenix Suns", value: "PHX" },
-    { label: "Portland Trail Blazers", value: "POR" }, { label: "Sacramento Kings", value: "SAC" },
-    { label: "San Antonio Spurs", value: "SAS" }, { label: "Toronto Raptors", value: "TOR" },
-    { label: "Utah Jazz", value: "UTA" }, { label: "Washington Wizards", value: "WAS" }
+    { label: "Atlanta Hawks", value: "ATL" },
+    { label: "Boston Celtics", value: "BOS" },
+    { label: "Brooklyn Nets", value: "BKN" },
+    { label: "Charlotte Hornets", value: "CHA" },
+    { label: "Chicago Bulls", value: "CHI" },
+    { label: "Cleveland Cavaliers", value: "CLE" },
+    { label: "Dallas Mavericks", value: "DAL" },
+    { label: "Denver Nuggets", value: "DEN" },
+    { label: "Detroit Pistons", value: "DET" },
+    { label: "Golden State Warriors", value: "GSW" },
+    { label: "Houston Rockets", value: "HOU" },
+    { label: "Indiana Pacers", value: "IND" },
+    { label: "LA Clippers", value: "LAC" },
+    { label: "Los Angeles Lakers", value: "LAL" },
+    { label: "Memphis Grizzlies", value: "MEM" },
+    { label: "Miami Heat", value: "MIA" },
+    { label: "Milwaukee Bucks", value: "MIL" },
+    { label: "Minnesota Timberwolves", value: "MIN" },
+    { label: "New Orleans Pelicans", value: "NOP" },
+    { label: "New York Knicks", value: "NYK" },
+    { label: "Oklahoma City Thunder", value: "OKC" },
+    { label: "Orlando Magic", value: "ORL" },
+    { label: "Philadelphia 76ers", value: "PHI" },
+    { label: "Phoenix Suns", value: "PHX" },
+    { label: "Portland Trail Blazers", value: "POR" },
+    { label: "Sacramento Kings", value: "SAC" },
+    { label: "San Antonio Spurs", value: "SAS" },
+    { label: "Toronto Raptors", value: "TOR" },
+    { label: "Utah Jazz", value: "UTA" },
+    { label: "Washington Wizards", value: "WAS" },
   ];
 
   // Generate list of colleges from player data
-  const uniqueColleges = Array.from(new Set(players.map(p => p.college).filter(Boolean))).sort();
-  const collegeOptions = uniqueColleges.map(college => ({ label: college, value: college }));
+  const uniqueColleges = Array.from(
+    new Set(players.map((p) => p.college).filter(Boolean))
+  ).sort();
+  const collegeOptions = uniqueColleges.map((college) => ({
+    label: college,
+    value: college,
+  }));
 
   // Handle team name input change
   const handleTeamNameChange = (e) => setTeamName(e.target.value);
@@ -108,13 +139,29 @@ export default function CreateTeam() {
         const weight = player.weight ? kgToLbs(player.weight) : null;
 
         const matchesTeam = filters.team === "" || player.team === filters.team;
-        const matchesCollege = filters.college === "" || player.college === filters.college;
-        const matchesHeightMin = !filters.minHeight || (height && height >= parseFloat(filters.minHeight));
-        const matchesHeightMax = !filters.maxHeight || (height && height <= parseFloat(filters.maxHeight));
-        const matchesWeightMin = !filters.minWeight || (weight && weight >= parseInt(filters.minWeight));
-        const matchesWeightMax = !filters.maxWeight || (weight && weight <= parseInt(filters.maxWeight));
+        const matchesCollege =
+          filters.college === "" || player.college === filters.college;
+        const matchesHeightMin =
+          !filters.minHeight ||
+          (height && height >= parseFloat(filters.minHeight));
+        const matchesHeightMax =
+          !filters.maxHeight ||
+          (height && height <= parseFloat(filters.maxHeight));
+        const matchesWeightMin =
+          !filters.minWeight ||
+          (weight && weight >= parseInt(filters.minWeight));
+        const matchesWeightMax =
+          !filters.maxWeight ||
+          (weight && weight <= parseInt(filters.maxWeight));
 
-        return matchesTeam && matchesCollege && matchesHeightMin && matchesHeightMax && matchesWeightMin && matchesWeightMax;
+        return (
+          matchesTeam &&
+          matchesCollege &&
+          matchesHeightMin &&
+          matchesHeightMax &&
+          matchesWeightMin &&
+          matchesWeightMax
+        );
       });
 
       setSearchResults(filtered.slice(0, 10));
@@ -126,26 +173,49 @@ export default function CreateTeam() {
 
   // Add a player to selected list (if limit not exceeded)
   const handleAddPlayer = (player) => {
-    if (selectedPlayers.length < 5 && !selectedPlayers.find(p => p.name === player.name)) {
+    if (
+      selectedPlayers.length < 5 &&
+      !selectedPlayers.find((p) => p.name === player.name)
+    ) {
       setSelectedPlayers([...selectedPlayers, player]);
     }
   };
 
+  const handleRemovePlayer = (playerName) => {
+    // Remove from selectedPlayers
+    setSelectedPlayers((prev) => prev.filter((p) => p.name !== playerName));
+
+    // Also remove from any assigned court slot
+    setSlots((prev) =>
+      prev.map((slot) =>
+        slot.player?.name === playerName ? { ...slot, player: null } : slot
+      )
+    );
+  };
+
   // Save team to Parse backend
   const handleSaveTeam = async () => {
-    if (!teamName || selectedPlayers.length !== 5) {
-      alert("Please enter a team name and select exactly 5 players.");
+    if (!teamName || slots.some((slot) => !slot.player)) {
+      alert("Please enter a team name and assign a player to each position.");
       return;
     }
 
     try {
-      await createTeam(teamName, selectedPlayers);
+      // Build an array of players with their position added into their object
+      const playersWithPositions = slots.map((slot) => ({
+        ...slot.player,
+        position: slot.id,
+      }));
+
+      await createTeam(teamName, playersWithPositions);
       navigate("/manage-teams");
     } catch (error) {
       console.error("Error saving team:", error);
       alert("Failed to save team.");
     }
   };
+
+  const isSaveDisabled = selectedPlayers.length !== 5 || slots.some(slot => !slot.player);
 
   return (
     <div style={{ padding: "2rem" }}>
@@ -167,7 +237,7 @@ export default function CreateTeam() {
       {/* Player search and filters */}
       <div style={{ marginBottom: "2rem" }}>
         <h3>🔍 Search and Filter Players</h3>
-        
+
         {/* Search by player name */}
         <input
           type="text"
@@ -183,24 +253,29 @@ export default function CreateTeam() {
             height: "38px",
             width: "213px",
             boxSizing: "border-box",
-            marginBottom: "1rem"
+            marginBottom: "1rem",
           }}
         />
 
         {/* Filter dropdowns */}
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-          gap: "1rem",
-          marginBottom: "1rem"
-        }}>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+            gap: "1rem",
+            marginBottom: "1rem",
+          }}
+        >
           <Select
             styles={customSelectStyles}
             options={nbaTeams}
             placeholder="Select a team..."
-            value={nbaTeams.find(opt => opt.value === filters.team) || null}
+            value={nbaTeams.find((opt) => opt.value === filters.team) || null}
             onChange={(selected) =>
-              setFilters(prev => ({ ...prev, team: selected ? selected.value : "" }))
+              setFilters((prev) => ({
+                ...prev,
+                team: selected ? selected.value : "",
+              }))
             }
             isClearable
             isSearchable
@@ -209,9 +284,15 @@ export default function CreateTeam() {
             styles={customSelectStyles}
             options={collegeOptions}
             placeholder="Select a college..."
-            value={collegeOptions.find(opt => opt.value === filters.college) || null}
+            value={
+              collegeOptions.find((opt) => opt.value === filters.college) ||
+              null
+            }
             onChange={(selected) =>
-              setFilters(prev => ({ ...prev, college: selected ? selected.value : "" }))
+              setFilters((prev) => ({
+                ...prev,
+                college: selected ? selected.value : "",
+              }))
             }
             isClearable
             isSearchable
@@ -220,9 +301,15 @@ export default function CreateTeam() {
             styles={customSelectStyles}
             options={heightOptions}
             placeholder="Min height"
-            value={heightOptions.find(opt => opt.value === filters.minHeight) || null}
+            value={
+              heightOptions.find((opt) => opt.value === filters.minHeight) ||
+              null
+            }
             onChange={(selected) =>
-              setFilters(prev => ({ ...prev, minHeight: selected ? selected.value : "" }))
+              setFilters((prev) => ({
+                ...prev,
+                minHeight: selected ? selected.value : "",
+              }))
             }
             isClearable
             isSearchable
@@ -231,9 +318,15 @@ export default function CreateTeam() {
             styles={customSelectStyles}
             options={heightOptions}
             placeholder="Max height"
-            value={heightOptions.find(opt => opt.value === filters.maxHeight) || null}
+            value={
+              heightOptions.find((opt) => opt.value === filters.maxHeight) ||
+              null
+            }
             onChange={(selected) =>
-              setFilters(prev => ({ ...prev, maxHeight: selected ? selected.value : "" }))
+              setFilters((prev) => ({
+                ...prev,
+                maxHeight: selected ? selected.value : "",
+              }))
             }
             isClearable
             isSearchable
@@ -242,9 +335,15 @@ export default function CreateTeam() {
             styles={customSelectStyles}
             options={weightOptions}
             placeholder="Min weight"
-            value={weightOptions.find(opt => opt.value === filters.minWeight) || null}
+            value={
+              weightOptions.find((opt) => opt.value === filters.minWeight) ||
+              null
+            }
             onChange={(selected) =>
-              setFilters(prev => ({ ...prev, minWeight: selected ? selected.value : "" }))
+              setFilters((prev) => ({
+                ...prev,
+                minWeight: selected ? selected.value : "",
+              }))
             }
             isClearable
             isSearchable
@@ -253,9 +352,15 @@ export default function CreateTeam() {
             styles={customSelectStyles}
             options={weightOptions}
             placeholder="Max weight"
-            value={weightOptions.find(opt => opt.value === filters.maxWeight) || null}
+            value={
+              weightOptions.find((opt) => opt.value === filters.maxWeight) ||
+              null
+            }
             onChange={(selected) =>
-              setFilters(prev => ({ ...prev, maxWeight: selected ? selected.value : "" }))
+              setFilters((prev) => ({
+                ...prev,
+                maxWeight: selected ? selected.value : "",
+              }))
             }
             isClearable
             isSearchable
@@ -270,12 +375,19 @@ export default function CreateTeam() {
         {/* Display search results */}
         <div style={{ marginTop: "1rem" }}>
           {searchResults.map((player, index) => (
-            <div key={index} style={{ borderBottom: "1px solid #ccc", padding: "0.5rem 0" }}>
+            <div
+              key={index}
+              style={{ borderBottom: "1px solid #ccc", padding: "0.5rem 0" }}
+            >
               <strong>{player.name}</strong> — {player.team || "N/A"}
               <div style={{ fontSize: "0.9rem", color: "#666" }}>
-                PPG: {player.ppg ?? "N/A"}, RPG: {player.rpg ?? "N/A"}, APG: {player.apg ?? "N/A"}
+                PPG: {player.ppg ?? "N/A"}, RPG: {player.rpg ?? "N/A"}, APG:{" "}
+                {player.apg ?? "N/A"}
               </div>
-              <button onClick={() => handleAddPlayer(player)} style={{ marginTop: "0.5rem" }}>
+              <button
+                onClick={() => handleAddPlayer(player)}
+                style={{ marginTop: "0.5rem" }}
+              >
                 ➕ Add to Team
               </button>
             </div>
@@ -285,22 +397,66 @@ export default function CreateTeam() {
 
       {/* Selected players + team save/cancel */}
       <div>
-        <h3>🏀 Selected Players ({selectedPlayers.length}/5)</h3>
-        <ul>
-          {selectedPlayers.map((player, index) => (
-            <li key={index}>{player.name}</li>
-          ))}
-        </ul>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: "2rem" }}>
+          {/* Left side: Selected Players */}
+          <div style={{ minWidth: "300px" }}>
+            <h3>🏀 Selected Players ({selectedPlayers.length}/5)</h3>
+            <ul style={{ listStyleType: "none", padding: 0 }}>
+              {selectedPlayers.map((player, index) => {
+                const assignedSlot = slots.find(
+                  (slot) => slot.player?.name === player.name
+                );
+                return (
+                  <li
+                    key={index}
+                    style={{
+                      marginBottom: "1rem",
+                      borderBottom: "1px solid #ccc",
+                      paddingBottom: "0.5rem",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                    }}
+                  >
+                    <div>
+                      <strong>{player.name}</strong>{" "}
+                      {assignedSlot ? `(${assignedSlot.id})` : "(unassigned)"}
+                      <div style={{ fontSize: "0.9rem", color: "#666" }}>
+                        PPG: {player.ppg ?? "N/A"}, RPG: {player.rpg ?? "N/A"},
+                        APG: {player.apg ?? "N/A"}
+                      </div>
+                    </div>
+                    <button
+                      onClick={() => handleRemovePlayer(player.name)}
+                      style={{ marginTop: "0.5rem" }}
+                    >
+                      Remove
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+
+          {/* Right side: Court */}
+          <Court
+            slots={slots}
+            setSlots={setSlots}
+            selectedPlayers={selectedPlayers}
+          />
+        </div>
+
         <div style={{ marginTop: "1rem" }}>
           <button
             onClick={handleSaveTeam}
-            style={{ padding: "0.5rem 1rem", marginRight: "1rem" }}
+            
+            style={{ padding: "0.5rem 1rem", marginRight: "1rem", cursor: isSaveDisabled ? "not-allowed" : "pointer",  backgroundColor: isSaveDisabled ? "#ccc" : ""}}
           >
             💾 Save Team
           </button>
           <button
             onClick={() => navigate("/manage-teams")}
-            style={{ padding: "0.5rem 1rem", marginRight: "1rem" }}
+            style={{ padding: "0.5rem 1rem", marginRight: "1rem", backgroundColor: ""}}
           >
             ❌ Cancel
           </button>
