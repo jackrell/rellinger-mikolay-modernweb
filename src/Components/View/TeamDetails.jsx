@@ -23,75 +23,82 @@ export default function TeamDetails() {
   }, [teamId]);
 
   // Show loading text while team is being fetched
-  if (!team) return <p>Loading team details...</p>;
+  if (!team) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-neutral-900 text-white">
+        <p className="text-xl">Loading team details...</p>
+      </div>
+    );
+  }
 
-  // Get username of the team creator, or show "Unknown" if not found
   const username = team.get("createdByUsername") || "Unknown";
 
   return (
-    <div style={{ padding: "2rem" }}>
-      {/* Team Name */}
-      <h2>📋 Team Details: {team.get("name")}</h2>
+    <div className="min-h-screen bg-neutral-900 text-white p-8">
+      <div className="max-w-4xl mx-auto">
+        {/* Team Name */}
+        <h2 className="text-3xl font-bold mb-8">
+          📋 Team Details: {team.get("name")}
+        </h2>
 
-      {/* Roster List */}
-      <h3>Players:</h3>
-      <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
-        {Array.isArray(team.get("players")) ? (
-          [...team.get("players")]
-            .sort((a, b) => {
-              const positionOrder = { PG: 1, SG: 2, SF: 3, PF: 4, C: 5 };
-              return (
-                (positionOrder[a.position] || 99) -
-                (positionOrder[b.position] || 99)
-              );
-            })
-            .map((player, index) => (
-              <li key={index} style={{ marginBottom: "1rem" }}>
-                <strong>{player.name}</strong>{" "}
-                {player.position ? `(${player.position})` : ""} —{" "}
-                {player.team || "N/A"}
-                <br />
-                PPG: {player.ppg ?? "N/A"}, RPG: {player.rpg ?? "N/A"}, APG:{" "}
-                {player.apg ?? "N/A"}
-                <br />
-                <button
-                  onClick={() =>
-                    navigate(`/player/${encodeURIComponent(player.name)}`)
-                  }
-                  style={{
-                    marginTop: "0.5rem",
-                    cursor: "pointer",
-                  }}
+        {/* Players List */}
+        <h3 className="text-2xl font-semibold mb-6">Players</h3>
+        <ul className="space-y-4 mb-12">
+          {Array.isArray(team.get("players")) ? (
+            [...team.get("players")]
+              .sort((a, b) => {
+                const positionOrder = { PG: 1, SG: 2, SF: 3, PF: 4, C: 5 };
+                return (
+                  (positionOrder[a.position] || 99) -
+                  (positionOrder[b.position] || 99)
+                );
+              })
+              .map((player, index) => (
+                <li
+                  key={index}
+                  className="bg-neutral-800 p-4 rounded-lg shadow-md"
                 >
-                  🔍 View Player Profile
-                </button>
-              </li>
-            ))
-        ) : (
-          <li>No players found.</li> // Fallback if no players are listed
-        )}
-      </ul>
+                  <p className="text-lg font-semibold mb-1">
+                    {player.name}{" "}
+                    <span className="text-gray-400 text-sm">
+                      {player.position ? `(${player.position})` : ""}
+                    </span>
+                  </p>
+                  <p className="text-gray-400 text-sm">
+                    {player.team || "N/A"}
+                  </p>
+                  <p className="text-xs text-gray-500 mb-3">
+                    PPG: {player.ppg ?? "N/A"}, RPG: {player.rpg ?? "N/A"}, APG:{" "}
+                    {player.apg ?? "N/A"}
+                  </p>
+                  <button
+                    onClick={() =>
+                      navigate(`/player/${encodeURIComponent(player.name)}`)
+                    }
+                    className="px-3 py-2 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition text-sm"
+                  >
+                    🔍 View Profile
+                  </button>
+                </li>
+              ))
+          ) : (
+            <li>No players found.</li>
+          )}
+        </ul>
 
-      {/* Creator Info */}
-      <p style={{ fontStyle: "italic", marginTop: "1rem", color: "#555" }}>
-        Created by: {username}
-      </p>
+        {/* Creator Info */}
+        <p className="italic text-gray-400 mb-12">Created by: {username}</p>
 
-      {/* Back Button */}
-      <button
-        onClick={() => navigate("/view-teams")}
-        style={{
-          marginTop: "2rem",
-          padding: "0.5rem 1rem",
-          backgroundColor: "#fff",
-          color: "#000",
-          border: "1px solid black",
-          borderRadius: "4px",
-          cursor: "pointer",
-        }}
-      >
-        🔙 Back to All Teams
-      </button>
+        {/* Back Button */}
+        <div className="flex justify-center">
+          <button
+            onClick={() => navigate("/view-teams")}
+            className="px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold text-lg transition"
+          >
+            🔙 Back to All Teams
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

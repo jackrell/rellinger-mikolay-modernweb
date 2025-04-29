@@ -16,9 +16,10 @@ export default function GamePreview() {
       </p>
     );
   }
-
+  // simulates from out backend
   const handleSimulation = async () => {
     setLoading(true);
+    // our backend api
     try {
       const response = await fetch("http://localhost:5050/api/simulate-game", {
         method: "POST",
@@ -42,8 +43,8 @@ export default function GamePreview() {
     }
   };
 
+  // renders the team, sorting if there is positional data
   const renderTeamColumn = (team) => {
-    // Sort players if positions exist
     const sortedPlayers = [...team.players].sort((a, b) => {
       const positionOrder = { PG: 1, SG: 2, SF: 3, PF: 4, C: 5 };
       const aPos = positionOrder[a.position] || 99;
@@ -52,25 +53,17 @@ export default function GamePreview() {
     });
 
     return (
-      <div
-        style={{
-          flex: 1,
-          padding: "1rem",
-          border: "1px solid #ccc",
-          borderRadius: "8px",
-          textAlign: "center",
-        }}
-      >
-        <h2 style={{ marginTop: 0 }}>{team.name}</h2>
-        <ul style={{ listStyleType: "none", padding: 0, marginTop: "1rem" }}>
+      <div className="flex-1 bg-neutral-800 p-6 rounded-lg text-center shadow-md min-w-[250px]">
+        <h2 className="text-2xl font-bold mb-6">{team.name}</h2>
+        <ul className="space-y-2 mb-6">
           {sortedPlayers.map((player, index) => (
-            <li key={index} style={{ marginBottom: "0.5rem" }}>
+            <li key={index}>
               <strong>{player.name}</strong>
               {player.position ? ` (${player.position})` : ""}
             </li>
           ))}
         </ul>
-        <p style={{ fontStyle: "italic", color: "#555" }}>
+        <p className="italic text-gray-400 text-sm">
           Created by: {team.createdByUsername || "Unknown"}
         </p>
       </div>
@@ -78,55 +71,34 @@ export default function GamePreview() {
   };
 
   return (
-    <div style={{ padding: "2rem", position: "relative" }}>
+    <div className="min-h-screen bg-neutral-900 text-white p-8 relative">
       {/* Cancel button */}
       <button
         onClick={() => navigate("/view-teams")}
-        style={{
-          position: "absolute",
-          top: "1rem",
-          left: "1rem",
-          padding: "0.4rem 1rem",
-          fontSize: "0.9rem",
-          backgroundColor: "#fff",
-          border: "1px solid black",
-          cursor: "pointer",
-          borderRadius: "4px",
-        }}
+        className="absolute top-8 left-8 px-4 py-2 bg-neutral-800 border border-neutral-700 rounded-lg hover:bg-neutral-700 transition text-white"
       >
         ❌ Cancel
       </button>
 
-      <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>
-        🏀 Game Preview
-      </h2>
+      <h2 className="text-3xl font-bold text-center mb-12">🏀 Game Preview</h2>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          gap: "2rem",
-          marginBottom: "2rem",
-        }}
-      >
+      {/* Teams Preview */}
+      <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
         {renderTeamColumn(teamA)}
-        <div style={{ fontSize: "1.5rem", fontWeight: "bold" }}>VS</div>
+        <div className="text-3xl font-bold">VS</div>
         {renderTeamColumn(teamB)}
       </div>
 
-      <div style={{ textAlign: "center" }}>
+      {/* Start Simulation Button */}
+      <div className="flex justify-center">
         <button
           onClick={handleSimulation}
           disabled={loading}
-          style={{
-            padding: "0.7rem 1.5rem",
-            fontSize: "1rem",
-            backgroundColor: "#fff",
-            border: "1px solid black",
-            cursor: loading ? "not-allowed" : "pointer",
-            borderRadius: "4px",
-          }}
+          className={`px-8 py-4 text-lg font-semibold rounded-lg transition ${
+            loading
+              ? "bg-gray-600 cursor-not-allowed"
+              : "bg-blue-600 hover:bg-blue-700"
+          }`}
         >
           🧠 {loading ? "Simulating..." : "Start Simulation"}
         </button>

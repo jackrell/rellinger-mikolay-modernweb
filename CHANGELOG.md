@@ -5,6 +5,31 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 2025-04-28
+
+### Added
+
+- Brand new drag and drop interface for assigning players to on-court positions (Create Team and Edit Team, Court.jsx)
+- Positional data management system for tracking player assignments in view and simulation
+- Full simulation module to simulate games between user-created teams using TogetherAI's Llama-3.3-70B-Instruct-Turbo-Free, including:
+  - Game Preview screen
+  - Simulated Game Result with MVP and summary
+  - Full Box Score view
+- TailwindCSS dark theme styling applied across the entire application for a unified look and feel
+
+### Changed
+
+- Redesigned Manage My Teams (ManageTeams, CreateTeam, EditTeam) UI with dark theme and Tailwind components
+- Updated View Teams and View Team Details pages with polished cards, tables, and responsive layout
+- Standardized button styling (global Home button, Save, Cancel, Back, Simulate) across all modules
+- View module connections to Simulate module and associated views
+
+### Feature 6 Details & Contributions
+
+- Jack: Led development of Court positional functionality, TailwindCSS styling across the app, attempted player data API integration to no tangible outcome
+- Danny: Led development of the full Simulate module, including game simulation logic, game preview/result flows, and box score generation
+
+
 ## [0.3.0] - 2025-04-01
 
 ### Added

@@ -1,5 +1,3 @@
-// src/Components/Manage/Court.jsx
-
 import React, { useState } from "react";
 
 export default function Court({ slots, setSlots, selectedPlayers }) {
@@ -9,17 +7,15 @@ export default function Court({ slots, setSlots, selectedPlayers }) {
     event.dataTransfer.setData("player", JSON.stringify(player));
   };
 
+  // handles dropping the player and adding to the slot (PG .. C)
   const handleDrop = (event, slotId) => {
     event.preventDefault();
     const player = JSON.parse(event.dataTransfer.getData("player"));
 
     setSlots(prevSlots => {
-      // Remove player from any other slot they were in
       const cleanedSlots = prevSlots.map(slot =>
         slot.player?.name === player.name ? { ...slot, player: null } : slot
       );
-
-      // Assign player to the new slot
       return cleanedSlots.map(slot =>
         slot.id === slotId ? { ...slot, player } : slot
       );
@@ -37,8 +33,8 @@ export default function Court({ slots, setSlots, selectedPlayers }) {
     setDragOverSlotId(null);
   };
 
+  // removes player if you click on it
   const handleSlotClick = (slotId) => {
-    // Clicking removes player from the slot
     setSlots(prev =>
       prev.map(slot =>
         slot.id === slotId ? { ...slot, player: null } : slot
@@ -47,12 +43,12 @@ export default function Court({ slots, setSlots, selectedPlayers }) {
   };
 
   return (
-    <div style={{ position: "relative", width: "600px", height: "400px", margin: "auto" }}>
+    <div className="relative w-[600px] h-[400px] mx-auto">
       {/* Court Image */}
       <img
         src="/Basketball_Halfcourt_Transparant.svg"
         alt="Basketball Court"
-        style={{ width: "100%", height: "100%" }}
+        className="w-full h-full object-cover"
       />
 
       {/* Slots */}
@@ -63,28 +59,22 @@ export default function Court({ slots, setSlots, selectedPlayers }) {
           onDrop={(e) => handleDrop(e, slot.id)}
           onDragOver={(e) => allowDrop(e, slot.id)}
           onDragLeave={handleDragLeave}
-          title={slot.player ? slot.player.name : slot.label} // Tooltip full name
+          title={slot.player ? `Remove ${slot.player.name}` : `Assign ${slot.label}`}
+          className={`
+            absolute
+            flex items-center justify-center
+            w-20 h-20
+            rounded-full
+            text-sm font-bold
+            cursor-pointer
+            overflow-hidden
+            transition-all
+            ${dragOverSlotId === slot.id ? "border-4 border-blue-400" : "border-2 border-gray-400"}
+            ${slot.player ? "bg-green-600 text-white" : "bg-neutral-800 text-gray-300"}
+          `}
           style={{
-            position: "absolute",
             left: `${slot.x}px`,
             top: `${slot.y}px`,
-            width: "80px",
-            height: "80px",
-            border: dragOverSlotId === slot.id ? "3px solid blue" : "2px dashed gray",
-            borderRadius: "50%",
-            textAlign: "center",
-            fontSize: "14px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            backgroundColor: slot.player ? "lightgreen" : "white",
-            fontWeight: "bold",
-            cursor: "pointer",
-            overflow: "hidden",
-            whiteSpace: "nowrap",
-            textOverflow: "ellipsis",
-            transition: "border 0.2s ease",
-            padding: "4px",
           }}
         >
           {slot.player ? slot.player.name.split(" ")[0] : slot.label}
@@ -92,39 +82,22 @@ export default function Court({ slots, setSlots, selectedPlayers }) {
       ))}
 
       {/* Available draggable players */}
-      <div style={{
-        marginTop: "20px",
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "center",
-        gap: "0.5rem"
-      }}>
+      <div className="mt-8 flex flex-wrap justify-center gap-2">
         {selectedPlayers
-          .filter(player => !slots.some(slot => slot.player?.name === player.name)) // Hide if assigned
+          .filter(player => !slots.some(slot => slot.player?.name === player.name))
           .map((player, index) => (
             <div
               key={index}
               draggable
               onDragStart={(e) => handleDragStart(e, player)}
-              style={{
-                padding: "0.5rem 1rem",
-                border: "1px solid black",
-                borderRadius: "5px",
-                backgroundColor: "white",
-                cursor: "grab",
-                fontSize: "14px",
-                fontWeight: "bold",
-                maxWidth: "120px",
-                textOverflow: "ellipsis",
-                overflow: "hidden",
-                whiteSpace: "nowrap"
-              }}
-              title={player.name} // Tooltip for full name
+              className="px-4 py-2 bg-neutral-800 border border-neutral-600 rounded-md text-white font-semibold text-sm cursor-grab hover:bg-neutral-700 transition"
+              title={player.name}
             >
               {player.name}
             </div>
-        ))}
+          ))}
       </div>
     </div>
   );
 }
+

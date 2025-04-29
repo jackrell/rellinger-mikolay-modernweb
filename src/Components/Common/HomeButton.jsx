@@ -13,17 +13,7 @@ export default function HomeButton() {
   return (
     <button
       onClick={() => navigate("/")}
-      style={{
-        position: "fixed",
-        top: "1.5rem",
-        right: "1.5rem",
-        padding: "0.5rem 1rem",
-        backgroundColor: "#fff",
-        color: "#333",
-        border: "1px solid black",
-        cursor: "pointer",
-        zIndex: 999
-      }}
+      className="fixed top-6 right-6 z-50 px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow-md font-semibold transition"
     >
       🏠 Home
     </button>

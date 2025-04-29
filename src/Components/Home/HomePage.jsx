@@ -1,74 +1,47 @@
-// src/Components/Home/HomePage.jsx
-
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { getCurrentUser, logOut } from "../../Common/Services/AuthService";
 
 export default function HomePage() {
-  const user = getCurrentUser(); // Get the currently logged-in user
+  const user = getCurrentUser();
   const navigate = useNavigate();
 
-  // Handles login or logout action depending on user state
   const handleAuthAction = async () => {
     if (user) {
-      await logOut(); // If logged in, log out
-      navigate("/");  // Redirect to homepage after logout
+      await logOut();
+      navigate("/");
     } else {
-      navigate("/auth"); // If not logged in, go to login/register
+      navigate("/auth");
     }
   };
 
   return (
-    <div style={{ textAlign: "center", padding: "2rem", position: "relative" }}>
-      {/* Top-right auth section */}
-      <div style={{
-        position: "absolute",
-        top: "1rem",
-        right: "1rem",
-        display: "flex",
-        alignItems: "center",
-        gap: "1rem"
-      }}>
+    <div className="min-h-screen bg-neutral-900 text-white flex flex-col items-center justify-center relative p-8">
+      {/* Auth buttons top-right */}
+      <div className="absolute top-6 right-6 flex gap-4 items-center">
         {user ? (
           <>
-            {/* Show username and logout if user is signed in */}
-            <span style={{ fontSize: "0.9rem", color: "#555" }}>
-              Signed in as: <strong>{user.get("username")}</strong>
+            <span className="text-sm text-gray-400">
+              Signed in as <strong>{user.get("username")}</strong>
             </span>
             <button
               onClick={handleAuthAction}
-              style={{
-                padding: "0.5rem 1rem",
-                border: "1px solid black",
-                backgroundColor: "#fff",
-                cursor: "pointer"
-              }}
+              className="px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-white rounded-md transition"
             >
               Logout
             </button>
           </>
         ) : (
           <>
-            {/* Show register/login buttons if user is not signed in */}
             <button
               onClick={() => navigate("/auth?register=true")}
-              style={{
-                padding: "0.5rem 1rem",
-                border: "1px solid black",
-                backgroundColor: "#fff",
-                cursor: "pointer"
-              }}
+              className="px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-white rounded-md transition"
             >
               Register
             </button>
             <button
               onClick={handleAuthAction}
-              style={{
-                padding: "0.5rem 1rem",
-                border: "1px solid black",
-                backgroundColor: "#fff",
-                cursor: "pointer"
-              }}
+              className="px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-white rounded-md transition"
             >
               Login
             </button>
@@ -76,32 +49,23 @@ export default function HomePage() {
         )}
       </div>
 
-      {/* App title and description */}
-      <h1>🏀 NBA Team Builder</h1>
-      <p>Draft your own team or explore teams created by others!</p>
+      {/* Title and description */}
+      <h1 className="text-4xl md:text-6xl font-bold mb-4">
+        NBA Team Builder
+      </h1>
+      <p className="text-lg text-gray-400 mb-10 text-center max-w-xl">
+        Build your dream team. Simulate matchups. Create basketball history.
+      </p>
 
-      {/* Navigation buttons to main features */}
-      <div style={{
-        display: "flex",
-        justifyContent: "center",
-        gap: "2rem",
-        marginTop: "2rem"
-      }}>
+      {/* Navigation buttons */}
+      <div className="flex flex-wrap gap-6 justify-center">
         <Link to="/view-teams">
-          <button style={{
-            padding: "1rem 2rem",
-            fontSize: "1rem",
-            cursor: "pointer"
-          }}>
+          <button className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition text-lg">
             View All Teams
           </button>
         </Link>
         <Link to="/manage-teams">
-          <button style={{
-            padding: "1rem 2rem",
-            fontSize: "1rem",
-            cursor: "pointer"
-          }}>
+          <button className="px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition text-lg">
             Manage My Teams
           </button>
         </Link>

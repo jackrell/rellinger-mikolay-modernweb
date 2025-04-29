@@ -34,36 +34,46 @@ export default function PlayerProfile() {
   };
 
   // Show loading screen while player is being fetched
-  if (!player) return <div style={{ padding: "2rem" }}>Loading player profile...</div>;
-
+  if (!player) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-neutral-900 text-white">
+        <p className="text-xl">Loading player profile...</p>
+      </div>
+    );
+  }
+  
   return (
-    <div style={{ padding: "2rem" }}>
-      <h2>👤 {player.name}</h2>
-      <p><strong>Team:</strong> {player.team}</p>
-      <p><strong>College:</strong> {player.college || "N/A"}</p>
-      <p><strong>Height:</strong> {formatHeight(player.height)}</p>
-      <p><strong>Weight:</strong> {formatWeight(player.weight)}</p>
-      <hr />
-      <h4>📊 2022–23 Season Averages</h4>
-      <p><strong>PPG:</strong> {player.ppg ?? "N/A"}</p>
-      <p><strong>RPG:</strong> {player.rpg ?? "N/A"}</p>
-      <p><strong>APG:</strong> {player.apg ?? "N/A"}</p>
-
-      {/* Back Button to return to the previous page */}
-      <button
-        onClick={() => navigate(-1)}
-        style={{
-          marginTop: "2rem",
-          padding: "0.5rem 1rem",
-          backgroundColor: "#fff",
-          color: "#000",
-          border: "1px solid black",
-          borderRadius: "4px",
-          cursor: "pointer"
-        }}
-      >
-        🔙 Back to Team Details
-      </button>
+    <div className="min-h-screen bg-neutral-900 text-white p-8">
+      <div className="max-w-3xl mx-auto">
+        {/* Player Name */}
+        <h2 className="text-3xl font-bold mb-8">👤 {player.name}</h2>
+  
+        {/* Player Info */}
+        <div className="bg-neutral-800 p-6 rounded-lg shadow-md space-y-4 mb-12">
+          <p><span className="font-semibold">🏀 Team:</span> {player.team || "N/A"}</p>
+          <p><span className="font-semibold">🎓 College:</span> {player.college || "N/A"}</p>
+          <p><span className="font-semibold">📏 Height:</span> {formatHeight(player.height)}</p>
+          <p><span className="font-semibold">⚖️ Weight:</span> {formatWeight(player.weight)}</p>
+        </div>
+  
+        {/* Season Averages */}
+        <h3 className="text-2xl font-semibold mb-6">📊 2022–23 Season Averages</h3>
+        <div className="bg-neutral-800 p-6 rounded-lg shadow-md space-y-4 mb-12">
+          <p><span className="font-semibold">PPG:</span> {player.ppg ?? "N/A"}</p>
+          <p><span className="font-semibold">RPG:</span> {player.rpg ?? "N/A"}</p>
+          <p><span className="font-semibold">APG:</span> {player.apg ?? "N/A"}</p>
+        </div>
+  
+        {/* Back Button */}
+        <div className="flex justify-center">
+          <button
+            onClick={() => navigate(-1)}
+            className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg rounded-lg transition"
+          >
+            🔙 Back to Team Details
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

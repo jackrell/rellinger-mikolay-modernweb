@@ -1,11 +1,9 @@
 // src/Components/Auth/AuthLogin.jsx
-
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { logIn } from "../../Common/Services/AuthService";
 
 export default function AuthLogin() {
-  // State variables for user input and error display
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -14,47 +12,51 @@ export default function AuthLogin() {
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError(""); // Clear previous errors
+    setError("");
 
     try {
-      await logIn(username, password); // Attempt to log in with Parse
-      navigate("/manage-teams"); // Redirect on success
+      await logIn(username, password);
+      // Redirect to Manage Teams page after successful login
+      navigate("/manage-teams");
     } catch (err) {
-      setError("Invalid credentials. Please try again."); // Show error on failure
+      setError("Invalid credentials. Please try again.");
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ maxWidth: "400px", margin: "0 auto" }}>
-      {/* Display error message */}
-      {error && <p style={{ color: "red" }}>{error}</p>}
+    <form onSubmit={handleSubmit} className="w-full max-w-sm">
+      {/* Display error message if login fails */}
+      {error && <p className="text-red-500 mb-4">{error}</p>}
 
-      {/* Username input */}
-      <div style={{ marginBottom: "1rem" }}>
+      {/* Username Input */}
+      <div className="mb-4">
         <input
           type="text"
           placeholder="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           required
-          style={{ width: "100%", padding: "0.5rem" }}
+          className="w-full p-3 bg-neutral-800 border border-neutral-700 rounded-lg focus:ring-2 focus:ring-blue-600"
         />
       </div>
 
-      {/* Password input */}
-      <div style={{ marginBottom: "1rem" }}>
+      {/* Password Input */}
+      <div className="mb-6">
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
-          style={{ width: "100%", padding: "0.5rem" }}
+          className="w-full p-3 bg-neutral-800 border border-neutral-700 rounded-lg focus:ring-2 focus:ring-blue-600"
         />
       </div>
 
-      {/* Submit button */}
-      <button type="submit" style={{ padding: "0.5rem 1rem" }}>
+      {/* Submit Button */}
+      <button
+        type="submit"
+        className="w-full bg-blue-600 hover:bg-blue-700 p-3 rounded-lg font-semibold transition"
+      >
         Login
       </button>
     </form>

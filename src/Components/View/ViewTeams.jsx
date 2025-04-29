@@ -12,6 +12,7 @@ export default function ViewTeams() {
   const [simulateMode, setSimulateMode] = useState(false);
   const [selectedTeamIds, setSelectedTeamIds] = useState([]);
 
+  // gets all teams and sets the teams array
   useEffect(() => {
     const fetchTeams = async () => {
       try {
@@ -24,6 +25,7 @@ export default function ViewTeams() {
     fetchTeams();
   }, []);
 
+  // for starting the simulation, the checkbox
   const handleCheckboxChange = (teamId) => {
     setSelectedTeamIds((prev) => {
       if (prev.includes(teamId)) {
@@ -35,11 +37,16 @@ export default function ViewTeams() {
     });
   };
 
+  // when we move on to simulate, can set the teams
   const handleContinue = () => {
     if (selectedTeamIds.length === 2) {
       const [id1, id2] = selectedTeamIds;
-      const teamA = teams.find((team) => team.id === id1 || team.objectId === id1);
-      const teamB = teams.find((team) => team.id === id2 || team.objectId === id2);
+      const teamA = teams.find(
+        (team) => team.id === id1 || team.objectId === id1
+      );
+      const teamB = teams.find(
+        (team) => team.id === id2 || team.objectId === id2
+      );
 
       if (teamA && teamB) {
         // Clean Parse objects into plain JS
@@ -60,6 +67,7 @@ export default function ViewTeams() {
     }
   };
 
+  // filters deams based on search values
   const filteredTeams = teams.filter((team) => {
     const teamName = team.get("name")?.toLowerCase() || "";
     const creatorUsername = team.get("createdByUsername")?.toLowerCase() || "";
@@ -70,113 +78,107 @@ export default function ViewTeams() {
     );
   });
 
-  const inputStyle = {
-    padding: "0.6rem",
-    fontSize: "15.5px",
-    fontFamily: "Serif",
-    border: "1px solid black",
-    borderRadius: "4px",
-    height: "38px",
-    width: "213px",
-    boxSizing: "border-box",
-    marginBottom: "1rem"
-  };
-
   return (
-    <div style={{ padding: "2rem" }}>
-      <h2>🏀 View All Teams</h2>
+    <div className="min-h-screen bg-neutral-900 text-white p-8">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-3xl font-bold mb-8">View All Teams</h2>
 
-      {/* Search Inputs */}
-      <div style={{ display: "flex", gap: "1rem", marginBottom: "1rem" }}>
-        <input
-          type="text"
-          placeholder="Search by team name"
-          value={searchValue}
-          onChange={(e) => setSearchValue(e.target.value)}
-          style={inputStyle}
-        />
-        <input
-          type="text"
-          placeholder="Search by username"
-          value={usernameSearch}
-          onChange={(e) => setUsernameSearch(e.target.value)}
-          style={inputStyle}
-        />
-      </div>
+        {/* Search Inputs */}
+        <div className="flex flex-wrap gap-4 mb-8">
+          <input
+            type="text"
+            placeholder="Search by team name"
+            value={searchValue}
+            onChange={(e) => setSearchValue(e.target.value)}
+            className="flex-1 min-w-[200px] p-3 bg-neutral-800 border border-neutral-700 rounded-lg focus:ring-2 focus:ring-blue-600"
+          />
+          <input
+            type="text"
+            placeholder="Search by username"
+            value={usernameSearch}
+            onChange={(e) => setUsernameSearch(e.target.value)}
+            className="flex-1 min-w-[200px] p-3 bg-neutral-800 border border-neutral-700 rounded-lg focus:ring-2 focus:ring-blue-600"
+          />
+        </div>
 
-      {/* Simulate & Continue Buttons */}
-      <div style={{ display: "flex", gap: "1rem", marginBottom: "1rem" }}>
-        <button
-          onClick={() => {
-            setSimulateMode(!simulateMode);
-            setSelectedTeamIds([]);
-          }}
-          style={{
-            padding: "0.5rem 1rem",
-            backgroundColor: simulateMode ? "#eee" : "#fff",
-            border: "1px solid black",
-            cursor: "pointer"
-          }}
-        >
-          🎮 {simulateMode ? "Cancel Simulation" : "Simulate a Game"}
-        </button>
-
-        {simulateMode && (
+        {/* Simulate Mode Buttons */}
+        <div className="flex flex-wrap gap-4 mb-8">
           <button
-            onClick={handleContinue}
-            disabled={selectedTeamIds.length !== 2}
-            style={{
-              padding: "0.5rem 1rem",
-              border: "1px solid black",
-              backgroundColor: selectedTeamIds.length === 2 ? "#fff" : "#ccc",
-              cursor: selectedTeamIds.length === 2 ? "pointer" : "not-allowed"
+            onClick={() => {
+              setSimulateMode(!simulateMode);
+              setSelectedTeamIds([]);
             }}
+            className={`px-6 py-3 rounded-lg font-semibold transition ${
+              simulateMode
+                ? "bg-gray-600 hover:bg-gray-700"
+                : "bg-blue-600 hover:bg-blue-700"
+            }`}
           >
-            ✅ Continue
+            🎮 {simulateMode ? "Cancel Simulation" : "Simulate a Game"}
           </button>
-        )}
+
+          {simulateMode && (
+            <button
+              onClick={handleContinue}
+              disabled={selectedTeamIds.length !== 2}
+              className={`px-6 py-3 rounded-lg font-semibold transition ${
+                selectedTeamIds.length === 2
+                  ? "bg-green-600 hover:bg-green-700"
+                  : "bg-gray-600 cursor-not-allowed"
+              }`}
+            >
+              ✅ Continue
+            </button>
+          )}
+        </div>
+
+        {/* Team List */}
+        <div className="space-y-6">
+          {filteredTeams.map((team) => {
+            const id = team.id || team.objectId;
+            const username = team.get("createdByUsername") || "Unknown";
+
+            return (
+              <div
+                key={id}
+                className="bg-neutral-800 p-6 rounded-lg shadow-md flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+              >
+                <div className="flex items-center gap-4">
+                  {simulateMode && (
+                    <input
+                      type="checkbox"
+                      checked={selectedTeamIds.includes(id)}
+                      onChange={() => handleCheckboxChange(id)}
+                      disabled={
+                        !selectedTeamIds.includes(id) &&
+                        selectedTeamIds.length >= 2
+                      }
+                      className="w-5 h-5 text-blue-600 bg-neutral-700 border-neutral-600 rounded focus:ring-blue-500 focus:ring-2"
+                    />
+                  )}
+                  <div>
+                    <h3 className="text-xl font-semibold">
+                      {team.get("name")}
+                    </h3>
+                    <p className="text-gray-400 italic text-sm">
+                      Created by: {username}
+                    </p>
+                  </div>
+                </div>
+
+                {!simulateMode && (
+                  <button
+                    onClick={() => navigate(`/team/${id}`)}
+                    className="px-4 py-2 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition"
+                  >
+                    🔍 View Details
+                  </button>
+                )}
+              </div>
+            );
+          })}
+        </div>
       </div>
-
-      {/* Team List */}
-      {filteredTeams.map((team) => {
-        const id = team.id || team.objectId;
-        const username = team.get("createdByUsername") || "Unknown";
-
-        return (
-          <div
-            key={id}
-            style={{
-              borderBottom: "1px solid #ccc",
-              marginBottom: "1rem",
-              display: "flex",
-              alignItems: "center",
-              gap: "1rem"
-            }}
-          >
-            {simulateMode && (
-              <input
-                type="checkbox"
-                checked={selectedTeamIds.includes(id)}
-                onChange={() => handleCheckboxChange(id)}
-                disabled={
-                  !selectedTeamIds.includes(id) && selectedTeamIds.length >= 2
-                }
-              />
-            )}
-            <div>
-              <h3>{team.get("name")}</h3>
-              <p style={{ fontStyle: "italic", color: "#555" }}>
-                Created by: {username}
-              </p>
-              {!simulateMode && (
-                <button onClick={() => navigate(`/team/${id}`)}>
-                  🔍 View Details
-                </button>
-              )}
-            </div>
-          </div>
-        );
-      })}
     </div>
   );
 }

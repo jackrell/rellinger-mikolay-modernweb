@@ -8,20 +8,16 @@ export default function GameResult() {
   const navigate = useNavigate();
   const result = location.state?.result;
 
+  // If no simulation result is available, show a simple error + back button
   if (!result) {
     return (
-      <div style={{ padding: "2rem", textAlign: "center" }}>
-        <h2>⚠️ No simulation data found.</h2>
+      <div className="min-h-screen flex flex-col justify-center items-center bg-neutral-900 text-white p-8">
+        <h2 className="text-2xl font-bold mb-6">
+          ⚠️ No simulation data found.
+        </h2>
         <button
           onClick={() => navigate("/view-teams")}
-          style={{
-            marginTop: "1rem",
-            padding: "0.5rem 1rem",
-            backgroundColor: "#fff",
-            border: "1px solid black",
-            cursor: "pointer",
-            borderRadius: "4px"
-          }}
+          className="px-6 py-3 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition"
         >
           🔙 Back to Teams
         </button>
@@ -30,98 +26,66 @@ export default function GameResult() {
   }
 
   return (
-    <div style={{ padding: "2rem", textAlign: "center" }}>
-      <h2 style={{ marginBottom: "2rem" }}>🏆 Game Result</h2>
+    <div className="min-h-screen bg-neutral-900 text-white p-8">
+      <div className="max-w-4xl mx-auto text-center">
+        {/* Page Title */}
+        <h2 className="text-3xl font-bold mb-12">🏆 Game Result</h2>
 
-      {/* Score Layout */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          gap: "4rem",
-          marginBottom: "2.5rem"
-        }}
-      >
-        {/* Team A */}
-        <div style={{ minWidth: "150px" }}>
-          <h3 style={{ marginBottom: "0.25rem" }}>{result.teamA}</h3>
-          <div style={{ fontSize: "1.7rem", fontWeight: "bold" }}>{result.scoreA}</div>
+        {/* Team Scores */}
+        <div className="flex flex-col md:flex-row justify-center items-center gap-12 mb-12">
+          {/* Team A Card */}
+          <div className="bg-neutral-800 p-6 rounded-lg w-48 shadow-md">
+            <h3 className="text-xl font-semibold mb-2">{result.teamA}</h3>
+            <div className="text-3xl font-bold">{result.scoreA}</div>
+          </div>
+
+          {/* VS Divider */}
+          <div className="text-2xl font-bold">VS</div>
+
+          {/* Team B Card */}
+          <div className="bg-neutral-800 p-6 rounded-lg w-48 shadow-md">
+            <h3 className="text-xl font-semibold mb-2">{result.teamB}</h3>
+            <div className="text-3xl font-bold">{result.scoreB}</div>
+          </div>
         </div>
 
-        {/* VS in the middle */}
-        <div style={{ fontSize: "1.3rem", fontWeight: "bold" }}>VS</div>
-
-        {/* Team B */}
-        <div style={{ minWidth: "150px" }}>
-          <h3 style={{ marginBottom: "0.25rem" }}>{result.teamB}</h3>
-          <div style={{ fontSize: "1.7rem", fontWeight: "bold" }}>{result.scoreB}</div>
+        {/* MVP Player Box */}
+        <div className="inline-block bg-neutral-800 p-6 rounded-lg shadow-md mb-12">
+          <h4 className="text-xl font-semibold mb-2">🏅 MVP</h4>
+          <p className="text-lg">{result.mvp}</p>
         </div>
-      </div>
 
-      {/* MVP Box */}
-      <div
-        style={{
-          display: "inline-block",
-          border: "1px solid black",
-          padding: "1rem 1.5rem",
-          borderRadius: "8px",
-          marginBottom: "2rem",
-          backgroundColor: "#f9f9f9"
-        }}
-      >
-        <h4 style={{ margin: "0 0 0.5rem 0" }}>🏅 MVP</h4>
-        <p style={{ margin: 0 }}>{result.mvp}</p>
-      </div>
+        {/* Game Summary */}
+        <div className="bg-neutral-800 p-6 rounded-lg shadow-md mb-12 max-w-2xl mx-auto">
+          <p className="text-gray-300">{result.summary}</p>
+        </div>
 
-      {/* Summary Box */}
-      <div
-        style={{
-          border: "1px solid #ccc",
-          padding: "1rem",
-          borderRadius: "8px",
-          maxWidth: "600px",
-          margin: "0 auto"
-        }}
-      >
-        <p>{result.summary}</p>
-      </div>
-
-      {/* Action Buttons */}
-      <div style={{ marginTop: "2rem", display: "flex", justifyContent: "center", gap: "1rem" }}>
-        {/* View Box Score Button */}
-        <button
-          onClick={() => navigate("/simulate/boxscore", {
-            state: {
-              boxScore: result.boxScore,
-              teamA: result.teamA,
-              teamB: result.teamB
+        {/* Action Buttons */}
+        <div className="flex flex-wrap justify-center gap-6">
+          {/* View Full Box Score Button */}
+          <button
+            onClick={() =>
+              navigate("/simulate/boxscore", {
+                state: {
+                  boxScore: result.boxScore,
+                  teamA: result.teamA,
+                  teamB: result.teamB,
+                },
+              })
             }
-          })}
-          style={{
-            padding: "0.5rem 1rem",
-            backgroundColor: "#fff",
-            border: "1px solid black",
-            cursor: "pointer",
-            borderRadius: "4px"
-          }}
-        >
-          📋 View Full Box Score
-        </button>
+            className="px-6 py-3 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition"
+          >
+            📋 View Full Box Score
+          </button>
 
-        {/* Back to Teams Button */}
-        <button
-          onClick={() => navigate("/view-teams")}
-          style={{
-            padding: "0.5rem 1rem",
-            backgroundColor: "#fff",
-            border: "1px solid black",
-            cursor: "pointer",
-            borderRadius: "4px"
-          }}
-        >
-          🔙 Back to Teams
-        </button>
+          {/* Back to Teams Button */}
+          <button
+            onClick={() => navigate("/view-teams")}
+            className="px-6 py-3 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition"
+          >
+            🔙 Back to Teams
+          </button>
+        </div>
       </div>
     </div>
   );

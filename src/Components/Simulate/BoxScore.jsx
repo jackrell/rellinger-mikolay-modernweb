@@ -8,20 +8,14 @@ export default function BoxScore() {
   const navigate = useNavigate();
   const { boxScore, teamA, teamB } = location.state || {};
 
+  // If no box score available, show fallback screen
   if (!boxScore) {
     return (
-      <div style={{ padding: "2rem", textAlign: "center" }}>
-        <h2>⚠️ No box score data found.</h2>
+      <div className="min-h-screen flex flex-col justify-center items-center bg-neutral-900 text-white p-8">
+        <h2 className="text-2xl font-bold mb-6">⚠️ No box score data found.</h2>
         <button
           onClick={() => navigate("/view-teams")}
-          style={{
-            marginTop: "1rem",
-            padding: "0.5rem 1rem",
-            backgroundColor: "#fff",
-            border: "1px solid black",
-            cursor: "pointer",
-            borderRadius: "4px"
-          }}
+          className="px-6 py-3 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition"
         >
           🔙 Back to Teams
         </button>
@@ -30,32 +24,46 @@ export default function BoxScore() {
   }
 
   // Separate players by team
-  const playersA = boxScore.filter(p => p.team === "A");
-  const playersB = boxScore.filter(p => p.team === "B");
+  const playersA = boxScore.filter((p) => p.team === "A");
+  const playersB = boxScore.filter((p) => p.team === "B");
 
+  // Renders a table for each team
   const renderTable = (teamName, players) => (
-    <div style={{ marginBottom: "2.5rem" }}>
-      <h3 style={{ textAlign: "center", marginBottom: "1rem" }}>{teamName}</h3>
-      <table style={{ width: "100%", borderCollapse: "collapse" }}>
-        <thead>
-          <tr style={{ backgroundColor: "#f2f2f2" }}>
-            <th style={thStyle}>Player</th>
-            <th style={thStyle}>PTS</th>
-            <th style={thStyle}>REB</th>
-            <th style={thStyle}>AST</th>
-          </tr>
-        </thead>
-        <tbody>
-          {players.map((player, idx) => (
-            <tr key={idx} style={{ textAlign: "center" }}>
-              <td style={tdStyle}>{player.name}</td>
-              <td style={tdStyle}>{player.pts}</td>
-              <td style={tdStyle}>{player.reb}</td>
-              <td style={tdStyle}>{player.ast}</td>
+    <div className="mb-12">
+      <h3 className="text-2xl font-semibold text-center mb-6">{teamName}</h3>
+      <div className="overflow-x-auto">
+        <table className="min-w-full text-sm">
+          <thead className="bg-neutral-800">
+            <tr>
+              <th className="p-4 border-b border-neutral-700 text-left">
+                Player
+              </th>
+              <th className="p-4 border-b border-neutral-700 text-center">
+                PTS
+              </th>
+              <th className="p-4 border-b border-neutral-700 text-center">
+                REB
+              </th>
+              <th className="p-4 border-b border-neutral-700 text-center">
+                AST
+              </th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {players.map((player, idx) => (
+              <tr
+                key={idx}
+                className="border-b border-neutral-800 hover:bg-neutral-800 transition"
+              >
+                <td className="p-4 text-left">{player.name}</td>
+                <td className="p-4 text-center">{player.pts}</td>
+                <td className="p-4 text-center">{player.reb}</td>
+                <td className="p-4 text-center">{player.ast}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 
@@ -63,35 +71,38 @@ export default function BoxScore() {
     padding: "0.75rem",
     borderBottom: "1px solid #ddd",
     fontWeight: "bold",
-    fontSize: "0.95rem"
+    fontSize: "0.95rem",
   };
 
   const tdStyle = {
     padding: "0.6rem",
     borderBottom: "1px solid #ddd",
-    fontSize: "0.9rem"
+    fontSize: "0.9rem",
   };
 
   return (
-    <div style={{ padding: "2rem", maxWidth: "800px", margin: "0 auto" }}>
-      <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>📋 Full Box Score</h2>
+    <div className="min-h-screen bg-neutral-900 text-white p-8">
+      <div className="max-w-4xl mx-auto">
+        {/* Page Title */}
+        <h2 className="text-3xl font-bold text-center mb-12">
+          📋 Full Box Score
+        </h2>
 
-      {renderTable(teamA, playersA)}
-      {renderTable(teamB, playersB)}
+        {/* Team A Table */}
+        {renderTable(teamA, playersA)}
 
-      <div style={{ textAlign: "center", marginTop: "2rem" }}>
-        <button
-          onClick={() => navigate("/view-teams")}
-          style={{
-            padding: "0.5rem 1rem",
-            backgroundColor: "#fff",
-            border: "1px solid black",
-            cursor: "pointer",
-            borderRadius: "4px"
-          }}
-        >
-          🔙 Back to Teams
-        </button>
+        {/* Team B Table */}
+        {renderTable(teamB, playersB)}
+
+        {/* Back Button */}
+        <div className="flex justify-center mt-12">
+          <button
+            onClick={() => navigate("/view-teams")}
+            className="px-8 py-4 border border-blue-500 text-blue-500 rounded-lg hover:bg-blue-500 hover:text-white transition"
+          >
+            🔙 Back to Teams
+          </button>
+        </div>
       </div>
     </div>
   );
