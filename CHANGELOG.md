@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated View Teams and View Team Details pages with polished cards, tables, and responsive layout
 - Standardized button styling (global Home button, Save, Cancel, Back, Simulate) across all modules
 - View module connections to Simulate module and associated views
+- Archived attempt at nba_api integration in backend/deprecated/fetch_nba_data.py
 
 ### Feature 6 Details & Contributions
 
